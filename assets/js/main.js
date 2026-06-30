@@ -187,11 +187,33 @@
         }
       }
 
-      slideNavigate = function (direction) {
+      function getLebenslaufPageIndex() {
+        return PAGES.indexOf('lebenslauf.html');
+      }
+
+      function navigatePageFromCV(direction) {
+        const idx = getLebenslaufPageIndex();
+        if (idx < 0) return;
         if (direction === 'prev') {
-          current = (current - 1 + total) % total;
+          goToPage((idx - 1 + PAGES.length) % PAGES.length);
         } else {
-          current = (current + 1) % total;
+          goToPage((idx + 1) % PAGES.length);
+        }
+      }
+
+      slideNavigate = function (direction) {
+        if (direction === 'prev' && current === 0) {
+          navigatePageFromCV('prev');
+          return;
+        }
+        if (direction === 'next' && current === total - 1) {
+          navigatePageFromCV('next');
+          return;
+        }
+        if (direction === 'prev') {
+          current = current - 1;
+        } else {
+          current = current + 1;
         }
         updateSlides(current);
       };
