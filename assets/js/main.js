@@ -13,12 +13,10 @@
   const THEME_KEY = 'portfolio-theme';
   const PAGES = [
     'index.html',
+    'kurzprofil.html',
     'anschreiben.html',
     'lebenslauf.html',
-    'profile-skills.html',
-    'motivation.html',
-    'portfolio.html',
-    'kontakt.html'
+    'portfolio.html'
   ];
 
   function applyTheme(theme) {
