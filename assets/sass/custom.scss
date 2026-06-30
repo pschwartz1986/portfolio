@@ -1,0 +1,15 @@
+@use "../bootstrap/scss/bootstrap";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+$font-family-base: 'Montserrat', system-ui, -apple-system, sans-serif;
+
+@import "variables";
+@import "login";
+@import "navbar";
+@import "hero";
+@import "timeline";
+@import "cards";
+@import "buttons";
+@import "scrollbar";
+@import "utilities";

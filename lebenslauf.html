@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="de" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lebenslauf – Bewerbungsmappe</title>
+  <meta name="robots" content="noindex, nofollow, noarchive" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" />
+  <link rel="stylesheet" href="assets/icons/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="assets/css/custom.css" />
+  <style>
+    .cv-slide { display: none; }
+    .cv-slide.active { display: block; animation: fadeInUp 0.55s cubic-bezier(0.22, 0.61, 0.36, 1) forwards; }
+    .cv-slider-indicator {
+      position: fixed;
+      bottom: 82px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 10px;
+      z-index: 1050;
+    }
+    .cv-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--border);
+      cursor: pointer;
+      transition: all 0.3s;
+      border: 2px solid transparent;
+    }
+    .cv-dot.active {
+      background: var(--accent);
+      border-color: var(--accent-strong);
+      box-shadow: 0 0 12px var(--accent-glow);
+      transform: scale(1.25);
+    }
+    @media (max-width: 768px) {
+      .cv-slider-indicator { bottom: 70px; }
+    }
+  </style>
+</head>
+<body>
+  <div id="login-screen">
+    <div class="login-card">
+      <div class="lock-icon"><i class="bi bi-lock-fill"></i></div>
+      <h2 class="fw-bold mb-1">Exklusiver Zugang</h2>
+      <p class="text-muted mb-4">Diese Bewerbungsmappe ist nur für Personalverantwortliche sichtbar.</p>
+      <input type="password" id="key-input" class="form-control-dark mb-3" placeholder="Zugangscode eingeben…" autofocus />
+      <button id="unlock-btn" class="btn btn-glow"><i class="bi bi-unlock me-2"></i>Freischalten</button>
+      <div class="text-danger mt-3" id="error-msg"></div>
+    </div>
+  </div>
+  <div id="portfolio-content" style="display:none;">
+    <button id="theme-toggle-bottom" class="theme-toggle-bottom" title="Farbschema wechseln"><i class="bi bi-moon-stars"></i></button>
+    <button id="slide-prev" class="slide-arrow slide-arrow-prev" aria-label="Vorherige Sektion"><i class="bi bi-chevron-left"></i></button>
+    <button id="slide-next" class="slide-arrow slide-arrow-next" aria-label="Nächste Sektion"><i class="bi bi-chevron-right"></i></button>
+    <div class="cv-slider" data-current="0" data-total="7">
+      <div class="cv-slide active" data-index="0">
+        <section class="section">
+          <div class="container">
+            <div class="text-center">
+              <div class="hero-avatar">[P]</div>
+              <h2 class="section-title">Lebens<span>lauf</span></h2>
+              <p class="section-subtitle mb-5">Patrick Schwartz</p>
+              <p class="hero-role mb-4">IT-Allrounder &amp; Entwickler</p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="cv-slide" data-index="1">
+        <section class="section">
+          <div class="container">
+            <div class="text-center">
+              <div class="hero-avatar">[K]</div>
+              <h2 class="section-title">Kern<span>kompetenzen</span></h2>
+              <p class="section-subtitle mb-5">Werkzeuge und Technologien</p>
+              <p class="hero-role mb-4">Frontend, Backend, DevOps, Kreativ</p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="cv-slide" data-index="2">
+        <section class="section">
+          <div class="container">
+            <div class="text-center">
+              <div class="hero-avatar">[W]</div>
+              <h2 class="section-title">Beruflicher <span>Werdegang</span></h2>
+              <p class="section-subtitle mb-5">Stationen meines praktischen Werdegangs</p>
+              <p class="hero-role mb-4">Projekte, Verantwortung, Entwicklung</p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="cv-slide" data-index="3">
+        <section class="section">
+          <div class="container">
+            <div class="text-center">
+              <div class="hero-avatar">[R]</div>
+              <h2 class="section-title">Projekte &amp; <span>Referenzen</span></h2>
+              <p class="section-subtitle mb-5">Nicht nur Code – fertige Lösungen</p>
+              <p class="hero-role mb-4">jungelmusik.de, GitHub, Individualsoftware</p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="cv-slide" data-index="4">
+        <section class="section">
+          <div class="container">
+            <div class="text-center">
+              <div class="hero-avatar">[B]</div>
+              <h2 class="section-title">Bildungs<span>weg</span></h2>
+              <p class="section-subtitle mb-5">Ausbildung und Weiterbildung</p>
+              <p class="hero-role mb-4">GFN Essen · Umschulung · kontinuierliches Lernen</p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="cv-slide" data-index="5">
+        <section class="section">
+          <div class="container">
+            <div class="text-center">
+              <div class="hero-avatar">[S]</div>
+              <h2 class="section-title">Sprach-<span>kenntnisse</span></h2>
+              <p class="section-subtitle mb-5">Kommunikation auf Deutsch und Englisch</p>
+              <p class="hero-role mb-4">Deutsch Muttersprache · Englisch gut in Wort und Schrift</p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="cv-slide" data-index="6">
+        <section class="section">
+          <div class="container">
+            <div class="text-center">
+              <div class="hero-avatar">[Q]</div>
+              <h2 class="section-title">Qualifikationen &amp; <span>Interessen</span></h2>
+              <p class="section-subtitle mb-5">Was mich darüber hinaus antreibt</p>
+              <p class="hero-role mb-4">Open Source · KI-Konzepte · Medienproduktion</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div class="cv-slider-indicator" aria-label="Sektions-Navigation">
+      <span class="cv-dot active" data-index="0" title="Persönliches Profil"></span>
+      <span class="cv-dot" data-index="1" title="Kernkompetenzen"></span>
+      <span class="cv-dot" data-index="2" title="Beruflicher Werdegang"></span>
+      <span class="cv-dot" data-index="3" title="Projekte"></span>
+      <span class="cv-dot" data-index="4" title="Bildungsweg"></span>
+      <span class="cv-dot" data-index="5" title="Sprachkenntnisse"></span>
+      <span class="cv-dot" data-index="6" title="Qualifikationen"></span>
+    </div>
+    <footer class="footer-fixed text-center border-top footer-theme-border">
+      <p class="text-muted small mb-0">
+        <span class="text-accent">✦</span> Interaktive Bewerbungsmappe – exklusiv zugänglich <span class="text-accent">✦</span>
+      </p>
+    </footer>
+  </div>
+  <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

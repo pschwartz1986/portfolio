@@ -1,0 +1,121 @@
+.text-accent { color: var(--accent) !important; }
+.small { font-size: 0.85rem !important; }
+
+.footer-fixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+  padding: 0.6rem 0;
+  background: transparent;
+  border-top: 1px solid transparent;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  opacity: 0.65;
+  transition: opacity 0.35s;
+}
+
+.footer-fixed:hover { opacity: 1; }
+
+.blur-hover {
+  filter: blur(0);
+  transition: filter 0.5s ease, transform 0.5s ease;
+}
+
+.blur-hover:hover { filter: blur(0) scale(1.03); }
+
+.blur-hover-out {
+  filter: blur(4px);
+  opacity: 0.8;
+  transition: filter 0.5s ease, opacity 0.5s ease;
+}
+
+.bg-surface { background: var(--bg-surface); }
+.bg-deep { background: var(--bg-deep); }
+
+.theme-toggle-bottom {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1070;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  color: var(--text-main);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(12px);
+  animation: fadeInToggle 0.7s 0.6s forwards;
+  transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+.theme-toggle-bottom:hover {
+  border-color: var(--accent);
+  color: var(--accent-strong);
+  box-shadow: 0 0 35px var(--accent-glow), 0 12px 35px rgba(0, 0, 0, 0.45);
+  transform: translateY(-4px);
+}
+
+@keyframes fadeInToggle {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .theme-toggle-bottom {
+    bottom: 14px;
+    right: 14px;
+    width: 48px;
+    height: 48px;
+    font-size: 1.2rem;
+  }
+}
+
+.slide-arrow {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1035;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  color: var(--text-main);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: border-color 0.2s, color 0.2s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0.85;
+}
+
+.slide-arrow:hover {
+  border-color: var(--accent);
+  color: var(--accent-strong);
+  opacity: 1;
+}
+
+.slide-arrow-prev { left: 14px; }
+.slide-arrow-next { right: 14px; }
+
+@media (max-width: 768px) {
+  .slide-arrow {
+    width: 36px;
+    height: 36px;
+    font-size: 1.1rem;
+  }
+  .slide-arrow-prev { left: 6px; }
+  .slide-arrow-next { right: 6px; }
+}

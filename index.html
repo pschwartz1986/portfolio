@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="de" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deckblatt – Bewerbungsmappe</title>
+  <meta name="robots" content="noindex, nofollow, noarchive" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" />
+  <link rel="stylesheet" href="assets/icons/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="assets/css/custom.css" />
+</head>
+
+<body>
+
+  <!-- LOGIN OVERLAY -->
+  <div id="login-screen">
+    <div class="login-card">
+      <div class="lock-icon"><i class="bi bi-lock-fill"></i></div>
+      <h2 class="fw-bold mb-1">Exklusiver Zugang</h2>
+      <p class="text-muted mb-4">Bitte geben Sie den Zugriffscode ein, um fortzufahren.</p>
+      <input type="password" id="key-input" class="form-control-dark mb-3" placeholder="Zugangscode eingeben…" autofocus />
+      <button id="unlock-btn" class="btn btn-glow"><i class="bi bi-unlock me-2"></i>Freischalten</button>
+      <div class="text-danger mt-3" id="error-msg"></div>
+    </div>
+  </div>
+
+  <!-- PORTFOLIO CONTENT -->
+  <div id="portfolio-content" style="display:none;">
+
+    <!-- Theme Toggle Bottom-Right -->
+    <button id="theme-toggle-bottom" class="theme-toggle-bottom" title="Farbschema wechseln"><i class="bi bi-moon-stars"></i></button>
+
+    <!-- Slider Arrows -->
+    <button id="slide-prev" class="slide-arrow slide-arrow-prev" aria-label="Vorherige Seite">
+      <i class="bi bi-chevron-left"></i>
+    </button>
+    <button id="slide-next" class="slide-arrow slide-arrow-next" aria-label="Nächste Seite">
+      <i class="bi bi-chevron-right"></i>
+    </button>
+
+    <!-- HERO / DECKBLATT -->
+    <section id="hero" class="hero-section">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-9 col-xl-8">
+            <div class="text-center">
+
+              <div class="hero-avatar">[A]</div>
+
+              <p class="hero-pre text-accent mb-3">Bewerbungsmappe & Referenzen</p>
+
+              <h1 class="hero-name mb-3">
+                Patrick Schwartz
+              </h1>
+              <p class="hero-role mb-4">Umschulung zum Fachinformatiker - Anwendungsentwicklung</p>
+
+              <!-- Socials -->
+              <div class="my-5 d-flex gap-3 justify-content-center flex-wrap">
+                <a href="anschreiben.html" class="social-pill" data-tooltip="Mein Anschreiben">
+                  <i class="bi bi-envelope-paper"></i> Anschreiben
+                </a>
+                <a href="lebenslauf.html" class="social-pill" data-tooltip="Mein Lebenslauf">
+                  <i class="bi bi-file-earmark-person"></i> Lebenslauf
+                </a>
+                <a href="https://github.com/pschwartz1986" target="_blank" rel="noopener" class="social-pill" data-tooltip="Code, Projekte & Experimente">
+                  <i class="bi bi-github"></i> GitHub
+                </a>
+                <a href="https://www.xing.com/profile/deinprofil" target="_blank" rel="noopener" class="social-pill">
+                  <i class="bi bi-xing"></i> Xing
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer-fixed text-center border-top footer-theme-border">
+      <p class="text-muted small mb-0">
+        <span class="text-accent">✦</span> Interaktive Bewerbungsmappe – exklusiv zugänglich <span class="text-accent">✦</span>
+      </p>
+    </footer>
+
+  </div>
+  <!-- Lokales Bootstrap JS -->
+  <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
