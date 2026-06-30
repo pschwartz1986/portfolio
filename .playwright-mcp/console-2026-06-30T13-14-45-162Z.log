@@ -1,0 +1,16 @@
+[      83ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8000/assets/bootstrap/bootstrap.bundle.min.js:0
+[     189ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ http://localhost:8000/index.html:0
+[     255ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8000/manifest.json:0
+[     257ms] [ERROR] Manifest fetch from http://localhost:8000/manifest.json failed, code 404 @ http://localhost:8000/index.html:0
+[     275ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8000/manifest.json:0
+[     308ms] [ERROR] Manifest fetch from http://localhost:8000/manifest.json failed, code 404 @ http://localhost:8000/index.html:0
+[     309ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8000/favicon.ico:0
+[   22537ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8000/manifest.json:0
+[   37670ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8000/assets/bootstrap/bootstrap.bundle.min.js:0
+[   37692ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ http://localhost:8000/index.html:0
+[   37741ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8000/manifest.json:0
+[   37741ms] [ERROR] Manifest fetch from http://localhost:8000/manifest.json failed, code 404 @ http://localhost:8000/index.html:0
+[   39199ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8000/assets/bootstrap/bootstrap.bundle.min.js:0
+[   39247ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ http://localhost:8000/index.html:0
+[   39259ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8000/manifest.json:0
+[   39259ms] [ERROR] Manifest fetch from http://localhost:8000/manifest.json failed, code 404 @ http://localhost:8000/index.html:0

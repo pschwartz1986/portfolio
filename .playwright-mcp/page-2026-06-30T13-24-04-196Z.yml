@@ -1,0 +1,8 @@
+- generic [ref=f2e2]:
+  - generic [ref=f2e4]: 
+  - heading "Exklusiver Zugang" [level=2] [ref=f2e5]
+  - paragraph [ref=f2e6]: Diese Bewerbungsmappe ist nur für Personalverantwortliche sichtbar.
+  - textbox "Zugangscode eingeben…" [active] [ref=f2e7]
+  - button " Freischalten" [ref=f2e8] [cursor=pointer]:
+    - generic [ref=f2e9]: 
+    - text: Freischalten

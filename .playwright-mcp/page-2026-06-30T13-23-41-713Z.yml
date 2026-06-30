@@ -1,0 +1,107 @@
+- generic [active] [ref=f1e11]:
+  - text:  
+  - generic [ref=f1e12]:
+    - button "" [ref=f1e13] [cursor=pointer]:
+      - generic [ref=f1e14]: 
+    - text:  
+    - generic [ref=f1e18]:
+      - generic [ref=f1e19]:
+        - generic [ref=f1e20]: "[A]"
+        - heading "Anschreiben" [level=1] [ref=f1e21]
+        - paragraph [ref=f1e22]: Mein Weg in die Softwareentwicklung
+        - generic [ref=f1e23]:
+          - link " Kurzprofil" [ref=f1e24] [cursor=pointer]:
+            - /url: kurzprofil.html
+            - generic [ref=f1e25]: 
+            - text: Kurzprofil
+          - link " Lebenslauf" [ref=f1e26] [cursor=pointer]:
+            - /url: lebenslauf.html
+            - generic [ref=f1e27]: 
+            - text: Lebenslauf
+      - generic [ref=f1e30]:
+        - paragraph [ref=f1e31]: Anschreiben – Praktikumsplatz im Rahmen der Umschulung zum Fachinformatiker Anwendungsentwicklung
+        - generic [ref=f1e32]:
+          - paragraph [ref=f1e33]:
+            - strong [ref=f1e34]: Patrick Schwartz
+            - text: Berliner Straße 123 · 45127 Essen
+            - text: 📧 patrick.schwartz@gfn.de · 📱 +49 176 12345678
+            - text: 🔗 github.com/pschwartz1986 · 🌐 jungelmusik.de
+          - paragraph [ref=f1e35]:
+            - strong [ref=f1e36]: Essen, den 30.06.2026
+          - separator [ref=f1e37]
+          - paragraph [ref=f1e38]:
+            - strong [ref=f1e39]:
+              - text: GFN Edupath AG
+              - text: Personalabwicklung
+              - text: z. Hd. Frau Müller
+            - text: Charlottenstraße 50
+            - text: 45130 Essen
+          - separator [ref=f1e40]
+          - heading "Bewerbung um einen Praktikumsplatz im Rahmen meiner Umschulung zum Fachinformatiker Anwendungsentwicklung" [level=2] [ref=f1e41]
+          - paragraph [ref=f1e42]: Sehr geehrte Damen und Herren,
+          - paragraph [ref=f1e43]: mein beruflicher Weg war vielseitig und nicht immer gradlinig – genau das hat mich zu dem vielseitigen IT-Allrounder gemacht, der ich heute bin. Mit über 15 Jahren praktischer Erfahrung in den Bereichen Webentwicklung, Linux-Systemen und kreativen Medien möchte ich mein Know-how im Rahmen meiner Umschulung bei der GFN in Essen nun formal fundieren und bei Ihnen in der Praxis anwenden.
+          - heading " Was mich auszeichnet – meine technische Bandbreite" [level=3] [ref=f1e44]:
+            - generic [ref=f1e45]: 
+            - text: Was mich auszeichnet – meine technische Bandbreite
+          - paragraph [ref=f1e46]: "Ich habe mir in den letzten Jahren ein breites technologisches Spektrum autodidaktisch erarbeitet:"
+          - generic [ref=f1e47]:
+            - list [ref=f1e49]:
+              - listitem [ref=f1e50]:
+                - strong [ref=f1e51]: "Frontend:"
+                - text: HTML5, CSS3, SASS, Bootstrap (v3–v5), Bulma, JavaScript (Vanilla, ES6+)
+              - listitem [ref=f1e52]:
+                - strong [ref=f1e53]: "Backend:"
+                - text: PHP (Basics bis erweitert), Python (Flask, individuelle Skripts, Tkinter)
+            - list [ref=f1e55]:
+              - listitem [ref=f1e56]:
+                - strong [ref=f1e57]: "CMS & Datenbanken:"
+                - text: WordPress (inkl. Plugin-Entwicklung), diverse Lightweight-CMS, SQL, SQLite3
+              - listitem [ref=f1e58]:
+                - strong [ref=f1e59]: "DevOps & Tools:"
+                - text: Docker, npm, pip, Git, GitHub, Linux-Systemadministration
+          - paragraph [ref=f1e60]: Diese Bandbreite ermöglicht es mir, Projekte ganzheitlich zu denken und umzusetzen – von der Konzeption über die Entwicklung bis hin zum Deployment.
+          - heading " Meine Referenz – ein lebendiger Beweis meines Könnens" [level=3] [ref=f1e61]:
+            - generic [ref=f1e62]: 
+            - text: Meine Referenz – ein lebendiger Beweis meines Könnens
+          - paragraph [ref=f1e63]:
+            - text: Mein aktuellstes Projekt,
+            - link "jungelmusik.de" [ref=f1e64] [cursor=pointer]:
+              - /url: https://jungelmusik.de
+            - text: ", habe ich vollständig im Alleingang konzipiert, designed und programmiert. Es vereint meine Frontend-Kenntnisse (Bootstrap, SASS, JS) mit Backend-Erfahrung (PHP, SQLite3) und zeigt meine Fähigkeit, professionelle, performante und individuell angepasste Lösungen zu liefern – ohne Vorgaben, ohne Team, einfach aus Leidenschaft."
+          - heading " Warum ich zu Ihnen möchte – und warum Sie mich wollen sollten" [level=3] [ref=f1e65]:
+            - generic [ref=f1e66]: 
+            - text: Warum ich zu Ihnen möchte – und warum Sie mich wollen sollten
+          - paragraph [ref=f1e67]: Ich habe mich bewusst für Ihr Unternehmen entschieden, weil ich Ihre Arbeit im Bereich Softwareentwicklung verfolge und mich besonders für anspruchsvolle Projekte begeistere. Die Kombination aus Ihrer innovativen Unternehmenskultur und technologischen Ausrichtung bietet mir die ideale Umgebung, um meine praktischen Fähigkeiten im professionellen Kontext anzuwenden und weiterzuentwickeln.
+          - paragraph [ref=f1e68]: "Die Umschulung bei der GFN in Essen ist für mich der logische Schritt, meine praktische Erfahrung mit einem fundierten, theoretischen Abschluss zu kombinieren und meine Leidenschaft für die Softwareentwicklung zum Beruf zu machen. Ein Praktikum bei Ihnen wäre die perfekte Brücke zwischen Theorie und Praxis – und eine Chance für uns beide: Sie erhalten einen motivierten, erfahrenen und sofort einsatzbereiten Praktikanten, der nicht nur Code schreibt, sondern denkt."
+          - heading " Was ich Ihnen biete" [level=3] [ref=f1e69]:
+            - generic [ref=f1e70]: 
+            - text: Was ich Ihnen biete
+          - generic [ref=f1e71]:
+            - generic [ref=f1e72]:
+              - generic [ref=f1e73]:
+                - generic [ref=f1e74]: 
+                - generic [ref=f1e75]:
+                  - strong [ref=f1e76]: "Sofortige Produktivität:"
+                  - text: Keine wochenlange Einarbeitung – ich bringe praktische Erfahrung mit
+              - generic [ref=f1e77]:
+                - generic [ref=f1e78]: 
+                - generic [ref=f1e79]:
+                  - strong [ref=f1e80]: "Breites Technologieverständnis:"
+                  - text: Ich denke nicht in "meiner" Sprache, sondern in Lösungen
+            - generic [ref=f1e81]:
+              - generic [ref=f1e82]:
+                - generic [ref=f1e83]: 
+                - generic [ref=f1e84]:
+                  - strong [ref=f1e85]: "Eigeninitiative & Verantwortung:"
+                  - text: Ich habe bewiesen, dass ich Projekte alleine stemmen kann
+              - generic [ref=f1e86]:
+                - generic [ref=f1e87]: 
+                - generic [ref=f1e88]:
+                  - strong [ref=f1e89]: "Lernbereitschaft & Neugier:"
+                  - text: Neue Technologien, KI-Konzepte und Trends sind mein täglich Brot
+          - paragraph [ref=f1e90]: Gerne stehe ich für ein persönliches Gespräch zur Verfügung und freue mich darauf, Sie von meiner Begeisterung für die Softwareentwicklung zu überzeugen. Meine vollständigen Bewerbungsunterlagen sowie mein GitHub-Profil mit weiteren Projekten finden Sie in den Anlagen.
+          - generic [ref=f1e91]:
+            - paragraph [ref=f1e92]: Mit freundlichen Grüßen
+            - paragraph [ref=f1e93]: Patrick Schwartz
+    - contentinfo [ref=f1e94]:
+      - paragraph [ref=f1e95]: ✦ Interaktive Bewerbungsmappe – exklusiv zugänglich ✦

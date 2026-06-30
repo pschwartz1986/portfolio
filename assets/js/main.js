@@ -52,29 +52,44 @@
     themeToggle.addEventListener('click', toggleTheme);
   }
 
-  const VALID_CODES = new Set(['bewerbung2026', '1212']);
+  function getPageKey() {
+    var path = window.location.pathname;
+    var file = path.split('/').pop();
+    if (!file) return 'index';
+    return file.replace(/\.html?$/, '');
+  }
 
   function unlock() {
     const code = keyInput.value.trim();
-    if (VALID_CODES.has(code)) {
-      loginScreen.style.display = 'none';
-      portfolioContent.style.display = 'block';
-      portfolioContent.style.opacity = '0';
-      portfolioContent.style.transform = 'translateY(15px)';
-      portfolioContent.style.transition = 'none';
-      requestAnimationFrame(function () {
-        requestAnimationFrame(function () {
-          portfolioContent.style.transition = 'opacity 0.55s ease, transform 0.55s cubic-bezier(0.22, 0.61, 0.36, 1)';
-          portfolioContent.style.opacity = '1';
-          portfolioContent.style.transform = 'translateY(0)';
-        });
-      });
-      localStorage.setItem('bewerbung-unlocked', 'true');
-    } else {
-      errorMsg.textContent = 'Falscher Zugangscode.';
-      keyInput.value = '';
-      keyInput.focus();
+    if (!code) return;
+    const pageKey = getPageKey();
+    const data = window.PORTFOLIO_DATA[pageKey];
+    if (!data) {
+      errorMsg.textContent = 'Keine Daten für diese Seite.';
+      return;
     }
+    errorMsg.textContent = 'Entschlüsseln...';
+    PortfolioCrypto.decrypt(code, data.ciphertext, data.iv, data.salt)
+      .then(function(html) {
+        portfolioContent.innerHTML = html;
+        loginScreen.style.display = 'none';
+        portfolioContent.style.display = 'block';
+        portfolioContent.style.opacity = '0';
+        portfolioContent.style.transform = 'translateY(15px)';
+        portfolioContent.style.transition = 'none';
+        requestAnimationFrame(function () {
+          requestAnimationFrame(function () {
+            portfolioContent.style.transition = 'opacity 0.55s ease, transform 0.55s cubic-bezier(0.22, 0.61, 0.36, 1)';
+            portfolioContent.style.opacity = '1';
+            portfolioContent.style.transform = 'translateY(0)';
+          });
+        });
+      })
+      .catch(function() {
+        errorMsg.textContent = 'Falscher Zugangscode.';
+        keyInput.value = '';
+        keyInput.focus();
+      });
   }
 
   if (unlockBtn) {
@@ -85,13 +100,6 @@
     keyInput.addEventListener('keydown', function (e) {
       if (e.key === 'Enter') unlock();
     });
-  }
-
-  if (localStorage.getItem('bewerbung-unlocked') === 'true') {
-    loginScreen.style.display = 'none';
-    portfolioContent.style.display = 'block';
-    portfolioContent.style.opacity = '1';
-    portfolioContent.style.transform = 'translateY(0)';
   }
 
   initTheme();

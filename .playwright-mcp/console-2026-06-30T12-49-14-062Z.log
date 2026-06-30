@@ -1,0 +1,45 @@
+[      34ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8080/assets/bootstrap/bootstrap.bundle.min.js:0
+[      41ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ http://localhost:8080/index.html:0
+[      48ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8080/manifest.json:0
+[      48ms] [ERROR] Manifest fetch from http://localhost:8080/manifest.json failed, code 404 @ http://localhost:8080/index.html:0
+[      59ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8080/favicon.ico:0
+[    7458ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8080/assets/bootstrap/bootstrap.bundle.min.js:0
+[    7462ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ http://localhost:8080/index.html:0
+[    7468ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8080/manifest.json:0
+[    7468ms] [ERROR] Manifest fetch from http://localhost:8080/manifest.json failed, code 404 @ http://localhost:8080/index.html:0
+[    9277ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8080/assets/bootstrap/bootstrap.bundle.min.js:0
+[    9281ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ http://localhost:8080/index.html:0
+[    9285ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8080/manifest.json:0
+[    9285ms] [ERROR] Manifest fetch from http://localhost:8080/manifest.json failed, code 404 @ http://localhost:8080/index.html:0
+[   22088ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8080/assets/bootstrap/bootstrap.bundle.min.js:0
+[   22120ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ http://localhost:8080/index.html:0
+[   22129ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8080/manifest.json:0
+[   22130ms] [ERROR] Manifest fetch from http://localhost:8080/manifest.json failed, code 404 @ http://localhost:8080/index.html:0
+[   22149ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8080/manifest.json:0
+[   22149ms] [ERROR] Manifest fetch from http://localhost:8080/manifest.json failed, code 404 @ http://localhost:8080/index.html:0
+[   60348ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8080/assets/bootstrap/bootstrap.bundle.min.js:0
+[   60355ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ http://localhost:8080/index.html:0
+[   60362ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8080/manifest.json:0
+[   60362ms] [ERROR] Manifest fetch from http://localhost:8080/manifest.json failed, code 404 @ http://localhost:8080/index.html:0
+[   94237ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8080/assets/bootstrap/bootstrap.bundle.min.js:0
+[   94245ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ http://localhost:8080/index.html:0
+[   94251ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8080/manifest.json:0
+[   94251ms] [ERROR] Manifest fetch from http://localhost:8080/manifest.json failed, code 404 @ http://localhost:8080/index.html:0
+[   94644ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8080/assets/bootstrap/bootstrap.bundle.min.js:0
+[   94649ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8080/manifest.json:0
+[   94650ms] [ERROR] Manifest fetch from http://localhost:8080/manifest.json failed, code 404 @ http://localhost:8080/index.html:0
+[   94730ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ http://localhost:8080/index.html:0
+[   94793ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8080/manifest.json:0
+[   94793ms] [ERROR] Manifest fetch from http://localhost:8080/manifest.json failed, code 404 @ http://localhost:8080/index.html:0
+[   94795ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8080/favicon.ico:0
+[   94947ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8080/assets/bootstrap/bootstrap.bundle.min.js:0
+[   94953ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8080/manifest.json:0
+[   94953ms] [ERROR] Manifest fetch from http://localhost:8080/manifest.json failed, code 404 @ http://localhost:8080/index.html:0
+[   94987ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ http://localhost:8080/index.html:0
+[   95028ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8080/manifest.json:0
+[   95029ms] [ERROR] Manifest fetch from http://localhost:8080/manifest.json failed, code 404 @ http://localhost:8080/index.html:0
+[   95029ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8080/favicon.ico:0
+[  140538ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8080/assets/bootstrap/bootstrap.bundle.min.js:0
+[  140544ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ http://localhost:8080/index.html:0
+[  140550ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8080/manifest.json:0
+[  140551ms] [ERROR] Manifest fetch from http://localhost:8080/manifest.json failed, code 404 @ http://localhost:8080/index.html:0

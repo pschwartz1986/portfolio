@@ -1,0 +1,465 @@
+- generic [active] [ref=e11]:
+  - text:  
+  - generic [ref=e12]:
+    - button "" [ref=e13] [cursor=pointer]:
+      - generic [ref=e14]: 
+    - navigation [ref=e15]:
+      - generic [ref=e16]:
+        - link "Patrick Schwartz" [ref=e17] [cursor=pointer]:
+          - /url: "#hero"
+        - generic [ref=e18]:
+          - link "Anschreiben" [ref=e19] [cursor=pointer]:
+            - /url: "#anschreiben"
+          - link "Kurzprofil" [ref=e20] [cursor=pointer]:
+            - /url: "#profil"
+          - link "Lebenslauf" [ref=e21] [cursor=pointer]:
+            - /url: "#lebenslauf"
+          - link "Portfolio" [ref=e22] [cursor=pointer]:
+            - /url: "#portfolio"
+    - generic [ref=e27]:
+      - img "Patrick Schwartz" [ref=e29]
+      - paragraph [ref=e30]: Bewerbungsmappe & Referenzen
+      - heading "Patrick Schwartz Patrick Schwartz Patrick Schwartz" [level=1] [ref=e31]
+      - paragraph [ref=e32]: Umschulung zum Fachinformatiker – Anwendungsentwicklung
+      - generic [ref=e33]:
+        - link " GitHub" [ref=e34] [cursor=pointer]:
+          - /url: https://github.com/pschwartz1986
+          - generic [ref=e35]: 
+          - text: GitHub
+        - link "XING" [ref=e36] [cursor=pointer]:
+          - /url: https://www.xing.com/profile/Patrick_Schwartz1
+          - text: XING
+        - link " LinkedIn" [ref=e37] [cursor=pointer]:
+          - /url: https://www.linkedin.com/in/patrick-schwartz-1986/
+          - generic [ref=e38]: 
+          - text: LinkedIn
+        - link " jungelmusik.de" [ref=e39] [cursor=pointer]:
+          - /url: https://jungelmusik.de
+          - generic [ref=e40]: 
+          - text: jungelmusik.de
+      - generic [ref=e42]:
+        - generic [ref=e43]:
+          - generic [ref=e44]: 
+          - text: E-Mail
+          - paragraph [ref=e45]:
+            - link "patrick.schwartz@gfn.de" [ref=e46] [cursor=pointer]:
+              - /url: mailto:patrick.schwartz@gfn.de
+        - generic [ref=e47]:
+          - generic [ref=e48]: 
+          - text: Telefon
+          - paragraph [ref=e49]:
+            - link "+49 176 12345678" [ref=e50] [cursor=pointer]:
+              - /url: tel:+4917612345678
+        - generic [ref=e51]:
+          - generic [ref=e52]: 
+          - text: Standort
+          - paragraph [ref=e53]: Essen, NRW
+        - generic [ref=e54]:
+          - generic [ref=e55]: 
+          - text: Verfügbar
+          - paragraph [ref=e56]: ab sofort
+    - generic [ref=e60]:
+      - generic [ref=e61]:
+        - generic [ref=e62]: "[A]"
+        - heading "Anschreiben" [level=1] [ref=e63]
+        - paragraph [ref=e64]: Mein Weg in die Softwareentwicklung
+        - generic [ref=e65]:
+          - link " Kurzprofil" [ref=e66] [cursor=pointer]:
+            - /url: "#profil"
+            - generic [ref=e67]: 
+            - text: Kurzprofil
+          - link " Lebenslauf" [ref=e68] [cursor=pointer]:
+            - /url: "#lebenslauf"
+            - generic [ref=e69]: 
+            - text: Lebenslauf
+      - generic [ref=e72]:
+        - paragraph [ref=e73]: Anschreiben – Praktikumsplatz im Rahmen der Umschulung zum Fachinformatiker Anwendungsentwicklung
+        - generic [ref=e74]:
+          - paragraph [ref=e75]:
+            - strong [ref=e76]: Patrick Schwartz
+            - text: Am Kattensiepen 15 · 42551 Velbert
+            - text: 📧 pschwartz1986@gmail.com · 📱 +49 1575 10 90 444
+            - text: 🔗 github.com/pschwartz1986 · 🌐 ---
+          - paragraph [ref=e77]:
+            - strong [ref=e78]: Essen, den 30.06.2026
+          - separator [ref=e79]
+          - paragraph [ref=e80]:
+            - strong [ref=e81]:
+              - text: GFN Edupath AG
+              - text: Personalabwicklung
+              - text: z. Hd. Frau Müller
+            - text: Charlottenstraße 50
+            - text: 45130 Essen
+          - separator [ref=e82]
+          - heading "Bewerbung um einen Praktikumsplatz im Rahmen meiner Umschulung zum Fachinformatiker Anwendungsentwicklung" [level=2] [ref=e83]
+          - paragraph [ref=e84]: Sehr geehrte Damen und Herren,
+          - paragraph [ref=e85]: mein beruflicher Weg war vielseitig und nicht immer gradlinig – genau das hat mich zu dem vielseitigen IT-Allrounder gemacht, der ich heute bin. Mit über 15 Jahren praktischer Erfahrung in den Bereichen Webentwicklung, Linux-Systemen und kreativen Medien möchte ich mein Know-how im Rahmen meiner Umschulung bei der GFN in Essen nun formal fundieren und bei Ihnen in der Praxis anwenden.
+          - heading " Was mich auszeichnet – meine technische Bandbreite" [level=3] [ref=e86]:
+            - generic [ref=e87]: 
+            - text: Was mich auszeichnet – meine technische Bandbreite
+          - paragraph [ref=e88]: "Ich habe mir in den letzten Jahren ein breites technologisches Spektrum autodidaktisch erarbeitet:"
+          - generic [ref=e89]:
+            - list [ref=e91]:
+              - listitem [ref=e92]:
+                - strong [ref=e93]: "Frontend:"
+                - text: HTML5, CSS3, SASS, Bootstrap (v3–v5), Bulma, JavaScript (Vanilla, ES6+)
+              - listitem [ref=e94]:
+                - strong [ref=e95]: "Backend:"
+                - text: PHP (Basics bis erweitert), Python (Flask, individuelle Skripts, Tkinter)
+            - list [ref=e97]:
+              - listitem [ref=e98]:
+                - strong [ref=e99]: "CMS & Datenbanken:"
+                - text: WordPress (inkl. Plugin-Entwicklung), diverse Lightweight-CMS, SQL, SQLite3
+              - listitem [ref=e100]:
+                - strong [ref=e101]: "DevOps & Tools:"
+                - text: Docker, npm, pip, Git, GitHub, Linux-Systemadministration
+          - paragraph [ref=e102]: Diese Bandbreite ermöglicht es mir, Projekte ganzheitlich zu denken und umzusetzen – von der Konzeption über die Entwicklung bis hin zum Deployment.
+          - heading " Meine Referenz – ein lebendiger Beweis meines Könnens" [level=3] [ref=e103]:
+            - generic [ref=e104]: 
+            - text: Meine Referenz – ein lebendiger Beweis meines Könnens
+          - paragraph [ref=e105]:
+            - text: Mein aktuellstes Projekt,
+            - link "jungelmusik.de" [ref=e106] [cursor=pointer]:
+              - /url: https://jungelmusik.de
+            - text: ", habe ich vollständig im Alleingang konzipiert, designed und programmiert. Es vereint meine Frontend-Kenntnisse (Bootstrap, SASS, JS) mit Backend-Erfahrung (PHP, SQLite3) und zeigt meine Fähigkeit, professionelle, performante und individuell angepasste Lösungen zu liefern – ohne Vorgaben, ohne Team, einfach aus Leidenschaft."
+          - heading " Warum ich zu Ihnen möchte – und warum Sie mich wollen sollten" [level=3] [ref=e107]:
+            - generic [ref=e108]: 
+            - text: Warum ich zu Ihnen möchte – und warum Sie mich wollen sollten
+          - paragraph [ref=e109]: Ich habe mich bewusst für Ihr Unternehmen entschieden, weil ich Ihre Arbeit im Bereich Softwareentwicklung verfolge und mich besonders für anspruchsvolle Projekte begeistere. Die Kombination aus Ihrer innovativen Unternehmenskultur und technologischen Ausrichtung bietet mir die ideale Umgebung, um meine praktischen Fähigkeiten im professionellen Kontext anzuwenden und weiterzuentwickeln.
+          - paragraph [ref=e110]: "Die Umschulung bei der GFN in Essen ist für mich der logische Schritt, meine praktische Erfahrung mit einem fundierten, theoretischen Abschluss zu kombinieren und meine Leidenschaft für die Softwareentwicklung zum Beruf zu machen. Ein Praktikum bei Ihnen wäre die perfekte Brücke zwischen Theorie und Praxis – und eine Chance für uns beide: Sie erhalten einen motivierten, erfahrenen und sofort einsatzbereiten Praktikanten, der nicht nur Code schreibt, sondern denkt."
+          - heading " Was ich Ihnen biete" [level=3] [ref=e111]:
+            - generic [ref=e112]: 
+            - text: Was ich Ihnen biete
+          - generic [ref=e113]:
+            - generic [ref=e114]:
+              - generic [ref=e115]:
+                - generic [ref=e116]: 
+                - generic [ref=e117]:
+                  - strong [ref=e118]: "Sofortige Produktivität:"
+                  - text: Keine wochenlange Einarbeitung – ich bringe praktische Erfahrung mit
+              - generic [ref=e119]:
+                - generic [ref=e120]: 
+                - generic [ref=e121]:
+                  - strong [ref=e122]: "Breites Technologieverständnis:"
+                  - text: Ich denke nicht in "meiner" Sprache, sondern in Lösungen
+            - generic [ref=e123]:
+              - generic [ref=e124]:
+                - generic [ref=e125]: 
+                - generic [ref=e126]:
+                  - strong [ref=e127]: "Eigeninitiative & Verantwortung:"
+                  - text: Ich habe bewiesen, dass ich Projekte alleine stemmen kann
+              - generic [ref=e128]:
+                - generic [ref=e129]: 
+                - generic [ref=e130]:
+                  - strong [ref=e131]: "Lernbereitschaft & Neugier:"
+                  - text: Neue Technologien, KI-Konzepte und Trends sind mein täglich Brot
+          - paragraph [ref=e132]: Gerne stehe ich für ein persönliches Gespräch zur Verfügung und freue mich darauf, Sie von meiner Begeisterung für die Softwareentwicklung zu überzeugen. Meine vollständigen Bewerbungsunterlagen sowie mein GitHub-Profil mit weiteren Projekten finden Sie in den Anlagen.
+          - generic [ref=e133]:
+            - paragraph [ref=e134]: Mit freundlichen Grüßen
+            - paragraph [ref=e135]: Patrick Schwartz
+    - generic [ref=e139]:
+      - generic [ref=e140]:
+        - generic [ref=e141]: "[P]"
+        - heading " Kurzprofil" [level=1] [ref=e142]:
+          - generic [ref=e143]: 
+          - text: Kurzprofil
+        - paragraph [ref=e144]: Patrick Schwartz – IT-Allrounder & Entwickler
+      - generic [ref=e145]:
+        - generic [ref=e148]:
+          - generic [ref=e149]: 
+          - paragraph [ref=e150]: Vielseitiger IT-Allrounder mit über 15 Jahren praktischer Erfahrung in Webentwicklung, Systemadministration und kreativen Medien. Autodidaktisch erworbenes Know-how in Frontend- und Backend-Technologien sowie in modernen Entwicklungsumgebungen. Leidenschaftlicher Problemlöser mit ausgeprägter Affinität zu neuen Technologien, KI-Konzepten und individuellen Customizing-Lösungen.
+          - paragraph [ref=e151]:
+            - strong [ref=e152]: "Aktuell:"
+            - text: "Umschulung zum Fachinformatiker für Anwendungsentwicklung bei der GFN Essen (2-jährig). Ziel: Formale Fundierung meiner praktischen Fähigkeiten und Einstieg in die professionelle Softwareentwicklung."
+        - generic [ref=e156]:
+          - heading " Kernkompetenzen & Technologien" [level=6] [ref=e157]:
+            - generic [ref=e158]: 
+            - text: Kernkompetenzen & Technologien
+          - generic [ref=e159]:
+            - generic [ref=e160]:
+              - generic [ref=e161]:
+                - strong [ref=e162]: Frontend
+                - generic [ref=e163]:
+                  - generic [ref=e164]: HTML5
+                  - generic [ref=e165]: CSS3
+                  - generic [ref=e166]: SASS
+                  - generic [ref=e167]: Bootstrap (v3–v5)
+                  - generic [ref=e168]: Bulma
+                  - generic [ref=e169]: JavaScript
+                  - generic [ref=e170]: ES6+
+              - generic [ref=e171]:
+                - strong [ref=e172]: Backend
+                - generic [ref=e173]:
+                  - generic [ref=e174]: PHP
+                  - generic [ref=e175]: Python
+                  - generic [ref=e176]: Flask
+                  - generic [ref=e177]: Tkinter
+            - generic [ref=e178]:
+              - generic [ref=e179]:
+                - strong [ref=e180]: CMS & Datenbanken
+                - generic [ref=e181]:
+                  - generic [ref=e182]: WordPress
+                  - generic [ref=e183]: SQL
+                  - generic [ref=e184]: SQLite
+              - generic [ref=e185]:
+                - strong [ref=e186]: DevOps & Tools
+                - generic [ref=e187]:
+                  - generic [ref=e188]: Docker
+                  - generic [ref=e189]: Git
+                  - generic [ref=e190]: GitHub
+                  - generic [ref=e191]: npm
+                  - generic [ref=e192]: pip
+                  - generic [ref=e193]: Linux-Admin
+              - generic [ref=e194]:
+                - strong [ref=e195]: Kreativbereich
+                - generic [ref=e196]:
+                  - generic [ref=e197]: Grafikdesign
+                  - generic [ref=e198]: Audio-Bearbeitung
+                  - generic [ref=e199]: Webdesign
+                  - generic [ref=e200]: Medienproduktion
+              - generic [ref=e201]:
+                - strong [ref=e202]: Zusatzqualifikationen
+                - generic [ref=e203]:
+                  - generic [ref=e204]: KI-Konzepte
+                  - generic [ref=e205]: Customizing
+                  - generic [ref=e206]: jQuery
+                  - generic [ref=e207]: Ajax
+                  - generic [ref=e208]: Responsive Design
+        - generic [ref=e209]:
+          - generic [ref=e212]:
+            - heading " Sprachkenntnisse" [level=6] [ref=e213]:
+              - generic [ref=e214]: 
+              - text: Sprachkenntnisse
+            - generic [ref=e215]:
+              - generic [ref=e216]:
+                - generic [ref=e217]: Deutsch
+                - generic [ref=e218]: Muttersprache
+              - generic [ref=e219]:
+                - generic [ref=e220]: Englisch
+                - generic [ref=e221]: Gute Kenntnisse in Wort und Schrift
+          - generic [ref=e224]:
+            - heading " Projekterfahrungen" [level=6] [ref=e225]:
+              - generic [ref=e226]: 
+              - text: Projekterfahrungen
+            - generic [ref=e227]:
+              - generic [ref=e228]:
+                - generic [ref=e229]: 
+                - generic [ref=e230]:
+                  - strong [ref=e231]: jungelmusik.de
+                  - text: – Komplette Konzeption, Design und Entwicklung einer professionellen Musik-Website.
+              - generic [ref=e232]:
+                - generic [ref=e233]: 
+                - generic [ref=e234]:
+                  - strong [ref=e235]: Docker-Workshops
+                  - text: – Containerisierte Entwicklungsumgebungen für PHP-Projekte.
+              - generic [ref=e236]:
+                - generic [ref=e237]: 
+                - generic [ref=e238]:
+                  - strong [ref=e239]: MIDI-Skripte
+                  - text: – Python-gesteuerte MIDI-Automation für Live-Musikproduktion.
+          - generic [ref=e242]:
+            - heading " Weitere Infos" [level=6] [ref=e243]:
+              - generic [ref=e244]: 
+              - text: Weitere Infos
+            - generic [ref=e245]:
+              - generic [ref=e246]:
+                - generic [ref=e247]: 
+                - generic [ref=e248]:
+                  - strong [ref=e249]: "Aktuell:"
+                  - text: Umschulung Fachinformatiker Anwendungsentwicklung (GFN Essen)
+              - generic [ref=e250]:
+                - generic [ref=e251]: 
+                - generic [ref=e252]:
+                  - strong [ref=e253]: "Interessen:"
+                  - text: KI-Konzepte, Open-Source, Customizing-Lösungen, Webentwicklung
+              - generic [ref=e254]:
+                - generic [ref=e255]: 
+                - generic [ref=e256]:
+                  - strong [ref=e257]: "Stärken:"
+                  - text: Eigeninitiative, analytisches Denken, Problemlösungskompetenz
+    - generic [ref=e261]:
+      - generic [ref=e262]:
+        - heading "Lebenslauf" [level=2] [ref=e263]
+        - paragraph [ref=e264]: Patrick Schwartz
+        - paragraph [ref=e265]: IT-Allrounder & Entwickler
+      - generic [ref=e266]:
+        - paragraph [ref=e267]: Vielseitiger IT-Allrounder mit über 15 Jahren praktischer Erfahrung in Webentwicklung, Systemadministration und kreativen Medien. Autodidaktisch erworbenes Know-how in Frontend- und Backend-Technologien sowie in modernen Entwicklungsumgebungen.
+        - paragraph [ref=e268]: Im Rahmen der 2-jährigen Umschulung bei der GFN Essen zum Fachinformatiker für Anwendungsentwicklung strebe ich nun die formale Fundierung meiner praktischen Fähigkeiten an.
+        - separator [ref=e269]
+        - generic [ref=e270]:
+          - generic [ref=e271]:
+            - generic [ref=e272]: 
+            - generic [ref=e273]: E-Mail
+            - text: patrick.schwartz@gfn.de
+          - generic [ref=e274]:
+            - generic [ref=e275]: 
+            - generic [ref=e276]: Telefon
+            - text: +49 176 12345678
+          - generic [ref=e277]:
+            - generic [ref=e278]: 
+            - generic [ref=e279]: Standort
+            - text: Essen, NRW
+          - generic [ref=e280]:
+            - generic [ref=e281]: 
+            - generic [ref=e282]: Web
+            - text: jungelmusik.de
+      - heading " Beruflicher Werdegang" [level=3] [ref=e283]:
+        - generic [ref=e284]: 
+        - text: Beruflicher Werdegang
+      - generic [ref=e285]:
+        - generic [ref=e286]:
+          - generic [ref=e288]: 20XX
+          - generic [ref=e289]: Selbstständige Webentwicklung & Systemadministration
+          - generic [ref=e290]: Konzeption, Entwicklung und Wartung von Webprojekten (u.a. jungelmusik.de). Betreuung von Linux-Servern, Docker-Containerisierung, Automatisierung von Deployment-Prozessen.
+          - generic [ref=e291]: Eigenverantwortlich · Full-Stack · diverse Kundenprojekte
+        - generic [ref=e292]:
+          - generic [ref=e294]: 20XX
+          - generic [ref=e295]: Webentwickler bei [Firma 1]
+          - generic [ref=e296]: Entwicklung von Webanwendungen mit PHP, MySQL und WordPress. Customizing von CMS-Systemen, Plugin-Entwicklung, Responsive Design.
+          - generic [ref=e297]: PHP · WordPress · MySQL · Frontend
+        - generic [ref=e298]:
+          - generic [ref=e300]: 20XX
+          - generic [ref=e301]: Linux-Systemadministrator bei [Firma 2]
+          - generic [ref=e302]: Betreuung von Linux-Servern, Netzwerkadministration, Automatisierung mit Shell-Skripten, Sicherheitsupdates, Backup-Management.
+          - generic [ref=e303]: Linux · Shell · Netzwerk · DevOps
+        - generic [ref=e304]:
+          - generic [ref=e306]: 20XX – heute
+          - generic [ref=e307]: Phase der Neuorientierung & Vertiefung
+          - generic [ref=e308]: Intensive Auseinandersetzung mit modernen Webtechnologien (Python/Flask, Docker, Bootstrap 5, Bulma), Linux-Systemen und kreativen Tools. Entwicklung eigener Projekte wie jungelmusik.de.
+          - generic [ref=e309]: Python · Flask · Docker · Selbststudium
+      - heading " Projekte & Referenzen" [level=3] [ref=e310]:
+        - generic [ref=e311]: 
+        - text: Projekte & Referenzen
+      - generic [ref=e312]:
+        - generic [ref=e314]:
+          - generic [ref=e316]: 
+          - heading "jungelmusik.de" [level=3] [ref=e317]
+          - paragraph [ref=e318]: Komplette Konzeption, Design und Entwicklung einer professionellen Musik-Website.
+          - generic [ref=e319]:
+            - generic [ref=e320]: HTML5
+            - generic [ref=e321]: CSS3
+            - generic [ref=e322]: SASS
+            - generic [ref=e323]: PHP
+            - generic [ref=e324]: SQLite3
+          - link " Live ansehen" [ref=e325] [cursor=pointer]:
+            - /url: https://jungelmusik.de
+            - generic [ref=e326]: 
+            - text: Live ansehen
+        - generic [ref=e328]:
+          - generic [ref=e330]: 
+          - heading "Docker-Workshops" [level=3] [ref=e331]
+          - paragraph [ref=e332]: Containerisierte Entwicklungsumgebungen für PHP- und Python-Projekte mit Docker Compose.
+          - generic [ref=e333]:
+            - generic [ref=e334]: Docker
+            - generic [ref=e335]: PHP
+            - generic [ref=e336]: MySQL
+            - generic [ref=e337]: npm
+          - link " GitHub ansehen" [ref=e338] [cursor=pointer]:
+            - /url: https://github.com/pschwartz1986
+            - generic [ref=e339]: 
+            - text: GitHub ansehen
+        - generic [ref=e341]:
+          - generic [ref=e343]: 
+          - heading "MIDI-Automation" [level=3] [ref=e344]
+          - paragraph [ref=e345]: Python-gesteuerte MIDI-Automation für Live-Musikproduktion und Hardware-Steuerung.
+          - generic [ref=e346]:
+            - generic [ref=e347]: Python
+            - generic [ref=e348]: MIDI
+            - generic [ref=e349]: Tkinter
+          - link " GitHub ansehen" [ref=e350] [cursor=pointer]:
+            - /url: https://github.com/pschwartz1986
+            - generic [ref=e351]: 
+            - text: GitHub ansehen
+      - heading " Bildungsweg" [level=3] [ref=e352]:
+        - generic [ref=e353]: 
+        - text: Bildungsweg
+      - generic [ref=e354]:
+        - generic [ref=e355]:
+          - generic [ref=e357]: Seit 2025 (laufend)
+          - generic [ref=e358]: Umschulung zum Fachinformatiker für Anwendungsentwicklung
+          - generic [ref=e359]: GFN Essen – 2-jährige staatlich anerkannte Umschulung mit Tiefenwinkel in modernen Webtechnologien, Softwarearchitektur und agiler Entwicklung.
+          - generic [ref=e360]: Aktuell · Vollzeit · Essen
+        - generic [ref=e361]:
+          - generic [ref=e363]: 20XX
+          - generic [ref=e364]: Fortbildungen & Zertifikate
+          - generic [ref=e365]: Regelmäßige Teilnahme an Workshops und Online-Kursen (z.B. Docker, Python Advanced, WordPress Plugin Development).
+          - generic [ref=e366]: Weiterbildung · Selbststudium · Zertifikate
+      - heading " Sprachkenntnisse" [level=3] [ref=e367]:
+        - generic [ref=e368]: 
+        - text: Sprachkenntnisse
+      - table [ref=e372]:
+        - rowgroup [ref=e373]:
+          - row "Deutsch Muttersprache" [ref=e374]:
+            - rowheader "Deutsch" [ref=e375]
+            - cell "Muttersprache" [ref=e376]
+          - row "Englisch Gute Kenntnisse in Wort und Schrift – sicher im technischen und beruflichen Kontext" [ref=e377]:
+            - rowheader "Englisch" [ref=e378]
+            - cell "Gute Kenntnisse in Wort und Schrift – sicher im technischen und beruflichen Kontext" [ref=e379]
+      - heading " Qualifikationen & Interessen" [level=3] [ref=e380]:
+        - generic [ref=e381]: 
+        - text: Qualifikationen & Interessen
+      - generic [ref=e382]:
+        - generic [ref=e383]:
+          - generic [ref=e385]: 
+          - heading "Ständige Weiterbildung" [level=4] [ref=e386]
+          - paragraph [ref=e387]: Regelmäßige Auseinandersetzung mit aktuellen Technologien (Docker, Python/Flask, KI-Konzepte, moderne JS-Frameworks).
+        - generic [ref=e388]:
+          - generic [ref=e390]: 
+          - heading "Problemlösungskompetenz" [level=4] [ref=e391]
+          - paragraph [ref=e392]: Strukturierte, analytische Herangehensweise an komplexe Herausforderungen – von der Analyse bis zur Implementierung.
+        - generic [ref=e393]:
+          - generic [ref=e395]: 
+          - heading "Eigeninitiative" [level=4] [ref=e396]
+          - paragraph [ref=e397]: Umsetzung kompletter Projekte im Alleingang – von der Idee über die Konzeption bis zum produktiven Deployment.
+        - generic [ref=e398]:
+          - generic [ref=e400]: 
+          - heading "Interessen & Leidenschaft" [level=4] [ref=e401]
+          - paragraph [ref=e402]: Webentwicklung, Open-Source-Projekte, kreative Medienproduktion, Technik-Trends, KI-Integration, Customizing-Lösungen.
+    - generic [ref=e406]:
+      - generic [ref=e407]:
+        - generic [ref=e408]: "[P]"
+        - heading "Portfolio & Projekte" [level=1] [ref=e409]
+        - paragraph [ref=e410]: Webentwicklung · Individualsoftware · Open Source
+      - generic [ref=e411]:
+        - generic [ref=e413]:
+          - generic [ref=e415]: 
+          - generic [ref=e416]: jungelmusik.de
+          - paragraph [ref=e417]: Komplette Konzeption, Design und Entwicklung einer professionellen Musik-Website. Vollständiger Full-Stack-Stack mit Frontend (Bootstrap, SASS, JS), Backend (PHP, SQLite3) und responsivem Design.
+          - link " Live ansehen" [ref=e418] [cursor=pointer]:
+            - /url: https://jungelmusik.de
+            - generic [ref=e419]: 
+            - text: Live ansehen
+        - generic [ref=e421]:
+          - generic [ref=e423]: 
+          - generic [ref=e424]: Infrastruktur & DevOps
+          - paragraph [ref=e425]: Containerisierte Entwicklungsumgebungen mit Docker. Linux-Systemadministration, CI/CD-Pipelines, Automatisierung von Deployments und Skripting für repetitive Aufgaben.
+          - link " GitHub ansehen" [ref=e426] [cursor=pointer]:
+            - /url: https://github.com/pschwartz1986
+            - generic [ref=e427]: 
+            - text: GitHub ansehen
+        - generic [ref=e429]:
+          - generic [ref=e431]: 
+          - generic [ref=e432]: MIDI-Automation
+          - paragraph [ref=e433]: Python-gesteuerte MIDI-Automation für Live-Musikproduktion. Schnittstellen-Programmierung und individuelle Software-Lösungen für kreative Workflows.
+          - link " GitHub ansehen" [ref=e434] [cursor=pointer]:
+            - /url: https://github.com/pschwartz1986
+            - generic [ref=e435]: 
+            - text: GitHub ansehen
+      - generic [ref=e436]:
+        - heading "Kontakt aufnehmen" [level=2] [ref=e438]
+        - paragraph [ref=e439]: Ich freue mich auf Ihre Nachricht oder ein persönliches Gespräch.
+        - generic [ref=e440]:
+          - link " E-Mail schreiben" [ref=e441] [cursor=pointer]:
+            - /url: mailto:patrick.schwartz@gfn.de
+            - generic [ref=e442]: 
+            - text: E-Mail schreiben
+          - link " GitHub" [ref=e443] [cursor=pointer]:
+            - /url: https://github.com/pschwartz1986
+            - generic [ref=e444]: 
+            - text: GitHub
+          - link " jungelmusik.de" [ref=e445] [cursor=pointer]:
+            - /url: https://jungelmusik.de
+            - generic [ref=e446]: 
+            - text: jungelmusik.de
+    - contentinfo [ref=e447]:
+      - paragraph [ref=e448]: ✦ Interaktive Bewerbungsmappe – exklusiv zugänglich ✦

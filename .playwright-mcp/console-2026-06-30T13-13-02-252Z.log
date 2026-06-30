@@ -1,0 +1,14 @@
+[      99ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8000/assets/bootstrap/bootstrap.bundle.min.js:0
+[     107ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ http://localhost:8000/index.html:0
+[     117ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8000/manifest.json:0
+[     118ms] [ERROR] Manifest fetch from http://localhost:8000/manifest.json failed, code 404 @ http://localhost:8000/index.html:0
+[     139ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8000/manifest.json:0
+[     139ms] [ERROR] Manifest fetch from http://localhost:8000/manifest.json failed, code 404 @ http://localhost:8000/index.html:0
+[     139ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8000/favicon.ico:0
+[   45298ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8000/assets/bootstrap/bootstrap.bundle.min.js:0
+[   45303ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8000/manifest.json:0
+[   45304ms] [ERROR] Manifest fetch from http://localhost:8000/manifest.json failed, code 404 @ http://localhost:8000/index.html:0
+[   45381ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ http://localhost:8000/index.html:0
+[   45475ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8000/manifest.json:0
+[   45475ms] [ERROR] Manifest fetch from http://localhost:8000/manifest.json failed, code 404 @ http://localhost:8000/index.html:0
+[   45475ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8000/favicon.ico:0
