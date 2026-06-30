@@ -3,78 +3,584 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Deckblatt – Bewerbungsmappe</title>
+  <title>Patrick Schwartz – Bewerbungsmappe & Portfolio</title>
+  <meta name="description" content="Bewerbungsmappe von Patrick Schwartz – Umschulung zum Fachinformatiker Anwendungsentwicklung. 15+ Jahre Webentwicklung, Linux, Creative Media." />
   <meta name="robots" content="noindex, nofollow, noarchive" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#05001c" />
   <link rel="stylesheet" href="assets/icons/bootstrap-icons.min.css" />
   <link rel="stylesheet" href="assets/css/custom.css" />
 </head>
-
 <body>
-
-  <!-- LOGIN OVERLAY -->
+  <div class="scanlines"></div>
   <div id="login-screen">
     <div class="login-card">
       <div class="lock-icon"><i class="bi bi-lock-fill"></i></div>
-      <h2 class="fw-bold mb-1">Exklusiver Zugang</h2>
-      <p class="text-muted mb-4">Bitte geben Sie den Zugriffscode ein, um fortzufahren.</p>
+      <h2 class="fw-bold mb-1 font-retro">Exklusiver Zugang</h2>
+      <p class="text-muted mb-4 font-mono">Bitte geben Sie den Zugriffscode ein, um fortzufahren.</p>
       <input type="password" id="key-input" class="form-control-dark mb-3" placeholder="Zugangscode eingeben…" autofocus />
       <button id="unlock-btn" class="btn btn-glow"><i class="bi bi-unlock me-2"></i>Freischalten</button>
-      <div class="text-danger mt-3" id="error-msg"></div>
+      <div class="text-accent mt-3" id="error-msg"></div>
     </div>
   </div>
-
-  <!-- PORTFOLIO CONTENT -->
   <div id="portfolio-content" style="display:none;">
-
-    <!-- Theme Toggle Bottom-Right -->
     <button id="theme-toggle-bottom" class="theme-toggle-bottom" title="Farbschema wechseln"><i class="bi bi-moon-stars"></i></button>
 
-    <!-- Slider Arrows -->
-    <button id="slide-prev" class="slide-arrow slide-arrow-prev" aria-label="Vorherige Seite">
-      <i class="bi bi-chevron-left"></i>
-    </button>
-    <button id="slide-next" class="slide-arrow slide-arrow-next" aria-label="Nächste Seite">
-      <i class="bi bi-chevron-right"></i>
-    </button>
+    <!-- TOP NAVIGATION -->
+    <nav class="navbar-custom" id="top-nav">
+      <div class="navbar-custom-inner">
+        <a href="#hero" class="navbar-brand font-retro">Patrick Schwartz</a>
+        <div class="nav-glow-wrap">
+          <a href="#anschreiben" class="nav-glow">Anschreiben</a>
+          <a href="#profil" class="nav-glow">Kurzprofil</a>
+          <a href="#lebenslauf" class="nav-glow">Lebenslauf</a>
+          <a href="#portfolio" class="nav-glow">Portfolio</a>
+        </div>
+      </div>
+    </nav>
 
     <!-- HERO / DECKBLATT -->
-    <section id="hero" class="hero-section">
+    <section id="hero" class="hero-section reveal-section">
+      <div class="retro-grid"></div>
       <div class="container-fluid">
         <div class="row justify-content-center">
           <div class="col-12 col-md-10 col-lg-9 col-xl-8">
             <div class="text-center">
-
-              <div class="">
-                <img src="https://avatars.githubusercontent.com/u/297923195?v=4" class="hero-avatar" alt="">
+              <div class="mb-4">
+                <img src="https://avatars.githubusercontent.com/u/297923195?v=4" class="hero-avatar" alt="Patrick Schwartz">
               </div>
-
               <p class="hero-pre text-accent mb-3">Bewerbungsmappe & Referenzen</p>
-
-              <h1 class="hero-name mb-3">
-                Patrick Schwartz
-              </h1>
-              <p class="hero-role mb-4">Umschulung zum Fachinformatiker - Anwendungsentwicklung</p>
-
-              <!-- Socials -->
+               <h1 class="display-1 hero-name glitch reveal-zoom" data-text="Patrick Schwartz">Patrick Schwartz</h1>
+              <p class="hero-role mb-4">Umschulung zum Fachinformatiker – Anwendungsentwicklung</p>
               <div class="my-5 d-flex gap-3 justify-content-center flex-wrap">
-                <a href="kurzprofil.html" class="social-pill" data-tooltip="Mein Kurzprofil">
-                  <i class="bi bi-person-lines-fill"></i> Kurzprofil
-                </a>
-                <a href="anschreiben.html" class="social-pill" data-tooltip="Mein Anschreiben">
-                  <i class="bi bi-envelope-paper"></i> Anschreiben
-                </a>
-                <a href="lebenslauf.html" class="social-pill" data-tooltip="Mein Lebenslauf">
-                  <i class="bi bi-file-earmark-person"></i> Lebenslauf
-                </a>
-                <a href="https://github.com/pschwartz1986" target="_blank" rel="noopener" class="social-pill" data-tooltip="Code, Projekte & Experimente">
+                <a href="https://github.com/pschwartz1986" target="_blank" rel="noopener" class="social-pill">
                   <i class="bi bi-github"></i> GitHub
                 </a>
-                <a href="https://www.xing.com/profile/deinprofil" target="_blank" rel="noopener" class="social-pill">
-                  <i class="bi bi-xing"></i> Xing
+                <a href="https://www.xing.com/profile/Patrick_Schwartz1" target="_blank" rel="noopener" class="social-pill">
+                  <i class="bi bi-xing"></i> XING
+                </a>
+                <a href="https://www.linkedin.com/in/patrick-schwartz-1986/" target="_blank" rel="noopener" class="social-pill">
+                  <i class="bi bi-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://jungelmusik.de" target="_blank" rel="noopener" class="social-pill">
+                  <i class="bi bi-globe"></i> jungelmusik.de
                 </a>
               </div>
+              <div class="mt-5 pt-4 border-top border-secondary-subtle">
+                <div class="row g-3 justify-content-center text-center">
+                  <div class="col-6 col-md-3">
+                    <i class="bi bi-envelope text-accent mb-1 d-block fs-4"></i>
+                    <small class="text-muted">E-Mail</small>
+                    <p class="mb-0 fw-semibold"><a href="mailto:patrick.schwartz@gfn.de" class="text-decoration-none text-main">patrick.schwartz@gfn.de</a></p>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <i class="bi bi-phone text-accent mb-1 d-block fs-4"></i>
+                    <small class="text-muted">Telefon</small>
+                    <p class="mb-0 fw-semibold"><a href="tel:+4917612345678" class="text-decoration-none text-main">+49 176 12345678</a></p>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <i class="bi bi-geo-alt text-accent mb-1 d-block fs-4"></i>
+                    <small class="text-muted">Standort</small>
+                    <p class="mb-0 fw-semibold">Essen, NRW</p>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <i class="bi bi-calendar-check text-accent mb-1 d-block fs-4"></i>
+                    <small class="text-muted">Verfügbar</small>
+                    <p class="mb-0 fw-semibold">ab sofort</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- ANSCHREIBEN -->
+    <section id="anschreiben" class="section bg-deep reveal-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-10 col-xl-9">
+            <div class="text-center mb-5">
+              <div class="hero-avatar mx-auto mb-4">[A]</div>
+              <h1 class="hero-name mb-2">Anschreiben</h1>
+              <p class="hero-role mb-2">Mein Weg in die Softwareentwicklung</p>
+              <div class="d-flex gap-3 justify-content-center flex-wrap">
+                <a href="#profil" class="btn btn-glow"><i class="bi bi-arrow-left me-2"></i>Kurzprofil</a>
+                <a href="#lebenslauf" class="btn btn-glow"><i class="bi bi-file-earmark-text me-2"></i>Lebenslauf</a>
+              </div>
+            </div>
+              <div class="checkpoint-enter reveal-fade">
+               <div class="divider-accent"></div>
+               <div class="cover-letter">
+                 <p class="text-muted fst-italic mb-4 font-mono">Anschreiben – Praktikumsplatz im Rahmen der Umschulung zum Fachinformatiker Anwendungsentwicklung</p>
+                <div>
+                  <p><strong>Patrick Schwartz</strong><br />
+                  Am Kattensiepen 15 · 42551 Velbert<br />
+                  📧 pschwartz1986@gmail.com · 📱 +49 1575 10 90 444<br />
+                  🔗 github.com/pschwartz1986 · 🌐 ---</p>
+                  <p class="text-end mt-4"><strong>Essen, den 30.06.2026</strong></p>
+                  <hr class="my-4">
+                  <p><strong>GFN Edupath AG<br>Personalabwicklung<br>z. Hd. Frau Müller</strong><br>Charlottenstraße 50<br>45130 Essen</p>
+                  <hr class="my-4">
+                  <h2 class="mb-3 fs-3">Bewerbung um einen Praktikumsplatz im Rahmen meiner Umschulung zum Fachinformatiker Anwendungsentwicklung</h2>
+                  <p>Sehr geehrte Damen und Herren,</p>
+                  <p>mein beruflicher Weg war vielseitig und nicht immer gradlinig – genau das hat mich zu dem vielseitigen IT-Allrounder gemacht, der ich heute bin. Mit über 15 Jahren praktischer Erfahrung in den Bereichen Webentwicklung, Linux-Systemen und kreativen Medien möchte ich mein Know-how im Rahmen meiner Umschulung bei der GFN in Essen nun formal fundieren und bei Ihnen in der Praxis anwenden.</p>
+                  <h3 class="h5 mt-4 mb-3 text-accent"><i class="bi bi-tools me-2"></i>Was mich auszeichnet – meine technische Bandbreite</h3>
+                  <p>Ich habe mir in den letzten Jahren ein breites technologisches Spektrum autodidaktisch erarbeitet:</p>
+                  <div class="row g-2 my-3">
+                    <div class="col-md-6">
+                      <ul class="mb-0 small">
+                        <li><strong>Frontend:</strong> HTML5, CSS3, SASS, Bootstrap (v3–v5), Bulma, JavaScript (Vanilla, ES6+)</li>
+                        <li><strong>Backend:</strong> PHP (Basics bis erweitert), Python (Flask, individuelle Skripts, Tkinter)</li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <ul class="mb-0 small">
+                        <li><strong>CMS & Datenbanken:</strong> WordPress (inkl. Plugin-Entwicklung), diverse Lightweight-CMS, SQL, SQLite3</li>
+                        <li><strong>DevOps & Tools:</strong> Docker, npm, pip, Git, GitHub, Linux-Systemadministration</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <p>Diese Bandbreite ermöglicht es mir, Projekte ganzheitlich zu denken und umzusetzen – von der Konzeption über die Entwicklung bis hin zum Deployment.</p>
+                  <h3 class="h5 mt-4 mb-3 text-accent"><i class="bi bi-globe me-2"></i>Meine Referenz – ein lebendiger Beweis meines Könnens</h3>
+                  <p>Mein aktuellstes Projekt, <a href="https://jungelmusik.de" target="_blank" rel="noopener" class="text-accent text-decoration-none">jungelmusik.de</a>, habe ich vollständig im Alleingang konzipiert, designed und programmiert. Es vereint meine Frontend-Kenntnisse (Bootstrap, SASS, JS) mit Backend-Erfahrung (PHP, SQLite3) und zeigt meine Fähigkeit, professionelle, performante und individuell angepasste Lösungen zu liefern – ohne Vorgaben, ohne Team, einfach aus Leidenschaft.</p>
+                  <h3 class="h5 mt-4 mb-3 text-accent"><i class="bi bi-building me-2"></i>Warum ich zu Ihnen möchte – und warum Sie mich wollen sollten</h3>
+                  <p>Ich habe mich bewusst für Ihr Unternehmen entschieden, weil ich Ihre Arbeit im Bereich Softwareentwicklung verfolge und mich besonders für anspruchsvolle Projekte begeistere. Die Kombination aus Ihrer innovativen Unternehmenskultur und technologischen Ausrichtung bietet mir die ideale Umgebung, um meine praktischen Fähigkeiten im professionellen Kontext anzuwenden und weiterzuentwickeln.</p>
+                  <p>Die Umschulung bei der GFN in Essen ist für mich der logische Schritt, meine praktische Erfahrung mit einem fundierten, theoretischen Abschluss zu kombinieren und meine Leidenschaft für die Softwareentwicklung zum Beruf zu machen. Ein Praktikum bei Ihnen wäre die perfekte Brücke zwischen Theorie und Praxis – und eine Chance für uns beide: Sie erhalten einen motivierten, erfahrenen und sofort einsatzbereiten Praktikanten, der nicht nur Code schreibt, sondern denkt.</p>
+                  <h3 class="h5 mt-4 mb-3 text-accent"><i class="bi bi-check-circle me-2"></i>Was ich Ihnen biete</h3>
+                  <div class="row g-2 my-3">
+                    <div class="col-md-6">
+                      <div class="d-flex align-items-start gap-2 mb-2">
+                        <i class="bi bi-check-circle-fill text-accent mt-1"></i>
+                        <span class="small"><strong>Sofortige Produktivität:</strong> Keine wochenlange Einarbeitung – ich bringe praktische Erfahrung mit</span>
+                      </div>
+                      <div class="d-flex align-items-start gap-2 mb-2">
+                        <i class="bi bi-check-circle-fill text-accent mt-1"></i>
+                        <span class="small"><strong>Breites Technologieverständnis:</strong> Ich denke nicht in "meiner" Sprache, sondern in Lösungen</span>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="d-flex align-items-start gap-2 mb-2">
+                        <i class="bi bi-check-circle-fill text-accent mt-1"></i>
+                        <span class="small"><strong>Eigeninitiative & Verantwortung:</strong> Ich habe bewiesen, dass ich Projekte alleine stemmen kann</span>
+                      </div>
+                      <div class="d-flex align-items-start gap-2 mb-2">
+                        <i class="bi bi-check-circle-fill text-accent mt-1"></i>
+                        <span class="small"><strong>Lernbereitschaft & Neugier:</strong> Neue Technologien, KI-Konzepte und Trends sind mein täglich Brot</span>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Gerne stehe ich für ein persönliches Gespräch zur Verfügung und freue mich darauf, Sie von meiner Begeisterung für die Softwareentwicklung zu überzeugen. Meine vollständigen Bewerbungsunterlagen sowie mein GitHub-Profil mit weiteren Projekten finden Sie in den Anlagen.</p>
+                  <div class="mt-5">
+                    <p>Mit freundlichen Grüßen</p>
+                    <p class="fw-bold">Patrick Schwartz</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KURZPROFIL -->
+    <section id="profil" class="section bg-deep reveal-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-11 col-xl-10">
+            <div class="text-center mb-5">
+              <div class="hero-avatar mx-auto mb-4">[P]</div>
+              <h1 class="hero-name d-inline">
+                <i class="bi bi-person-lines-fill text-accent me-2"></i>Kurzprofil
+              </h1>
+              <p class="hero-role mb-0">Patrick Schwartz – IT-Allrounder &amp; Entwickler</p>
+            </div>
+            <div class="checkpoint-enter">
+              <div class="divider-accent"></div>
+
+              <div class="card mb-4 motivation-card visible">
+                <div class="card-body p-4">
+                  <i class="bi bi-quote text-accent fs-2 mb-3 d-block"></i>
+                  <p class="lead mb-3 fst-italic text-center">Vielseitiger IT-Allrounder mit über 15 Jahren praktischer Erfahrung in Webentwicklung, Systemadministration und kreativen Medien. Autodidaktisch erworbenes Know-how in Frontend- und Backend-Technologien sowie in modernen Entwicklungsumgebungen. Leidenschaftlicher Problemlöser mit ausgeprägter Affinität zu neuen Technologien, KI-Konzepten und individuellen Customizing-Lösungen.</p>
+                  <p class="text-center mt-3"><strong>Aktuell:</strong> Umschulung zum Fachinformatiker für Anwendungsentwicklung bei der GFN Essen (2-jährig). Ziel: Formale Fundierung meiner praktischen Fähigkeiten und Einstieg in die professionelle Softwareentwicklung.</p>
+                </div>
+              </div>
+
+              <div class="row g-3 mb-4">
+                <div class="col-12">
+                  <div class="card motivation-card h-100">
+                    <div class="card-body p-3">
+                      <h6 class="card-title mb-3 text-accent"><i class="bi bi-code-slash me-2"></i>Kernkompetenzen &amp; Technologien</h6>
+                      <div class="row g-3">
+                        <div class="col-md-6 col-12">
+                          <div class="mb-2">
+                            <strong class="small text-uppercase text-muted">Frontend</strong>
+                            <div class="d-flex flex-wrap gap-1 mt-1">
+                              <span class="badge-tech">HTML5</span>
+                              <span class="badge-tech">CSS3</span>
+                              <span class="badge-tech">SASS</span>
+                              <span class="badge-tech">Bootstrap (v3–v5)</span>
+                              <span class="badge-tech">Bulma</span>
+                              <span class="badge-tech">JavaScript</span>
+                              <span class="badge-tech">ES6+</span>
+                            </div>
+                          </div>
+                          <div class="mb-2">
+                            <strong class="small text-uppercase text-muted">Backend</strong>
+                            <div class="d-flex flex-wrap gap-1 mt-1">
+                              <span class="badge-tech">PHP</span>
+                              <span class="badge-tech">Python</span>
+                              <span class="badge-tech">Flask</span>
+                              <span class="badge-tech">Tkinter</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                          <div class="mb-2">
+                            <strong class="small text-uppercase text-muted">CMS &amp; Datenbanken</strong>
+                            <div class="d-flex flex-wrap gap-1 mt-1">
+                              <span class="badge-tech">WordPress</span>
+                              <span class="badge-tech">SQL</span>
+                              <span class="badge-tech">SQLite</span>
+                            </div>
+                          </div>
+                          <div class="mb-2">
+                            <strong class="small text-uppercase text-muted">DevOps &amp; Tools</strong>
+                            <div class="d-flex flex-wrap gap-1 mt-1">
+                              <span class="badge-tech">Docker</span>
+                              <span class="badge-tech">Git</span>
+                              <span class="badge-tech">GitHub</span>
+                              <span class="badge-tech">npm</span>
+                              <span class="badge-tech">pip</span>
+                              <span class="badge-tech">Linux-Admin</span>
+                            </div>
+                          </div>
+                          <div class="mb-2">
+                            <strong class="small text-uppercase text-muted">Kreativbereich</strong>
+                            <div class="d-flex flex-wrap gap-1 mt-1">
+                              <span class="badge-tech">Grafikdesign</span>
+                              <span class="badge-tech">Audio-Bearbeitung</span>
+                              <span class="badge-tech">Webdesign</span>
+                              <span class="badge-tech">Medienproduktion</span>
+                            </div>
+                          </div>
+                          <div class="mb-2">
+                            <strong class="small text-uppercase text-muted">Zusatzqualifikationen</strong>
+                            <div class="d-flex flex-wrap gap-1 mt-1">
+                              <span class="badge-tech">KI-Konzepte</span>
+                              <span class="badge-tech">Customizing</span>
+                              <span class="badge-tech">jQuery</span>
+                              <span class="badge-tech">Ajax</span>
+                              <span class="badge-tech">Responsive Design</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row g-3 mb-4">
+                <div class="col-md-4">
+                  <div class="card motivation-card h-100">
+                    <div class="card-body p-3">
+                      <h6 class="card-title mb-3 text-accent"><i class="bi bi-translate me-2"></i>Sprachkenntnisse</h6>
+                      <div>
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                          <span class="fw-semibold">Deutsch</span>
+                          <span class="badge-tech">Muttersprache</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <span class="fw-semibold">Englisch</span>
+                          <span class="badge-tech">Gute Kenntnisse in Wort und Schrift</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card motivation-card h-100">
+                    <div class="card-body p-3">
+                      <h6 class="card-title mb-3 text-accent"><i class="bi bi-briefcase me-2"></i>Projekterfahrungen</h6>
+                      <div class="small">
+                        <div class="d-flex align-items-start gap-2 mb-2">
+                          <i class="bi bi-globe2 text-accent mt-1"></i>
+                          <div><strong>jungelmusik.de</strong> – Komplette Konzeption, Design und Entwicklung einer professionellen Musik-Website.</div>
+                        </div>
+                        <div class="d-flex align-items-start gap-2 mb-2">
+                          <i class="bi bi-box-seam text-accent mt-1"></i>
+                          <div><strong>Docker-Workshops</strong> – Containerisierte Entwicklungsumgebungen für PHP-Projekte.</div>
+                        </div>
+                        <div class="d-flex align-items-start gap-2">
+                          <i class="bi bi-music-note text-accent mt-1"></i>
+                          <div><strong>MIDI-Skripte</strong> – Python-gesteuerte MIDI-Automation für Live-Musikproduktion.</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card motivation-card h-100">
+                    <div class="card-body p-3">
+                      <h6 class="card-title mb-3 text-accent"><i class="bi bi-info-circle me-2"></i>Weitere Infos</h6>
+                      <div class="small">
+                        <div class="d-flex align-items-start gap-2 mb-2">
+                          <i class="bi bi-mortarboard text-accent mt-1"></i>
+                          <div><strong>Aktuell:</strong> Umschulung Fachinformatiker Anwendungsentwicklung (GFN Essen)</div>
+                        </div>
+                        <div class="d-flex align-items-start gap-2 mb-2">
+                          <i class="bi bi-heart text-accent mt-1"></i>
+                          <div><strong>Interessen:</strong> KI-Konzepte, Open-Source, Customizing-Lösungen, Webentwicklung</div>
+                        </div>
+                        <div class="d-flex align-items-start gap-2">
+                          <i class="bi bi-trophy text-accent mt-1"></i>
+                          <div><strong>Stärken:</strong> Eigeninitiative, analytisches Denken, Problemlösungskompetenz</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEBENSLAUF -->
+    <section id="lebenslauf" class="section bg-deep reveal-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-10 col-xl-9">
+            <div class="cv-header">
+              <h2 class="section-title">Lebens<span>lauf</span></h2>
+              <p class="section-subtitle">Patrick Schwartz</p>
+              <p class="hero-role mb-3">IT-Allrounder &amp; Entwickler</p>
+            </div>
+
+            <div class="cv-profile mb-5">
+              <p class="lead mb-4">Vielseitiger IT-Allrounder mit über 15 Jahren praktischer Erfahrung in Webentwicklung, Systemadministration und kreativen Medien. Autodidaktisch erworbenes Know-how in Frontend- und Backend-Technologien sowie in modernen Entwicklungsumgebungen.</p>
+              <p class="mb-0">Im Rahmen der 2-jährigen Umschulung bei der GFN Essen zum Fachinformatiker für Anwendungsentwicklung strebe ich nun die formale Fundierung meiner praktischen Fähigkeiten an.</p>
+              <hr class="my-4" />
+              <div class="row g-3 text-center">
+                <div class="col-md-3 col-6">
+                  <i class="bi bi-envelope text-accent fs-3 d-block mb-1"></i>
+                  <small class="text-muted d-block">E-Mail</small>
+                  <span class="small fw-semibold">patrick.schwartz@gfn.de</span>
+                </div>
+                <div class="col-md-3 col-6">
+                  <i class="bi bi-phone text-accent fs-3 d-block mb-1"></i>
+                  <small class="text-muted d-block">Telefon</small>
+                  <span class="small fw-semibold">+49 176 12345678</span>
+                </div>
+                <div class="col-md-3 col-6">
+                  <i class="bi bi-geo-alt text-accent fs-3 d-block mb-1"></i>
+                  <small class="text-muted d-block">Standort</small>
+                  <span class="small fw-semibold">Essen, NRW</span>
+                </div>
+                <div class="col-md-3 col-6">
+                  <i class="bi bi-globe text-accent fs-3 d-block mb-1"></i>
+                  <small class="text-muted d-block">Web</small>
+                  <span class="small fw-semibold">jungelmusik.de</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Werdegang -->
+            <h3 class="h4 fw-bold mb-4 text-center"><i class="bi bi-briefcase text-accent me-2"></i>Beruflicher Werdegang</h3>
+            <div class="cv-timeline mb-5">
+              <div class="cv-timeline-item">
+                <div class="cv-timeline-dot"></div>
+                <div class="cv-timeline-year">20XX</div>
+                <div class="cv-timeline-title">Selbstständige Webentwicklung &amp; Systemadministration</div>
+                <div class="cv-timeline-text">Konzeption, Entwicklung und Wartung von Webprojekten (u.a. jungelmusik.de). Betreuung von Linux-Servern, Docker-Containerisierung, Automatisierung von Deployment-Prozessen.</div>
+                <div class="cv-timeline-tag">Eigenverantwortlich · Full-Stack · diverse Kundenprojekte</div>
+              </div>
+              <div class="cv-timeline-item">
+                <div class="cv-timeline-dot"></div>
+                <div class="cv-timeline-year">20XX</div>
+                <div class="cv-timeline-title">Webentwickler bei [Firma 1]</div>
+                <div class="cv-timeline-text">Entwicklung von Webanwendungen mit PHP, MySQL und WordPress. Customizing von CMS-Systemen, Plugin-Entwicklung, Responsive Design.</div>
+                <div class="cv-timeline-tag">PHP · WordPress · MySQL · Frontend</div>
+              </div>
+              <div class="cv-timeline-item">
+                <div class="cv-timeline-dot"></div>
+                <div class="cv-timeline-year">20XX</div>
+                <div class="cv-timeline-title">Linux-Systemadministrator bei [Firma 2]</div>
+                <div class="cv-timeline-text">Betreuung von Linux-Servern, Netzwerkadministration, Automatisierung mit Shell-Skripten, Sicherheitsupdates, Backup-Management.</div>
+                <div class="cv-timeline-tag">Linux · Shell · Netzwerk · DevOps</div>
+              </div>
+              <div class="cv-timeline-item">
+                <div class="cv-timeline-dot"></div>
+                <div class="cv-timeline-year">20XX – heute</div>
+                <div class="cv-timeline-title">Phase der Neuorientierung &amp; Vertiefung</div>
+                <div class="cv-timeline-text">Intensive Auseinandersetzung mit modernen Webtechnologien (Python/Flask, Docker, Bootstrap 5, Bulma), Linux-Systemen und kreativen Tools. Entwicklung eigener Projekte wie jungelmusik.de.</div>
+                <div class="cv-timeline-tag">Python · Flask · Docker · Selbststudium</div>
+              </div>
+            </div>
+
+            <!-- Projekte -->
+            <h3 class="h4 fw-bold mb-4 text-center"><i class="bi bi-grid text-accent me-2"></i>Projekte &amp; Referenzen</h3>
+            <div class="cv-project-grid mb-5">
+              <div class="card project-card">
+                <div class="card-body p-4">
+                  <div class="project-icon"><i class="bi bi-globe"></i></div>
+                  <h3 class="mb-2">jungelmusik.de</h3>
+                  <p class="mb-3">Komplette Konzeption, Design und Entwicklung einer professionellen Musik-Website.</p>
+                  <div class="mb-3">
+                    <span class="badge-tech">HTML5</span>
+                    <span class="badge-tech">CSS3</span>
+                    <span class="badge-tech">SASS</span>
+                    <span class="badge-tech">PHP</span>
+                    <span class="badge-tech">SQLite3</span>
+                  </div>
+                  <a href="https://jungelmusik.de" target="_blank" rel="noopener" class="link-arrow"><i class="bi bi-box-arrow-up-right me-1"></i>Live ansehen</a>
+                </div>
+              </div>
+              <div class="card project-card">
+                <div class="card-body p-4">
+                  <div class="project-icon"><i class="bi bi-box-seam"></i></div>
+                  <h3 class="mb-2">Docker-Workshops</h3>
+                  <p class="mb-3">Containerisierte Entwicklungsumgebungen für PHP- und Python-Projekte mit Docker Compose.</p>
+                  <div class="mb-3">
+                    <span class="badge-tech">Docker</span>
+                    <span class="badge-tech">PHP</span>
+                    <span class="badge-tech">MySQL</span>
+                    <span class="badge-tech">npm</span>
+                  </div>
+                  <a href="https://github.com/pschwartz1986" target="_blank" rel="noopener" class="link-arrow"><i class="bi bi-github me-1"></i>GitHub ansehen</a>
+                </div>
+              </div>
+              <div class="card project-card">
+                <div class="card-body p-4">
+                  <div class="project-icon"><i class="bi bi-music-note-beamed"></i></div>
+                  <h3 class="mb-2">MIDI-Automation</h3>
+                  <p class="mb-3">Python-gesteuerte MIDI-Automation für Live-Musikproduktion und Hardware-Steuerung.</p>
+                  <div class="mb-3">
+                    <span class="badge-tech">Python</span>
+                    <span class="badge-tech">MIDI</span>
+                    <span class="badge-tech">Tkinter</span>
+                  </div>
+                  <a href="https://github.com/pschwartz1986" target="_blank" rel="noopener" class="link-arrow"><i class="bi bi-github me-1"></i>GitHub ansehen</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bildung -->
+            <h3 class="h4 fw-bold mb-4 text-center"><i class="bi bi-mortarboard text-accent me-2"></i>Bildungsweg</h3>
+            <div class="cv-timeline mb-5">
+              <div class="cv-timeline-item">
+                <div class="cv-timeline-dot"></div>
+                <div class="cv-timeline-year">Seit 2025 (laufend)</div>
+                <div class="cv-timeline-title">Umschulung zum Fachinformatiker für Anwendungsentwicklung</div>
+                <div class="cv-timeline-text">GFN Essen – 2-jährige staatlich anerkannte Umschulung mit Tiefenwinkel in modernen Webtechnologien, Softwarearchitektur und agiler Entwicklung.</div>
+                <div class="cv-timeline-tag">Aktuell · Vollzeit · Essen</div>
+              </div>
+              <div class="cv-timeline-item">
+                <div class="cv-timeline-dot"></div>
+                <div class="cv-timeline-year">20XX</div>
+                <div class="cv-timeline-title">Fortbildungen &amp; Zertifikate</div>
+                <div class="cv-timeline-text">Regelmäßige Teilnahme an Workshops und Online-Kursen (z.B. Docker, Python Advanced, WordPress Plugin Development).</div>
+                <div class="cv-timeline-tag">Weiterbildung · Selbststudium · Zertifikate</div>
+              </div>
+            </div>
+
+            <!-- Sprachen -->
+            <h3 class="h4 fw-bold mb-4 text-center"><i class="bi bi-translate text-accent me-2"></i>Sprachkenntnisse</h3>
+            <div class="row justify-content-center mb-5">
+              <div class="col-12 col-md-8 col-lg-6">
+                <div class="cv-profile">
+                  <table class="cv-simple-table">
+                    <tr>
+                      <th>Deutsch</th>
+                      <td>Muttersprache</td>
+                    </tr>
+                    <tr>
+                      <th>Englisch</th>
+                      <td>Gute Kenntnisse in Wort und Schrift – sicher im technischen und beruflichen Kontext</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <!-- Qualifikationen -->
+            <h3 class="h4 fw-bold mb-4 text-center"><i class="bi bi-stars text-accent me-2"></i>Qualifikationen &amp; Interessen</h3>
+            <div class="cv-info-grid mb-5">
+              <div class="cv-profile text-center">
+                <div class="text-accent fs-1 mb-3"><i class="bi bi-lightbulb"></i></div>
+                <h4 class="h6 fw-bold mb-2">Ständige Weiterbildung</h4>
+                <p class="small text-muted mb-0">Regelmäßige Auseinandersetzung mit aktuellen Technologien (Docker, Python/Flask, KI-Konzepte, moderne JS-Frameworks).</p>
+              </div>
+              <div class="cv-profile text-center">
+                <div class="text-accent fs-1 mb-3"><i class="bi bi-puzzle"></i></div>
+                <h4 class="h6 fw-bold mb-2">Problemlösungskompetenz</h4>
+                <p class="small text-muted mb-0">Strukturierte, analytische Herangehensweise an komplexe Herausforderungen – von der Analyse bis zur Implementierung.</p>
+              </div>
+              <div class="cv-profile text-center">
+                <div class="text-accent fs-1 mb-3"><i class="bi bi-rocket-takeoff"></i></div>
+                <h4 class="h6 fw-bold mb-2">Eigeninitiative</h4>
+                <p class="small text-muted mb-0">Umsetzung kompletter Projekte im Alleingang – von der Idee über die Konzeption bis zum produktiven Deployment.</p>
+              </div>
+              <div class="cv-profile text-center">
+                <div class="text-accent fs-1 mb-3"><i class="bi bi-hearts"></i></div>
+                <h4 class="h6 fw-bold mb-2">Interessen &amp; Leidenschaft</h4>
+                <p class="small text-muted mb-0">Webentwicklung, Open-Source-Projekte, kreative Medienproduktion, Technik-Trends, KI-Integration, Customizing-Lösungen.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="section bg-deep reveal-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-10 col-xl-9">
+            <div class="text-center mb-5">
+              <div class="hero-avatar mx-auto mb-4">[P]</div>
+              <h1 class="hero-name mb-3">Portfolio &amp; Projekte</h1>
+              <p class="hero-role mb-5">Webentwicklung · Individualsoftware · Open Source</p>
+            </div>
+            <div class="row g-3 mb-5">
+              <div class="col-md-4">
+                <div class="feature-card reveal-zoom">
+                  <div class="feature-icon"><i class="bi bi-globe"></i></div>
+                  <div class="feature-title">jungelmusik.de</div>
+                  <p class="feature-text">Komplette Konzeption, Design und Entwicklung einer professionellen Musik-Website. Vollständiger Full-Stack-Stack mit Frontend (Bootstrap, SASS, JS), Backend (PHP, SQLite3) und responsivem Design.</p>
+                  <a href="https://jungelmusik.de" target="_blank" rel="noopener" class="link-arrow mt-3"><i class="bi bi-box-arrow-up-right me-1"></i>Live ansehen</a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="feature-card reveal-zoom" style="transition-delay: 0.1s;">
+                  <div class="feature-icon"><i class="bi bi-hdd-network"></i></div>
+                  <div class="feature-title">Infrastruktur &amp; DevOps</div>
+                  <p class="feature-text">Containerisierte Entwicklungsumgebungen mit Docker. Linux-Systemadministration, CI/CD-Pipelines, Automatisierung von Deployments und Skripting für repetitive Aufgaben.</p>
+                  <a href="https://github.com/pschwartz1986" target="_blank" rel="noopener" class="link-arrow mt-3"><i class="bi bi-github me-1"></i>GitHub ansehen</a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="feature-card reveal-zoom" style="transition-delay: 0.2s;">
+                  <div class="feature-icon"><i class="bi bi-music-note-beamed"></i></div>
+                  <div class="feature-title">MIDI-Automation</div>
+                  <p class="feature-text">Python-gesteuerte MIDI-Automation für Live-Musikproduktion. Schnittstellen-Programmierung und individuelle Software-Lösungen für kreative Workflows.</p>
+                  <a href="https://github.com/pschwartz1986" target="_blank" rel="noopener" class="link-arrow mt-3"><i class="bi bi-github me-1"></i>GitHub ansehen</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="text-center reveal-fade">
+              <div class="divider-accent mb-5"></div>
+              <h2 class="h4 fw-bold mb-3 font-retro neon-text-amber">Kontakt aufnehmen</h2>
+              <p class="text-muted small mb-4">Ich freue mich auf Ihre Nachricht oder ein persönliches Gespräch.</p>
+              <div class="d-flex gap-3 justify-content-center flex-wrap">
+                <a href="mailto:patrick.schwartz@gfn.de" class="btn btn-glow"><i class="bi bi-envelope me-2"></i>E-Mail schreiben</a>
+                <a href="https://github.com/pschwartz1986" target="_blank" rel="noopener" class="btn btn-glow"><i class="bi bi-github me-2"></i>GitHub</a>
+                <a href="https://jungelmusik.de" target="_blank" rel="noopener" class="btn btn-glow"><i class="bi bi-globe me-2"></i>jungelmusik.de</a>
+              </div>
             </div>
           </div>
         </div>
@@ -82,14 +588,12 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="footer-fixed text-center border-top footer-theme-border">
+    <footer class="footer-fixed text-center border-top footer-theme-border font-mono">
       <p class="text-muted small mb-0">
-        <span class="text-accent">✦</span> Interaktive Bewerbungsmappe – exklusiv zugänglich <span class="text-accent">✦</span>
+        <span class="neon-text">✦</span> Interaktive Bewerbungsmappe – exklusiv zugänglich <span class="neon-text">✦</span>
       </p>
     </footer>
-
   </div>
-  <!-- Lokales Bootstrap JS -->
   <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>

@@ -1,8 +1,9 @@
 @use "../bootstrap/scss/bootstrap";
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
 
-$font-family-base: 'Montserrat', system-ui, -apple-system, sans-serif;
+$font-family-base: "Space Mono", monospace;
+$headings-font-family: "Orbitron", sans-serif;
 
 @import "variables";
 @import "login";
@@ -13,3 +14,31 @@ $font-family-base: 'Montserrat', system-ui, -apple-system, sans-serif;
 @import "buttons";
 @import "scrollbar";
 @import "utilities";
+@import "cv";
+@import "effects";
+
+@scope (scope) {
+  :scope { container-type: inline-size; }
+  .hero-name {
+    font-size: clamp(1.8rem, 5cqi, 3rem);
+  }
+  h1 {
+    font-size: clamp(1.6rem, 4.5cqi, 2.5rem);
+  }
+  .footer-fixed {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: inherit;
+    padding: 0.5rem 0;
+    z-index: 1040;
+  }
+  .section {
+    display: grid;
+    gap: 1rem;
+    padding-bottom: 4rem;
+  }
+  .card {
+    height: 100%;
+  }
+}

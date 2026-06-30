@@ -8,15 +8,15 @@
   const prevBtn = document.getElementById('slide-prev');
   const nextBtn = document.getElementById('slide-next');
 
-  let slideNavigate = null;
-
   const THEME_KEY = 'portfolio-theme';
-  const PAGES = [
-    'index.html',
-    'kurzprofil.html',
-    'anschreiben.html',
-    'lebenslauf.html',
-    'portfolio.html'
+  const SECTIONS = ['anschreiben', 'profil', 'lebenslauf', 'portfolio'];
+
+  const REVEAL_CLASSES = [
+    'reveal-section',
+    'reveal-fade',
+    'reveal-zoom',
+    'reveal-left',
+    'reveal-right'
   ];
 
   function applyTheme(theme) {
@@ -96,136 +96,120 @@
 
   initTheme();
 
-  const path = window.location.pathname;
-  const page = path.split('/').pop() || 'index.html';
-  if (page !== 'lebenslauf.html' && page !== 'index.html') {
-    const container = document.querySelector('.section > .container');
-    if (container) {
-      container.classList.add('checkpoint-enter');
-    }
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+    anchor.addEventListener('click', function (e) {
+      const targetId = this.getAttribute('href');
+      if (targetId === '#') return;
+      const target = document.querySelector(targetId);
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+
+  // Active nav link on scroll
+  function updateActiveNav() {
+    const scrollPos = window.scrollY + 120;
+    SECTIONS.forEach(function (id) {
+      const section = document.getElementById(id);
+      if (!section) return;
+      const top = section.offsetTop;
+      const height = section.offsetHeight;
+      const link = document.querySelector('a[href="#' + id + '"]');
+      if (!link) return;
+      if (scrollPos >= top && scrollPos < top + height) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
+    });
   }
 
-  function getCurrentPage() {
-    const path = window.location.pathname;
-    const page = path.split('/').pop() || 'index.html';
-    const idx = PAGES.indexOf(page);
-    return idx >= 0 ? idx : 0;
-  }
+  // Navbar show/hide on scroll
+  const navbar = document.getElementById('top-nav');
 
-  function goToPage(index) {
-    const target = PAGES[index];
-    if (!target) return;
-    const content = document.getElementById('portfolio-content');
-    if (content) {
-      content.classList.add('page-leaving');
-      setTimeout(function () {
-        window.location.href = target;
-      }, 460);
+  function handleNavScroll() {
+    if (!navbar) return;
+    const currentScroll = window.scrollY;
+    if (currentScroll > 100) {
+      navbar.classList.add('scrolled');
     } else {
-      window.location.href = target;
+      navbar.classList.remove('scrolled');
     }
+    updateActiveNav();
   }
 
+  if (navbar) {
+    window.addEventListener('scroll', handleNavScroll, { passive: true });
+    handleNavScroll();
+  }
+
+  // Prev/Next buttons as section scrollers for one-pager
   if (prevBtn && nextBtn) {
     prevBtn.addEventListener('click', function () {
-      if (slideNavigate) {
-        slideNavigate('prev');
-        return;
+      const sectionIds = Array.from(document.querySelectorAll('section[id]')).map(function (s) { return s.id; });
+      const currentIndex = sectionIds.findIndex(function (id) {
+        const section = document.getElementById(id);
+        return section && section.getBoundingClientRect().top <= 200;
+      });
+      const prevIndex = Math.max(0, currentIndex - 1);
+      const prevSection = document.getElementById(sectionIds[prevIndex]);
+      if (prevSection) {
+        prevSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
-      const current = getCurrentPage();
-      const prev = (current - 1 + PAGES.length) % PAGES.length;
-      goToPage(prev);
     });
 
     nextBtn.addEventListener('click', function () {
-      if (slideNavigate) {
-        slideNavigate('next');
-        return;
+      const sectionIds = Array.from(document.querySelectorAll('section[id]')).map(function (s) { return s.id; });
+      const currentIndex = sectionIds.findIndex(function (id) {
+        const section = document.getElementById(id);
+        return section && section.getBoundingClientRect().top <= 200;
+      });
+      const nextIndex = Math.min(sectionIds.length - 1, currentIndex + 1);
+      const nextSection = document.getElementById(sectionIds[nextIndex]);
+      if (nextSection) {
+        nextSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
-      const current = getCurrentPage();
-      const next = (current + 1) % PAGES.length;
-      goToPage(next);
     });
   }
 
+  // Section and element reveal on scroll
   if ('IntersectionObserver' in window) {
-    const observer = new IntersectionObserver(function (entries) {
+    const sectionObserver = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
           entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
+          sectionObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal-section, .reveal-fade, .reveal-zoom, .reveal-left, .reveal-right')
+      .forEach(function (el) {
+        sectionObserver.observe(el);
+      });
+
+    const elementObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          elementObserver.unobserve(entry.target);
         }
       });
     }, { threshold: 0.15 });
 
-    document.querySelectorAll('.tl-item, .motivation-card').forEach(function (el) {
-      observer.observe(el);
+    document.querySelectorAll('.motivation-card, .cv-timeline-item, .cv-timeline-item, .feature-card, .tl-item, .tl-card, .project-card').forEach(function (el) {
+      elementObserver.observe(el);
     });
   } else {
-    document.querySelectorAll('.tl-item, .motivation-card').forEach(function (el) {
+    document.querySelectorAll('.reveal-section, .reveal-fade, .reveal-zoom, .reveal-left, .reveal-right')
+      .forEach(function (el) {
+        el.classList.add('visible');
+      });
+    document.querySelectorAll('.motivation-card, .cv-timeline-item, .tl-item, .tl-card, .feature-card, .project-card').forEach(function (el) {
       el.classList.add('visible');
     });
-  }
-
-  {
-    const path = window.location.pathname;
-    const page = path.split('/').pop();
-    if (page === 'lebenslauf.html') {
-      const slides = document.querySelectorAll('.cv-slide');
-      const dots = document.querySelectorAll('.cv-dot');
-      let current = 0;
-      const total = slides.length;
-
-      function updateSlides(index) {
-        slides.forEach((s, i) => {
-          s.classList.toggle('active', i === index);
-        });
-        if (dots.length) {
-          dots.forEach((d, i) => {
-            d.classList.toggle('active', i === index);
-          });
-        }
-      }
-
-      function getLebenslaufPageIndex() {
-        return PAGES.indexOf('lebenslauf.html');
-      }
-
-      function navigatePageFromCV(direction) {
-        const idx = getLebenslaufPageIndex();
-        if (idx < 0) return;
-        if (direction === 'prev') {
-          goToPage((idx - 1 + PAGES.length) % PAGES.length);
-        } else {
-          goToPage((idx + 1) % PAGES.length);
-        }
-      }
-
-      slideNavigate = function (direction) {
-        if (direction === 'prev' && current === 0) {
-          navigatePageFromCV('prev');
-          return;
-        }
-        if (direction === 'next' && current === total - 1) {
-          navigatePageFromCV('next');
-          return;
-        }
-        if (direction === 'prev') {
-          current = current - 1;
-        } else {
-          current = current + 1;
-        }
-        updateSlides(current);
-      };
-
-      dots.forEach((dot, i) => {
-        dot.addEventListener('click', function () {
-          current = i;
-          updateSlides(current);
-        });
-      });
-
-      updateSlides(0);
-    }
   }
 })();

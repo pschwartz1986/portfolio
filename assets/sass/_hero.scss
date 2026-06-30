@@ -6,45 +6,57 @@
   position: relative;
   overflow: hidden;
   background: var(--bg-deep);
+  padding-top: calc(var(--nav-height) + 2rem);
+  padding-bottom: 3rem;
 }
 
 .hero-pre {
-  font-size: 0.72rem;
-  letter-spacing: 0.4em;
+  font-family: "Orbitron", sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.35em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--accent-secondary);
   opacity: 0;
-  animation: fadeInUp 0.6s 0.2s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+  animation: fadeInUp 0.8s 0.2s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
   font-weight: 600;
+  text-shadow: 0 0 15px var(--accent-secondary-glow);
+  position: relative;
 }
 
 .hero-avatar {
-  width: 140px;
-  height: 140px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+  background: linear-gradient(135deg, var(--accent), var(--accent-secondary));
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 3.6rem;
-  font-weight: 700;
+  font-family: "Orbitron", sans-serif;
+  font-size: 3.2rem;
+  font-weight: 900;
   color: var(--bg-deep);
-  margin: 0 auto 2.4rem;
-  box-shadow: 0 1px 0 var(--border), 0 12px 30px rgba(0, 0, 0, 0.35);
-  animation: fadeInScale 1s 0.25s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+  margin: 0 auto 2.8rem;
+  box-shadow: 0 0 0 0 var(--accent-glow);
+  animation: fadeInScale 1.2s 0.25s cubic-bezier(0.22, 0.61, 0.36, 1) forwards, avatarGlow 3s ease-in-out infinite 1.5s;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   position: relative;
   z-index: 1;
   opacity: 0;
+  border: 3px solid var(--accent);
 }
 
 @keyframes fadeInScale {
-  from { opacity: 0; transform: scale(0.88); filter: blur(8px); }
+  from { opacity: 0; transform: scale(0.6); filter: blur(12px); }
   to { opacity: 1; transform: scale(1); filter: blur(0); }
 }
 
+@keyframes avatarGlow {
+  0%, 100% { box-shadow: 0 0 30px var(--accent-glow), 0 0 60px var(--accent-glow); }
+  50% { box-shadow: 0 0 50px var(--accent-secondary-glow), 0 0 100px var(--accent-secondary-glow); }
+}
+
 @keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(12px); }
+  from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
@@ -54,30 +66,31 @@
 }
 
 @keyframes checkpointIn {
-  from { opacity: 0; transform: translateY(14px); }
+  from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
 .hero-badges {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 10px;
   justify-content: center;
-  margin: 1.8rem 0 0;
+  margin: 2rem 0 0;
   opacity: 0;
-  animation: fadeInUp 0.7s 0.75s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+  animation: fadeInUp 1s 0.9s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
 }
 
 .badge-soft {
   background: var(--bg-elevated);
   border: 1px solid var(--border);
   color: var(--text-muted);
-  padding: 6px 14px;
-  border-radius: 999px;
+  padding: 8px 18px;
+  border-radius: 4px;
+  font-family: "Space Mono", monospace;
   font-size: 0.72rem;
   font-weight: 600;
   letter-spacing: 0.3px;
-  transition: border-color 0.2s, color 0.2s;
+  transition: all 0.3s;
   cursor: default;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
@@ -86,4 +99,21 @@
 .badge-soft:hover {
   border-color: var(--accent);
   color: var(--accent-strong);
+  box-shadow: 0 0 20px var(--accent-glow);
+}
+
+.hero-name {
+  font-family: "Orbitron", sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-main);
+  text-shadow: 0 0 30px var(--accent-glow), 0 0 60px rgba(255, 0, 255, 0.2);
+}
+
+.hero-role {
+  color: var(--text-muted);
+  font-family: "Space Mono", monospace;
+  font-size: 0.95rem;
+  letter-spacing: 0.1em;
 }

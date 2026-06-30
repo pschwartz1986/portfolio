@@ -1,0 +1,212 @@
+.scanlines {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, 0.08) 2px,
+    rgba(0, 0, 0, 0.08) 4px
+  );
+  opacity: 0.4;
+}
+
+[data-bs-theme="light"] .scanlines {
+  opacity: 0.15;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, 0.03) 2px,
+    rgba(0, 0, 0, 0.03) 4px
+  );
+}
+
+.retro-grid {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  opacity: 0.15;
+  background-image:
+    linear-gradient(var(--border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border) 1px, transparent 1px);
+  background-size: 60px 60px;
+  background-position: center center;
+  mask-image: radial-gradient(ellipse at center, black 30%, transparent 70%);
+  -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 70%);
+}
+
+.neon-text {
+  color: var(--accent);
+  text-shadow:
+    0 0 7px var(--accent-glow),
+    0 0 20px var(--accent-glow),
+    0 0 42px var(--accent-glow);
+  animation: neonPulse 2s ease-in-out infinite alternate;
+}
+
+.neon-text-secondary {
+  color: var(--accent-secondary);
+  text-shadow:
+    0 0 7px var(--accent-secondary-glow),
+    0 0 20px var(--accent-secondary-glow),
+    0 0 42px var(--accent-secondary-glow);
+  animation: neonPulseSecondary 2.5s ease-in-out infinite alternate;
+}
+
+.neon-text-amber {
+  color: var(--accent-amber);
+  text-shadow:
+    0 0 7px var(--accent-amber-glow),
+    0 0 20px var(--accent-amber-glow),
+    0 0 42px var(--accent-amber-glow);
+  animation: neonPulseAmber 3s ease-in-out infinite alternate;
+}
+
+@keyframes neonPulse {
+  from { opacity: 1; }
+  to { opacity: 0.75; }
+}
+
+@keyframes neonPulseSecondary {
+  from { opacity: 1; }
+  to { opacity: 0.8; }
+}
+
+@keyframes neonPulseAmber {
+  from { opacity: 1; }
+  to { opacity: 0.7; }
+}
+
+.glitch {
+  position: relative;
+}
+
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.glitch::before {
+  color: var(--accent-secondary);
+  z-index: -1;
+  animation: glitch1 3s infinite linear alternate-reverse;
+}
+
+.glitch::after {
+  color: var(--accent);
+  z-index: -2;
+  animation: glitch2 2s infinite linear alternate-reverse;
+}
+
+@keyframes glitch1 {
+  0%, 100% { opacity: 0; transform: translate(0); }
+  20% { opacity: 0.3; transform: translate(-2px, 2px); }
+  40% { opacity: 0; transform: translate(2px, -2px); }
+  60% { opacity: 0.2; transform: translate(-1px, 1px); }
+  80% { opacity: 0; transform: translate(0); }
+}
+
+@keyframes glitch2 {
+  0%, 100% { opacity: 0; transform: translate(0); }
+  25% { opacity: 0.2; transform: translate(2px, -2px); }
+  50% { opacity: 0; transform: translate(-2px, 2px); }
+  75% { opacity: 0.3; transform: translate(1px, -1px); }
+}
+
+.reveal-section {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 1s cubic-bezier(0.22, 0.61, 0.36, 1), transform 1s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.reveal-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-fade {
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.reveal-fade.visible {
+  opacity: 1;
+}
+
+.reveal-zoom {
+  opacity: 0;
+  transform: scale(0.85);
+  transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.reveal-zoom.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-60px);
+  transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.reveal-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(60px);
+  transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.reveal-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid var(--accent);
+  width: 0;
+  animation: typing 3s steps(30, end) forwards, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  from, to { border-color: transparent; }
+  50% { border-color: var(--accent); }
+}
+
+.floating {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+.pulse-glow {
+  animation: pulseGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes pulseGlow {
+  from { box-shadow: 0 0 5px var(--accent-glow); }
+  to { box-shadow: 0 0 25px var(--accent-glow), 0 0 50px var(--accent-glow); }
+}

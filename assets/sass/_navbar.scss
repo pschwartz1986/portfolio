@@ -1,69 +1,125 @@
-.nav-trigger {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 8px;
-  z-index: 1050;
-}
-
 .navbar-custom {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(11, 18, 34, 0.6);
-  backdrop-filter: blur(16px) saturate(140%);
-  -webkit-backdrop-filter: blur(16px) saturate(140%);
+  background: rgba(5, 0, 28, 0.92);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
   border-bottom: 1px solid var(--border);
-  padding: 0.6rem 0;
+  padding: 0;
   height: var(--nav-height);
-  z-index: 1040;
-  transform: translateY(-105%);
-  transition: transform 0.45s cubic-bezier(0.22, 0.61, 0.36, 1), background 0.3s, box-shadow 0.3s;
+  z-index: 1050;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 30px rgba(123, 45, 255, 0.2);
 }
 
-.navbar-custom .container { position: relative; }
+.navbar-custom-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* CENTER on desktop */
+  gap: 0.75rem;
+  max-width: 960px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 1.5rem;
+  flex-wrap: wrap;
+}
 
-.navbar-custom .nav-link-custom {
-  color: var(--text-muted);
-  font-weight: 600;
-  text-decoration: none;
-  padding: 6px 10px;
-  border-radius: 8px;
+.navbar-custom .navbar-brand {
+  font-family: "Orbitron", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
   transition: all 0.3s;
-  font-size: 0.8rem;
-  letter-spacing: 0.2px;
-  opacity: 0.75;
+  line-height: 1.2;
+  white-space: nowrap;
+  color: var(--text-main) !important;
+  text-shadow: 0 0 10px var(--accent-glow);
+  margin-right: auto;
 }
 
-.navbar-custom .nav-link-custom:hover,
-.navbar-custom .nav-link-custom.active {
+.navbar-custom .nav-glow {
+  font-family: "Orbitron", sans-serif;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 6px 16px;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  background: transparent;
+  cursor: pointer;
+}
+
+.navbar-custom .nav-glow::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--accent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.navbar-custom .nav-glow:hover {
+  color: var(--bg-deep);
+  border-color: var(--accent);
+  box-shadow: 0 0 20px var(--accent-glow), 0 0 40px var(--accent-glow), inset 0 0 20px var(--accent-glow);
+  transform: translateY(-1px);
+}
+
+.navbar-custom .nav-glow:hover::before {
   opacity: 1;
-  color: var(--accent-strong);
-  background: rgba(77, 168, 218, 0.1);
+}
+
+.navbar-custom .nav-glow.active {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: rgba(255, 0, 255, 0.1);
+  box-shadow: 0 0 15px var(--accent-glow);
 }
 
 .navbar-custom.scrolled {
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 10px 50px rgba(123, 45, 255, 0.35);
+  background: rgba(5, 0, 28, 0.98);
 }
 
 [data-bs-theme="light"] .navbar-custom {
-  background: rgba(240, 244, 248, 0.6);
+  background: rgba(243, 229, 255, 0.95);
+  box-shadow: 0 4px 30px rgba(179, 136, 255, 0.2);
 }
 
-.nav-trigger:hover ~ .navbar-custom,
-.navbar-custom:hover {
-  transform: translateY(0);
+[data-bs-theme="light"] .navbar-custom.scrolled {
+  background: rgba(255, 255, 255, 0.98);
 }
 
 @media (max-width: 768px) {
   .navbar-custom {
-    transform: translateY(0);
-    background: rgba(11, 18, 34, 0.95);
+    --nav-height: 64px;
   }
-  [data-bs-theme="light"] .navbar-custom {
-    background: rgba(240, 244, 248, 0.95);
+  .navbar-custom-inner {
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0 0.75rem;
   }
-  .nav-trigger { display: none; }
+  .navbar-custom .navbar-brand {
+    font-size: 0.65rem;
+    margin-right: 0;
+    order: -1;
+    flex: 0 0 100%;
+    text-align: center;
+    margin-bottom: 0.25rem;
+  }
+  .navbar-custom .nav-glow {
+    font-size: 0.6rem;
+    padding: 5px 12px;
+    letter-spacing: 0.05em;
+  }
 }

@@ -12,23 +12,46 @@
 .login-card {
   background: var(--bg-surface);
   border: 1px solid var(--border);
-  border-radius: 24px;
+  border-radius: 20px;
   padding: 3.5rem 2.8rem;
   max-width: 460px;
   width: 92%;
-  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.65), 0 0 140px var(--accent-glow);
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.7), 0 0 140px var(--accent-glow);
   text-align: center;
-  animation: floatLogin 6s ease-in-out infinite;
+  animation: floatLogin 5s ease-in-out infinite;
+  position: relative;
+  overflow: hidden;
+}
+
+.login-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 0, 255, 0.1), transparent);
+  animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+  to { left: 100%; }
 }
 
 @keyframes floatLogin {
   0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-8px); }
+  50% { transform: translateY(-10px); }
 }
 
 .lock-icon {
-  font-size: 3.4rem;
+  font-size: 3.5rem;
   color: var(--accent);
-  margin-bottom: 1rem;
-  filter: drop-shadow(0 0 18px var(--accent-glow));
+  margin-bottom: 1.2rem;
+  filter: drop-shadow(0 0 25px var(--accent-glow));
+  animation: lockPulse 2s ease-in-out infinite alternate;
+}
+
+@keyframes lockPulse {
+  from { filter: drop-shadow(0 0 15px var(--accent-glow)); }
+  to { filter: drop-shadow(0 0 35px var(--accent-secondary-glow)); }
 }
