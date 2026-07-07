@@ -12110,8 +12110,8 @@ textarea.form-control-lg {
 }
 
 .hero-avatar {
-  width: 200px;
-  height: 200px;
+  width: 240px;
+  height: 240px;
   border-radius: 50%;
   background: linear-gradient(135deg, var(--accent), var(--accent-secondary));
   display: flex;
@@ -13918,7 +13918,7 @@ html {
 
 .speak-bubble {
   position: fixed;
-  left: 20%;
+  left: 15%;
   top: 90px;
   z-index: 1080;
   background: var(--bg-surface);
