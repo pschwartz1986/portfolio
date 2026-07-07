@@ -49,12 +49,30 @@
           </nav>
           <div class="text-center position-relative">
             <div class="mb-4 position-relative d-inline-block">
-            <img src="https://avatars.githubusercontent.com/u/297923195?v=4" class="hero-avatar" alt="Portfolio" />
-            <div id="speak-bubble" class="speak-bubble" role="status" aria-live="polite" aria-atomic="true">
-              <div class="speak-bubble-header">
-                <strong class="me-auto">Willkommen!</strong>
-                <button type="button" class="btn-close speak-bubble-close" aria-label="Close"></button>
+              <img src="https://avatars.githubusercontent.com/u/297923195?v=4" class="hero-avatar" alt="Portfolio" />
+              <div id="speak-bubble" class="speak-bubble" role="status" aria-live="polite" aria-atomic="true">
+                <div class="speak-bubble-header">
+                  <strong class="me-auto">Hey! 👋</strong>
+                  <button type="button" class="btn-close speak-bubble-close" aria-label="Close"></button>
+                </div>
+                <div class="speak-bubble-body">
+                  <strong>Praktikumsplatz</strong> gesucht – sprich mich gern an! 😊
+                </div>
               </div>
+            </div>
+            <p class="hero-pre text-accent mb-3 fw-bold">SPUREN DER ENTWICKLUNG</p>
+            <h1 class="display-1 hero-name glitch reveal-zoom" data-text="Patrick Schwartz">Patrick Schwartz</h1>
+            <p class="hero-role mb-4">Nicht jeder Schritt war richtig. Aber jeder führte weiter.</p>
+            <a href="#projekte" class="btn btn-glow btn-lg my-5">
+              <i class="bi bi-arrow-down me-2"></i>Referenzen ansehen
+            </a>
+          </div>
+              <div class="speak-bubble-body">
+                <strong>Praktikumsplatz</strong> gesucht – sprich mich gern an! 😊
+              </div>
+            </div>
+          </div>
+        </div>
               <div class="speak-bubble-body">
                 <strong>Praktikumsplatz</strong> gesucht – sprich mich gern an! 😊
               </div>
@@ -541,19 +559,12 @@
            loader.classList.add('is-hidden');
          }
 
-         setTimeout(function () {
-           var toastEl = document.getElementById('speak-bubble');
-           var avatarImg = document.querySelector('.hero-avatar');
-           if (toastEl && avatarImg) {
-             var avatarRect = avatarImg.getBoundingClientRect();
-             var centerX = avatarRect.left + avatarRect.width / 2;
-             var topY = avatarRect.top - 10;
-             toastEl.style.left = centerX + 'px';
-             toastEl.style.top = topY + 'px';
-             toastEl.style.transform = 'translate(-50%, -100%)';
-             toastEl.classList.add('is-visible');
-           }
-         }, 500);
+        setTimeout(function () {
+          var toastEl = document.getElementById('speak-bubble');
+          if (toastEl) {
+            toastEl.classList.add('is-visible');
+          }
+        }, 600);
        });
 
        if (document.readyState === 'complete') {
@@ -562,19 +573,12 @@
          if (loader) {
            loader.classList.add('is-hidden');
          }
-         setTimeout(function () {
-           var toastEl = document.getElementById('speak-bubble');
-           var avatarImg = document.querySelector('.hero-avatar');
-           if (toastEl && avatarImg) {
-             var avatarRect = avatarImg.getBoundingClientRect();
-             var centerX = avatarRect.left + avatarRect.width / 2;
-             var topY = avatarRect.top - 10;
-             toastEl.style.left = centerX + 'px';
-             toastEl.style.top = topY + 'px';
-             toastEl.style.transform = 'translate(-50%, -100%)';
-             toastEl.classList.add('is-visible');
-           }
-         }, 300);
+        setTimeout(function () {
+          var toastEl = document.getElementById('speak-bubble');
+          if (toastEl) {
+            toastEl.classList.add('is-visible');
+          }
+        }, 300);
        }
 
       document.querySelector('.speak-bubble-close') && document.querySelector('.speak-bubble-close').addEventListener('click', function () {

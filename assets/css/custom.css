@@ -13918,6 +13918,8 @@ html {
 
 .speak-bubble {
   position: fixed;
+  left: 20%;
+  top: 90px;
   z-index: 1080;
   background: var(--bg-surface);
   border: 1px solid var(--border);
@@ -13926,7 +13928,8 @@ html {
   opacity: 0;
   transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.22, 0.61, 0.36, 1);
   pointer-events: none;
-  display: block !important;
+  display: flex !important;
+  flex-direction: column;
 }
 .speak-bubble.is-visible {
   opacity: 1;
@@ -13937,6 +13940,9 @@ html {
   border-bottom: 1px solid var(--border);
   padding: 0.7rem 0.9rem;
   border-radius: 20px 20px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .speak-bubble .speak-bubble-body {
   padding: 0.9rem;
