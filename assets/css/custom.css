@@ -13817,6 +13817,99 @@ html {
   }
 }
 
+.page-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: var(--bg-deep);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+.page-loader.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.loader-spinner {
+  position: relative;
+  width: 90px;
+  height: 90px;
+}
+.spinner-ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 4px solid transparent;
+  animation: loaderSpin 2.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+}
+.spinner-ring:nth-child(1) {
+  border-top-color: var(--accent);
+  box-shadow: 0 0 25px var(--accent-glow);
+  animation-delay: 0s;
+}
+.spinner-ring:nth-child(2) {
+  inset: 12px;
+  border-right-color: var(--accent-secondary);
+  box-shadow: 0 0 20px var(--accent-secondary-glow);
+  animation-delay: 0.3s;
+  animation-direction: reverse;
+}
+.spinner-ring:nth-child(3) {
+  inset: 24px;
+  border-bottom-color: var(--accent-amber);
+  box-shadow: 0 0 15px var(--accent-amber-glow);
+  animation-delay: 0.6s;
+}
+@keyframes loaderSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.speak-bubble {
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 20px);
+  transform: translateX(-50%) translateY(10px);
+  width: 320px;
+  z-index: 5;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 20px 20px 20px 4px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6), 0 0 50px var(--accent-glow);
+  opacity: 0;
+  transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.22, 0.61, 0.36, 1);
+  pointer-events: none;
+}
+.speak-bubble.is-visible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+  pointer-events: auto;
+}
+.speak-bubble .toast-header {
+  background: var(--bg-elevated);
+  border-bottom: 1px solid var(--border);
+  padding: 0.7rem 0.9rem;
+  border-radius: 20px 20px 0 0;
+}
+.speak-bubble .toast-body {
+  padding: 0.9rem;
+  font-family: "Space Mono", monospace;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+@media (max-width: 768px) {
+  .speak-bubble {
+    width: 260px;
+    bottom: calc(100% + 14px);
+  }
+}
+
 @scope (scope) {
   :scope {
     container-type: inline-size;
