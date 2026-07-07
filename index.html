@@ -29,14 +29,24 @@
           <a href="https://github.com/pschwartz1986" target="_blank" rel="noopener" class="hero-github-icon">
             <i class="bi bi-github"></i>
           </a>
+          <nav class="hero-side-nav">
+            <button class="hero-side-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasAbout" aria-label="Über mich">
+              <i class="bi bi-person"></i>
+              <span>Über mich</span>
+            </button>
+            <button class="hero-side-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTech" aria-label="Tech Stack">
+              <i class="bi bi-code-slash"></i>
+              <span>Tech Stack</span>
+            </button>
+          </nav>
           <div class="text-center position-relative">
             <div class="mb-4 position-relative d-inline-block">
               <img src="https://avatars.githubusercontent.com/u/297923195?v=4" class="hero-avatar" alt="Portfolio" />
-              <div class="toast speak-bubble" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast speak-bubble" role="status" aria-live="polite" aria-atomic="true">
                 <div class="toast-header">
                   <svg aria-hidden="true" class="bd-placeholder-img rounded me-2" height="20" preserveAspectRatio="xMidYMid slice" width="20" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="#007aff"></rect></svg>
                   <strong class="me-auto">Patrick Schwartz</strong>
-                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                  <button type="button" class="btn-close speak-bubble-close" aria-label="Close"></button>
                 </div>
                 <div class="toast-body">
                   <strong>Hey! 👋</strong> Ich suche aktuell einen <strong>Praktikumsplatz</strong> im Bereich Softwareentwicklung. Falls du jemanden kennst – sprich mich gern an! 😊
@@ -487,6 +497,7 @@
       });
 
       window.addEventListener('load', function () {
+        window.scrollTo(0, 0);
         var loader = document.getElementById('page-loader');
         if (loader) {
           loader.classList.add('is-hidden');
@@ -500,13 +511,134 @@
         }, 600);
       });
 
-      document.querySelector('.speak-bubble .btn-close') && document.querySelector('.speak-bubble .btn-close').addEventListener('click', function () {
+      if (document.readyState === 'complete') {
+        window.scrollTo(0, 0);
+        var loader = document.getElementById('page-loader');
+        if (loader) {
+          loader.classList.add('is-hidden');
+        }
+        setTimeout(function () {
+          var toastEl = document.querySelector('.speak-bubble');
+          if (toastEl) {
+            toastEl.classList.add('is-visible');
+          }
+        }, 300);
+      }
+
+      document.querySelector('.speak-bubble-close') && document.querySelector('.speak-bubble-close').addEventListener('click', function () {
         var toastEl = document.querySelector('.speak-bubble');
         if (toastEl) {
           toastEl.classList.remove('is-visible');
         }
       });
-    })();
+
+      var offcanvases = document.querySelectorAll('.hero-offcanvas');
+      offcanvases.forEach(function (panel) {
+        panel.addEventListener('show.bs.offcanvas', function () {
+          var toastEl = document.querySelector('.speak-bubble');
+          if (toastEl) {
+            toastEl.classList.remove('is-visible');
+          }
+        });
+      });
+     })();
   </script>
+
+  <div class="offcanvas offcanvas-end hero-offcanvas" tabindex="-1" id="offcanvasAbout" aria-labelledby="offcanvasAboutLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasAboutLabel">Über mich</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="d-flex align-items-center gap-3 mb-3">
+        <img src="https://avatars.githubusercontent.com/u/297923195?v=4" class="hero-avatar" style="width:64px;height:64px;" alt="Patrick Schwartz" />
+        <div>
+          <div class="fw-bold fs-5">Patrick Schwartz</div>
+          <div class="text-muted small">Full-Stack-Entwickler · Individualsoftware</div>
+        </div>
+      </div>
+      <p class="small text-muted">Nicht jeder Schritt war richtig. Aber jeder führte weiter.</p>
+      <div class="d-grid gap-2 small">
+        <div class="cv-profile p-3">
+          <div class="text-accent mb-2"><i class="bi bi-briefcase me-2"></i>Berufserfahrung</div>
+          <p class="mb-0 text-muted">Über 15 Jahre autodidaktische Praxis in Webentwicklung, Linux-Systemen und kreativen Medien.</p>
+        </div>
+        <div class="cv-profile p-3">
+          <div class="text-accent mb-2"><i class="bi bi-mortarboard me-2"></i>Status</div>
+          <p class="mb-0 text-muted">Aktuell in der 2-jährigen Umschulung zum Fachinformatiker für Anwendungsentwicklung mit Schwerpunkt auf modernen Webtechnologien.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="offcanvas offcanvas-end hero-offcanvas" tabindex="-1" id="offcanvasTech" aria-labelledby="offcanvasTechLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasTechLabel">Tech Stack</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="d-flex flex-column gap-3">
+        <div class="cv-profile p-3">
+          <div class="text-accent mb-2 fw-bold"><i class="bi bi-code-slash me-2"></i>Frontend</div>
+          <div class="d-flex flex-wrap gap-1">
+            <span class="badge-tech">HTML5</span>
+            <span class="badge-tech">CSS3</span>
+            <span class="badge-tech">SASS</span>
+            <span class="badge-tech">Bootstrap (v3–v5)</span>
+            <span class="badge-tech">Bulma</span>
+            <span class="badge-tech">JavaScript</span>
+            <span class="badge-tech">ES6+</span>
+          </div>
+        </div>
+        <div class="cv-profile p-3">
+          <div class="text-accent mb-2 fw-bold"><i class="bi bi-server me-2"></i>Backend</div>
+          <div class="d-flex flex-wrap gap-1">
+            <span class="badge-tech">PHP</span>
+            <span class="badge-tech">Python</span>
+            <span class="badge-tech">Flask</span>
+            <span class="badge-tech">Tkinter</span>
+          </div>
+        </div>
+        <div class="cv-profile p-3">
+          <div class="text-accent mb-2 fw-bold"><i class="bi bi-database me-2"></i>CMS & Datenbanken</div>
+          <div class="d-flex flex-wrap gap-1">
+            <span class="badge-tech">WordPress</span>
+            <span class="badge-tech">SQL</span>
+            <span class="badge-tech">SQLite</span>
+          </div>
+        </div>
+        <div class="cv-profile p-3">
+          <div class="text-accent mb-2 fw-bold"><i class="bi bi-gear me-2"></i>DevOps & Tools</div>
+          <div class="d-flex flex-wrap gap-1">
+            <span class="badge-tech">Docker</span>
+            <span class="badge-tech">Git</span>
+            <span class="badge-tech">GitHub</span>
+            <span class="badge-tech">npm</span>
+            <span class="badge-tech">pip</span>
+            <span class="badge-tech">Linux-Admin</span>
+          </div>
+        </div>
+        <div class="cv-profile p-3">
+          <div class="text-accent mb-2 fw-bold"><i class="bi bi-palette me-2"></i>Kreativbereich</div>
+          <div class="d-flex flex-wrap gap-1">
+            <span class="badge-tech">Grafikdesign</span>
+            <span class="badge-tech">Audio-Bearbeitung</span>
+            <span class="badge-tech">Webdesign</span>
+            <span class="badge-tech">Medienproduktion</span>
+          </div>
+        </div>
+        <div class="cv-profile p-3">
+          <div class="text-accent mb-2 fw-bold"><i class="bi bi-stars me-2"></i>Zusatzqualifikationen</div>
+          <div class="d-flex flex-wrap gap-1">
+            <span class="badge-tech">KI-Konzepte</span>
+            <span class="badge-tech">Customizing</span>
+            <span class="badge-tech">jQuery</span>
+            <span class="badge-tech">Ajax</span>
+            <span class="badge-tech">Responsive Design</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

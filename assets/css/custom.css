@@ -13817,6 +13817,52 @@ html {
   }
 }
 
+.hero-side-nav {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.hero-side-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.55rem 0.9rem;
+  border-radius: 12px 0 0 12px;
+  border: 1px solid var(--border);
+  border-right: none;
+  background: var(--bg-elevated);
+  color: var(--text-muted);
+  font-family: "Space Mono", monospace;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+  transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.hero-side-btn i {
+  font-size: 1rem;
+}
+.hero-side-btn:hover {
+  color: var(--text-main);
+  border-color: var(--accent);
+  padding-right: 1.2rem;
+  box-shadow: 0 0 25px var(--accent-glow), 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 768px) {
+  .hero-side-nav {
+    display: none;
+  }
+}
+
 .page-loader {
   position: fixed;
   inset: 0;
