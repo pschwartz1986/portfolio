@@ -401,6 +401,37 @@
         }
       }
 
+      var themeToggle = document.getElementById('theme-toggle-bottom');
+      var themeKey = 'portfolio-theme';
+
+      function applyTheme(theme) {
+        document.documentElement.setAttribute('data-bs-theme', theme);
+      }
+
+      function initTheme() {
+        var saved = localStorage.getItem(themeKey) || 'dark';
+        applyTheme(saved);
+        var icon = themeToggle && themeToggle.querySelector('i');
+        if (icon) {
+          icon.className = saved === 'dark' ? 'bi bi-moon-stars' : 'bi bi-sun';
+        }
+      }
+
+      if (themeToggle) {
+        themeToggle.addEventListener('click', function () {
+          var current = document.documentElement.getAttribute('data-bs-theme');
+          var next = current === 'dark' ? 'light' : 'dark';
+          applyTheme(next);
+          localStorage.setItem(themeKey, next);
+          var icon = themeToggle.querySelector('i');
+          if (icon) {
+            icon.className = next === 'dark' ? 'bi bi-moon-stars' : 'bi bi-sun';
+          }
+        });
+      }
+
+      initTheme();
+
       document.querySelectorAll('.tl-link').forEach(function (link) {
         link.addEventListener('mouseenter', function () {
           showPopover(link);
