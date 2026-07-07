@@ -8,39 +8,44 @@ from cryptography.hazmat.primitives.ciphers.aead import AESGCM
 from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
 from cryptography.hazmat.primitives import hashes
 from cryptography.hazmat.backends import default_backend
+from html.parser import HTMLParser
 
 
-class PortfolioContentExtractor:
-    def __init__(self, html: str):
-        self.html = html
+class InnerHTMLParser(HTMLParser):
+    def __init__(self, target_id):
+        super().__init__()
+        self.target_id = target_id
+        self.in_target = False
+        self.depth = 0
+        self.chunks = []
 
-    def extract(self) -> str:
-        start_pattern = 'id="portfolio-content"'
-        idx = self.html.find(start_pattern)
-        if idx == -1:
-            raise ValueError("Block #portfolio-content not found")
-        tag_start = self.html.rfind("<div", 0, idx)
-        if tag_start == -1:
-            raise ValueError("Start tag not found")
-        gt = self.html.find(">", tag_start)
-        if gt == -1:
-            raise ValueError("Tag not closed")
-        pos = gt + 1
-        depth = 1
-        while pos < len(self.html) and depth > 0:
-            next_open = self.html.find("<div", pos)
-            next_close = self.html.find("</div>", pos)
-            if next_close == -1:
-                break
-            if next_open != -1 and next_open < next_close:
-                depth += 1
-                pos = next_open + 4
-            else:
-                depth -= 1
-                if depth == 0:
-                    return self.html[gt + 1 : next_close]
-                pos = next_close + 6
-        raise ValueError("No matching closing tag")
+    def handle_starttag(self, tag, attrs):
+        if not self.in_target:
+            attr_dict = dict(attrs)
+            if tag == "div" and attr_dict.get("id") == self.target_id:
+                self.in_target = True
+                self.depth = 1
+                return
+            return
+        self.depth += 1
+        self.chunks.append(self.get_starttag_text())
+
+    def handle_endtag(self, tag):
+        if not self.in_target:
+            return
+        if tag == "div":
+            self.depth -= 1
+            if self.depth == 0:
+                self.in_target = False
+                return
+        self.chunks.append(f"</{tag}>")
+
+    def handle_data(self, data):
+        if self.in_target:
+            self.chunks.append(data)
+
+    def get_html(self):
+        return "".join(self.chunks)
 
 
 def derive_key(password: bytes, salt: bytes) -> bytes:
@@ -91,7 +96,11 @@ def main():
             print(f"Missing: {path}")
             sys.exit(1)
         html = path.read_text(encoding="utf-8")
-        content = PortfolioContentExtractor(html).extract()
+        parser = InnerHTMLParser("portfolio-content")
+        parser.feed(html)
+        content = parser.get_html()
+        if not content.strip():
+            print(f"WARNING: {key} content is empty after extraction")
         encrypted = encrypt(password, content)
         result[key] = encrypted
         print(f"Encrypted {key}: {len(content)} chars -> {len(encrypted['ciphertext'])} base64 chars")
