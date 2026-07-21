@@ -1,3 +1,38 @@
+.tl-phase {
+  position: relative;
+  width: 100%;
+  padding: 3rem 0 0.5rem;
+  text-align: center;
+  clear: both;
+  z-index: 3;
+}
+
+.tl-phase-title {
+  font-family: "Orbitron", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--accent-secondary);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px var(--accent-secondary-glow);
+  display: inline-block;
+  background: var(--bg-deep);
+  padding: 0.6rem 1.4rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  box-shadow: 0 0 20px var(--accent-secondary-glow);
+  position: relative;
+}
+
+.tl-phase-subtitle {
+  font-family: "Space Mono", monospace;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+  display: block;
+  letter-spacing: 0.05em;
+}
+
 .tl-item {
   position: relative;
   width: 50%;
@@ -8,8 +43,8 @@
 }
 
 .tl-item.visible { opacity: 1; transform: translateY(0) scale(1); }
-.tl-item:nth-child(odd) { left: 0; text-align: right; }
-.tl-item:nth-child(even) { left: 50%; text-align: left; }
+.tl-item.tl-left { left: 0; text-align: right; }
+.tl-item.tl-right { left: 50%; text-align: left; }
 
 .tl-dot {
   position: absolute;
@@ -36,14 +71,14 @@
   border-color: var(--accent-secondary);
 }
 
-.tl-item:nth-child(odd) .tl-dot { right: -10px; }
-.tl-item:nth-child(even) .tl-dot { left: -10px; }
+.tl-item.tl-left .tl-dot { right: -10px; }
+.tl-item.tl-right .tl-dot { left: -10px; }
 
 .tl-card {
   background: var(--bg-surface);
   border: 1px solid var(--border);
   border-radius: 16px;
-  padding: 1.6rem 2rem;
+  padding: 1.8rem 2rem;
   transition: all 0.4s;
   position: relative;
   overflow: hidden;
@@ -73,7 +108,7 @@
 
 .tl-year {
   font-family: "Orbitron", sans-serif;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   font-weight: 700;
   color: var(--accent-secondary);
   letter-spacing: 2px;
@@ -83,16 +118,17 @@
 
 .tl-title {
   font-family: "Orbitron", sans-serif;
-  font-size: 1.15rem;
+  font-size: 1.35rem;
   font-weight: 700;
   margin: 0.5rem 0 0.6rem;
   letter-spacing: 0.03em;
+  line-height: 1.35;
 }
 
 .tl-text {
   color: var(--text-muted);
   font-family: "Space Mono", monospace;
-  font-size: 0.88rem;
+  font-size: 1rem;
   line-height: 1.7;
 }
 
@@ -102,7 +138,7 @@
   border: 1px solid var(--accent-secondary);
   color: var(--accent-secondary);
   font-family: "Space Mono", monospace;
-  font-size: 0.68rem;
+  font-size: 0.8rem;
   padding: 4px 12px;
   border-radius: 4px;
   margin-top: 0.8rem;
@@ -131,8 +167,8 @@
 
 @media (max-width: 768px) {
   .tl-item,
-  .tl-item:nth-child(even),
-  .tl-item:nth-child(odd) {
+  .tl-item.tl-left,
+  .tl-item.tl-right {
     width: 100%;
     left: 0;
     text-align: left;
@@ -140,8 +176,8 @@
     padding-right: 1rem;
   }
   .tl-dot,
-  .tl-item:nth-child(odd) .tl-dot,
-  .tl-item:nth-child(even) .tl-dot {
+  .tl-item.tl-left .tl-dot,
+  .tl-item.tl-right .tl-dot {
     left: 18px !important;
     right: auto !important;
   }
