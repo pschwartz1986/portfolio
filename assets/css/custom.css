@@ -12230,7 +12230,7 @@ textarea.form-control-lg {
   background: var(--bg-surface);
   border: 1px solid var(--border);
   border-radius: 16px;
-  padding: 1.6rem 2rem;
+  padding: 1.8rem 2rem;
   transition: all 0.4s;
   position: relative;
   overflow: hidden;
@@ -12306,6 +12306,8 @@ textarea.form-control-lg {
   text-align: center;
   clear: both;
   z-index: 3;
+  opacity: 1;
+  transform: none;
 }
 
 .tl-phase-title {
@@ -12328,10 +12330,12 @@ textarea.form-control-lg {
 .tl-phase-subtitle {
   font-family: "Space Mono", monospace;
   font-size: 0.85rem;
+  font-weight: 600;
   color: var(--text-muted);
   margin-top: 0.5rem;
   display: block;
   letter-spacing: 0.05em;
+  z-index: 999;
 }
 
 .timeline {
