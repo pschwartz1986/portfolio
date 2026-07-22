@@ -384,6 +384,15 @@ Rückblickend war Solevital weniger wegen der fertigen Website bedeutsam, sonder
         });
       });
 
+      function revealVisible() {
+        document.querySelectorAll('.reveal-section, .tl-item').forEach(function (el) {
+          var rect = el.getBoundingClientRect();
+          if (rect.top < window.innerHeight && rect.bottom > 0) {
+            el.classList.add('visible');
+          }
+        });
+      }
+
       if ('IntersectionObserver' in window) {
         var observer = new IntersectionObserver(function (entries) {
           entries.forEach(function (entry) {
@@ -397,6 +406,8 @@ Rückblickend war Solevital weniger wegen der fertigen Website bedeutsam, sonder
         document.querySelectorAll('.reveal-section, .reveal-zoom, .reveal-fade, .tl-item, .tl-card').forEach(function (el) {
           observer.observe(el);
         });
+
+        setTimeout(revealVisible, 600);
       } else {
         document.querySelectorAll('.reveal-section, .reveal-zoom, .reveal-fade, .tl-item, .tl-card').forEach(function (el) {
           el.classList.add('visible');
@@ -576,26 +587,6 @@ Rückblickend war Solevital weniger wegen der fertigen Website bedeutsam, sonder
           }
         });
       });
-
-      function forceReveal() {
-        document.querySelectorAll('.reveal-section:not(.visible)').forEach(function (el) {
-          el.classList.add('visible');
-        });
-        document.querySelectorAll('.tl-item:not(.visible)').forEach(function (el) {
-          el.classList.add('visible');
-        });
-      }
-
-      setTimeout(forceReveal, 600);
-
-      window.addEventListener('load', forceReveal);
-
-      window.addEventListener('scroll', function () {
-        if (!window.__timelineForced) {
-          forceReveal();
-          window.__timelineForced = true;
-        }
-      }, { once: true });
     })();
   </script>
 
