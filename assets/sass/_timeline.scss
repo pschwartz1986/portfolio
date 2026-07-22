@@ -27,10 +27,12 @@
 .tl-phase-subtitle {
   font-family: "Space Mono", monospace;
   font-size: 0.85rem;
+  font-weight: 600;
   color: var(--text-muted);
   margin-top: 0.5rem;
   display: block;
   letter-spacing: 0.05em;
+  z-index: 999;
 }
 
 .tl-item {
