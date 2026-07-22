@@ -79,20 +79,23 @@
           </div>
           <div class="row g-4">
             <div class="col-md-4">
-              <div class="cv-profile p-4 h-100">
-                <div class="text-accent mb-3"><i class="bi bi-lightbulb me-2"></i>Neugier</div>
+              <div class="why-card p-4 h-100">
+                <div class="why-icon mb-3"><i class="bi bi-lightbulb"></i></div>
+                <div class="why-title text-accent mb-3">Neugier</div>
                 <p class="mb-0 text-muted">Schon immer wollte ich verstehen, wie Dinge funktionieren. Anwendungsentwicklung gibt mir die Möglichkeit, genau das jeden Tag zu tun.</p>
               </div>
             </div>
             <div class="col-md-4">
-              <div class="cv-profile p-4 h-100">
-                <div class="text-accent mb-3"><i class="bi bi-code-slash me-2"></i>Lernen</div>
+              <div class="why-card p-4 h-100">
+                <div class="why-icon mb-3"><i class="bi bi-code-slash"></i></div>
+                <div class="why-title text-accent mb-3">Lernen</div>
                 <p class="mb-0 text-muted">Technologien ändern sich ständig. Gerade das macht den Beruf für mich spannend, weil es immer wieder neues zu entdecken gibt.</p>
               </div>
             </div>
             <div class="col-md-4">
-              <div class="cv-profile p-4 h-100">
-                <div class="text-accent mb-3"><i class="bi bi-wrench me-2"></i>Gestalten</div>
+              <div class="why-card p-4 h-100">
+                <div class="why-icon mb-3"><i class="bi bi-wrench"></i></div>
+                <div class="why-title text-accent mb-3">Gestalten</div>
                 <p class="mb-0 text-muted">Für mich verbindet Anwendungsentwicklung Technik und Kreativität. Es geht nicht nur darum, Code zu schreiben, sondern Lösungen zu gestalten.</p>
               </div>
             </div>
@@ -568,6 +571,12 @@ Rückblickend war Solevital weniger wegen der fertigen Website bedeutsam, sonder
           }
         });
       });
+
+      setTimeout(function () {
+        document.querySelectorAll('.tl-item:not(.visible)').forEach(function (item) {
+          item.classList.add('visible');
+        });
+      }, 2000);
     })();
   </script>
 

@@ -473,3 +473,62 @@
   line-height: 1.7;
   font-size: 0.85rem;
 }
+
+.why-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--accent-secondary), transparent);
+    opacity: 0;
+    transition: opacity 0.4s;
+  }
+
+  &:hover {
+    transform: translateY(-8px);
+    border-color: var(--accent);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.5), 0 0 45px var(--accent-glow);
+  }
+
+  &:hover::before {
+    opacity: 1;
+  }
+}
+
+.why-icon {
+  font-size: 2rem;
+  color: var(--accent-secondary);
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 0 12px var(--accent-secondary-glow));
+  transition: all 0.3s;
+}
+
+.why-card:hover .why-icon {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 20px var(--accent-secondary-glow));
+}
+
+.why-title {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+  letter-spacing: 0.05em;
+}
+
+.why-card p {
+  color: var(--text-muted);
+  line-height: 1.7;
+  font-family: "Space Mono", monospace;
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
