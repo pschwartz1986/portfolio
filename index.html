@@ -6,9 +6,6 @@
   <title>Portfolio</title>
   <link rel="stylesheet" href="assets/icons/bootstrap-icons.min.css" />
   <link rel="stylesheet" href="assets/css/custom.css" />
-  <script>
-    window.scrollTo(0, 0);
-  </script>
 </head>
 <body>
   <div id="page-loader" class="page-loader">
@@ -41,17 +38,21 @@
               <i class="bi bi-code-slash"></i>
               <span>Tech Stack</span>
             </button>
+            <button class="hero-side-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasProjects" aria-label="Projekte">
+              <i class="bi bi-grid-3x3-gap"></i>
+              <span>Projekte</span>
+            </button>
           </nav>
           <div class="text-center position-relative">
             <div class="mb-4 position-relative d-inline-block">
               <img src="https://avatars.githubusercontent.com/u/297923195?v=4" class="hero-avatar" alt="Portfolio" />
               <div id="speak-bubble" class="speak-bubble w-25" role="status" aria-live="polite" aria-atomic="true">
                 <div class="speak-bubble-header">
-                  <strong class="me-auto fw-bold">Praktikumsplatz gesucht!</strong>
+                  <strong class="me-auto fw-bold">Bereit für echte Projektpraxis</strong>
                   <button type="button" class="btn-close speak-bubble-close" aria-label="Close"></button>
                 </div>
                 <div class="speak-bubble-body fw-medium text-start">
-                  Im Rahmen meiner Umschulung suche ich ab <strong>Oktober 2027</strong> einen Praktikumsplatz im Bereich <strong>Anwendungsentwicklung</strong>.
+                  Ab Oktober 2027 suche ich einen Praktikumsplatz in der Anwendungsentwicklung, um an echten Aufgaben zu wachsen und praktische Erfahrung für mein IHK-Abschlussprojekt zu sammeln.
                 </div>
               </div>
             </div>
@@ -100,7 +101,7 @@
           </div>
           <div class="text-center mt-4">
             <a href="#projekte" class="btn btn-glow btn-lg">
-              <i class="bi bi-arrow-down me-2"></i>Zur Entwicklung
+              <i class="bi bi-arrow-down me-3"></i>Zur Entwicklung
             </a>
           </div>
         </div>
@@ -567,7 +568,7 @@ Rückblickend war Solevital weniger wegen der fertigen Website bedeutsam, sonder
           if (toastEl) {
             toastEl.classList.add('is-visible');
           }
-        }, 600);
+        }, 1200);
       }
 
       document.querySelector('.speak-bubble-close') && document.querySelector('.speak-bubble-close').addEventListener('click', function () {
@@ -657,6 +658,133 @@ Rückblickend war Solevital weniger wegen der fertigen Website bedeutsam, sonder
             <span class="badge-tech">Automatisierung</span>
             <span class="badge-tech">Desktop-Anwendungen</span>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="offcanvas offcanvas-end hero-offcanvas" tabindex="-1" id="offcanvasProjects" aria-labelledby="offcanvasProjectsLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasProjectsLabel">Projekt-Schnellblick</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <p class="text-muted small mb-4">Keine lange Timeline. Nur ein schneller Überblick über ausgewählte Arbeiten.</p>
+      <div class="project-preview-grid">
+        <div class="project-preview-card">
+          <div class="project-preview-title">Solevital</div>
+          <div class="project-preview-desc">Erstes umfangreicheres Webprojekt mit Monstra CMS, Bootstrap 3, PHP und jQuery. Wichtig, weil hier Webentwicklung vom Basteln zum echten Projekt wurde.</div>
+          <div class="project-preview-tags">
+            <span class="project-preview-tag">Monstra CMS</span>
+            <span class="project-preview-tag">Bootstrap 3</span>
+            <span class="project-preview-tag">PHP</span>
+            <span class="project-preview-tag">jQuery</span>
+            <span class="project-preview-tag">Shop</span>
+          </div>
+          <span class="project-preview-badge">Frühes Webprojekt</span>
+        </div>
+        <div class="project-preview-card">
+          <div class="project-preview-title">Pechan Straßenbau</div>
+          <div class="project-preview-desc">Individuelles Webprojekt mit PHP, JavaScript und Bootstrap/SASS. Umsetzung eigener Layout- und Funktionsideen für einen realen Bedarf.</div>
+          <div class="project-preview-tags">
+            <span class="project-preview-tag">PHP</span>
+            <span class="project-preview-tag">JavaScript</span>
+            <span class="project-preview-tag">Bootstrap</span>
+            <span class="project-preview-tag">SASS</span>
+          </div>
+          <span class="project-preview-badge">Kundenprojekt</span>
+        </div>
+        <div class="project-preview-card">
+          <div class="project-preview-title">Urban Care</div>
+          <div class="project-preview-desc">WordPress-Projekt mit individuellem Theme, Formularfunktionen und angepassten Inhalten. Schwerpunkt lag auf Struktur, Anpassung und praktischer Umsetzung.</div>
+          <div class="project-preview-tags">
+            <span class="project-preview-tag">WordPress</span>
+            <span class="project-preview-tag">PHP</span>
+            <span class="project-preview-tag">Custom Theme</span>
+            <span class="project-preview-tag">Formulare</span>
+          </div>
+          <span class="project-preview-badge">Kundenprojekt</span>
+        </div>
+        <div class="project-preview-card">
+          <div class="project-preview-title">Razer Battery Status</div>
+          <div class="project-preview-desc">Eigenes Tool zur Anzeige des Akkustands einer Razer Basilisk Ultimate. Entstanden aus einem nervigen Alltagsproblem und gelöst über Analyse von Treiber-Logs.</div>
+          <div class="project-preview-tags">
+            <span class="project-preview-tag">AutoHotkey v2</span>
+            <span class="project-preview-tag">Windows</span>
+            <span class="project-preview-tag">Reverse Engineering</span>
+            <span class="project-preview-tag">Overlay</span>
+          </div>
+          <span class="project-preview-badge">Tool</span>
+        </div>
+        <div class="project-preview-card">
+          <div class="project-preview-title">Jungelmusik</div>
+          <div class="project-preview-desc">Webanwendung auf Basis von Python und Flask mit Bootstrap/SASS. Enthält Funktionen wie externe Integrationen, Kontakt- und Buchungslogik.</div>
+          <div class="project-preview-tags">
+            <span class="project-preview-tag">Python</span>
+            <span class="project-preview-tag">Flask</span>
+            <span class="project-preview-tag">Bootstrap</span>
+            <span class="project-preview-tag">SASS</span>
+            <span class="project-preview-tag">API</span>
+          </div>
+          <span class="project-preview-badge">Aktuelles Projekt</span>
+        </div>
+        <div class="project-preview-card">
+          <div class="project-preview-title">2AMBS Sass Generator</div>
+          <div class="project-preview-desc">Flask-App zur Generierung und Anpassung von Bootstrap-5-Themes über eine Oberfläche. Fokus auf SASS, Live-Preview und praktisches Arbeiten mit Designsystemen.</div>
+          <div class="project-preview-tags">
+            <span class="project-preview-tag">Python</span>
+            <span class="project-preview-tag">Flask</span>
+            <span class="project-preview-tag">Bootstrap 5</span>
+            <span class="project-preview-tag">SASS</span>
+            <span class="project-preview-tag">Theme Generator</span>
+          </div>
+          <span class="project-preview-badge">Tool</span>
+        </div>
+        <div class="project-preview-card">
+          <div class="project-preview-title">Portfolio</div>
+          <div class="project-preview-desc">Diese Seite dokumentiert nicht nur Projekte, sondern auch den Weg von Technikinteresse, Kreativität und Selbststudium bis zur FIAE-Umschulung.</div>
+          <div class="project-preview-tags">
+            <span class="project-preview-tag">HTML</span>
+            <span class="project-preview-tag">CSS</span>
+            <span class="project-preview-tag">JavaScript</span>
+            <span class="project-preview-tag">GitHub Pages</span>
+            <span class="project-preview-tag">Storytelling</span>
+          </div>
+          <span class="project-preview-badge">Portfolio</span>
+        </div>
+        <div class="project-preview-card">
+          <div class="project-preview-title">Linux & Systemtooling</div>
+          <div class="project-preview-desc">Experimente mit Linux, virtuellen Maschinen, Shell-Skripten und Systemanpassungen. Fokus lag auf Verstehen, Ausprobieren und Automatisierung.</div>
+          <div class="project-preview-tags">
+            <span class="project-preview-tag">Linux</span>
+            <span class="project-preview-tag">VMs</span>
+            <span class="project-preview-tag">Shell</span>
+            <span class="project-preview-tag">Python</span>
+            <span class="project-preview-tag">Systeme</span>
+          </div>
+          <span class="project-preview-badge">Experiment</span>
+        </div>
+        <div class="project-preview-card">
+          <div class="project-preview-title">Windows Automatisierung</div>
+          <div class="project-preview-desc">Kleine Werkzeuge und Skripte zur Automatisierung wiederkehrender Abläufe unter Windows.</div>
+          <div class="project-preview-tags">
+            <span class="project-preview-tag">AutoHotkey</span>
+            <span class="project-preview-tag">PowerShell</span>
+            <span class="project-preview-tag">Batch</span>
+            <span class="project-preview-tag">Windows</span>
+          </div>
+          <span class="project-preview-badge">Automatisierung</span>
+        </div>
+        <div class="project-preview-card">
+          <div class="project-preview-title">MIDI Skripte</div>
+          <div class="project-preview-desc">Skripte und Anpassungen rund um MIDI, DAWs und kreative Workflows. Verbindung aus Musik, Technik und Automatisierung.</div>
+          <div class="project-preview-tags">
+            <span class="project-preview-tag">Python</span>
+            <span class="project-preview-tag">MIDI</span>
+            <span class="project-preview-tag">FL Studio</span>
+            <span class="project-preview-tag">Automation</span>
+          </div>
+          <span class="project-preview-badge">Kreativprojekt</span>
         </div>
       </div>
     </div>
