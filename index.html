@@ -525,6 +525,127 @@ Rückblickend war Solevital weniger wegen der fertigen Website bedeutsam, sonder
         document.body.style.overflow = '';
       }
 
+      var projects = {
+        solevital: {
+          title: 'Solevital',
+          type: 'Frühes Webprojekt',
+          image: 'assets/imgs/projekte/solevital.png',
+          short: 'Der Punkt, an dem aus HTML/CSS-Bastelei ein echtes Webprojekt wurde.',
+          description: 'Solevital war eines der ersten echten Webprojekte. Es entstand aus der Wende, einfache HTML/CSS-Bastelarbeiten in ein nutzbares Webprojekt zu überführen. Mit Monstra CMS, PHP, Bootstrap 3 und jQuery wurde hier erstmals zusammenspielt, was später zur Arbeitsweise wurde: Technik verstehen und dann anwenden.',
+          tags: ['Monstra CMS', 'PHP', 'Bootstrap 3', 'jQuery'],
+          links: []
+        },
+        pechan: {
+          title: 'Pechan Straßenbau',
+          type: 'Kundenprojekt',
+          image: 'assets/imgs/projekte/pechan.png',
+          short: 'Individuelles Webprojekt mit eigener Umsetzung von Layout, Struktur und Funktionen.',
+          description: 'Ein echtes Kundenprojekt, bei dem Layout, Struktur und Funktionen individuell umgesetzt wurden. PHP, JavaScript, Bootstrap und SASS kamen zusammen, um eine praktische Lösung zu bauen, die auch in der Praxis funktioniert.',
+          tags: ['PHP', 'JavaScript', 'Bootstrap', 'SASS'],
+          links: []
+        },
+        urbancare: {
+          title: 'Urban Care',
+          type: 'WordPress',
+          image: 'assets/imgs/projekte/urbancare.png',
+          short: 'Custom-Theme, Formularlogik und angepasste Inhaltsstruktur für ein reales Webprojekt.',
+          description: 'Urban Care zeigt, was mit WordPress möglich ist, wenn man tiefer einsteigt: ein eigenes Custom-Theme, angepasste Formularlogik und eine auf den Kunden abgestimmte Inhaltsstruktur.',
+          tags: ['WordPress', 'PHP', 'Custom Theme', 'Formulare'],
+          links: []
+        },
+        razer: {
+          title: 'Razer Battery Status',
+          type: 'Tool',
+          image: 'assets/imgs/projekte/razer_battery_status.png',
+          short: 'Kleines Desktop-Tool, entstanden aus einem nervigen Alltagsproblem.',
+          description: 'Razer Battery Status entstand aus einem konkreten Alltagsproblem: Wie lässt sich der Akkustatus von Razer-Geräten ohne Umwege beobachten? Ein kleines Desktop-Tool mit AutoHotkey v2 zeigt, dass nützliche Helfer nicht groß sein müssen.',
+          tags: ['AutoHotkey v2', 'Windows', 'Logs', 'Overlay'],
+          links: []
+        },
+        jungelmusik: {
+          title: 'Jungelmusik',
+          type: 'Webapp',
+          image: 'assets/imgs/projekte/jungelmusik.png',
+          short: 'Aktuelles Flask-Projekt mit externen Integrationen und eigener Oberfläche.',
+          description: 'Jungelmusik ist eine Flask-Webapp mit externen Integrationen und einer eigenen Oberfläche. Sie zeigt, wie sich Python als Backend mit modernen Frontend-Technologien verbinden lässt.',
+          tags: ['Python', 'Flask', 'Bootstrap', 'SASS'],
+          links: []
+        },
+        '2ambs': {
+          title: '2AMBS Sass Generator',
+          type: 'Developer Tool',
+          image: 'assets/imgs/projekte/2ambs_sass_generator.png',
+          short: 'Tool zur Erstellung und Anpassung von Bootstrap-5-Themes über eine Oberfläche.',
+          description: 'Der 2AMBS Sass Generator ist ein Developer Tool, das die Arbeit mit Bootstrap 5-Themes über eine einfache Oberfläche zugänglich macht. SASS wird interaktiver und nachvollziehbarer.',
+          tags: ['Python', 'Flask', 'SASS', 'Bootstrap 5'],
+          links: []
+        },
+        portfolio: {
+          title: 'Portfolio',
+          type: 'Dokumentation',
+          image: 'assets/imgs/projekte/solevital.png',
+          short: 'Diese Seite verbindet Projekte, Lernweg und persönliche Entwicklung.',
+          description: 'Dieses Portfolio selbst ist ein eigenes Projekt: Es dokumentiert nicht nur fertige Arbeiten, sondern verbindet Lernweg, Technikinteresse und persönliche Entwicklung zu einer nachvollziehbaren Geschichte.',
+          tags: ['HTML', 'CSS', 'JavaScript', 'GitHub Pages'],
+          links: []
+        }
+      };
+
+      function openProjectModal(projectId) {
+        var project = projects[projectId];
+        if (!project) return;
+
+        modalTitle.textContent = project.title;
+        modalDesc.textContent = project.description || project.short;
+        modalTags.innerHTML = '';
+        project.tags.forEach(function (tag) {
+          var span = document.createElement('span');
+          span.className = 'portfolio-modal__tag';
+          span.textContent = tag;
+          modalTags.appendChild(span);
+        });
+
+        if (project.image) {
+          modalImg.src = project.image;
+          modalImg.style.display = 'block';
+        } else {
+          modalImg.removeAttribute('src');
+          modalImg.style.display = 'none';
+        }
+
+        modalActions.innerHTML = '';
+        if (project.links && project.links.length) {
+          project.links.forEach(function (link) {
+            var a = document.createElement('a');
+            a.href = link.href;
+            a.target = '_blank';
+            a.rel = 'noopener';
+            a.textContent = link.label;
+            modalActions.appendChild(a);
+          });
+        }
+
+        modal.classList.add('is-open');
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+        modalClose.focus();
+      }
+
+      document.querySelectorAll('.project-preview-card').forEach(function (card) {
+        card.style.cursor = 'pointer';
+        card.addEventListener('click', function () {
+          var projectId = card.getAttribute('data-project-id');
+          if (projectId) openProjectModal(projectId);
+        });
+        card.addEventListener('keydown', function (e) {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            var projectId = card.getAttribute('data-project-id');
+            if (projectId) openProjectModal(projectId);
+          }
+        });
+      });
+
       document.querySelectorAll('.tl-card').forEach(function (card) {
         card.style.cursor = 'pointer';
         card.addEventListener('click', function () {
@@ -688,136 +809,132 @@ Rückblickend war Solevital weniger wegen der fertigen Website bedeutsam, sonder
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body">
-      <p class="text-muted small mb-4">Für alle, die direkt einen Überblick möchten: ausgewählte Projekte, Tools und Experimente auf einen Blick.</p>
-      <div class="project-preview-grid">
-        <div class="project-preview-card">
-          <div class="project-preview-head">
-            <h3 class="project-preview-title">Solevital</h3>
-            <span class="project-type-badge">Frühes Webprojekt</span>
+      <p class="offcanvas-intro text-muted small mb-4">Eine kompakte Auswahl echter Projekte und Tools.</p>
+      <div class="project-preview-grid" id="project-preview-grid">
+        <div class="project-preview-card" data-project-id="solevital" tabindex="0" role="button" aria-label="Details zu Solevital öffnen">
+          <div class="project-preview-img-wrap">
+            <img src="assets/imgs/projekte/solevital.png" alt="Projektvorschau Solevital" class="project-preview-img" loading="lazy" />
           </div>
-          <p class="project-preview-desc">Der Punkt, an dem aus HTML/CSS-Bastelei ein echtes Webprojekt wurde.</p>
-          <div class="project-preview-tags">
-            <span class="project-preview-tag">Monstra CMS</span>
-            <span class="project-preview-tag">PHP</span>
-            <span class="project-preview-tag">Bootstrap 3</span>
-            <span class="project-preview-tag">jQuery</span>
-          </div>
-        </div>
-        <div class="project-preview-card">
-          <div class="project-preview-head">
-            <h3 class="project-preview-title">Pechan Straßenbau</h3>
-            <span class="project-type-badge">Kundenprojekt</span>
-          </div>
-          <p class="project-preview-desc">Individuelles Webprojekt mit eigener Umsetzung von Layout, Struktur und Funktionen.</p>
-          <div class="project-preview-tags">
-            <span class="project-preview-tag">PHP</span>
-            <span class="project-preview-tag">JavaScript</span>
-            <span class="project-preview-tag">Bootstrap</span>
-            <span class="project-preview-tag">SASS</span>
+          <div class="project-preview-body">
+            <div class="project-preview-head">
+              <h3 class="project-preview-title">Solevital</h3>
+              <span class="project-type-badge">Frühes Webprojekt</span>
+            </div>
+            <p class="project-preview-desc">Der Punkt, an dem aus HTML/CSS-Bastelei ein echtes Webprojekt wurde.</p>
+            <div class="project-preview-tags">
+              <span class="project-preview-tag">Monstra CMS</span>
+              <span class="project-preview-tag">PHP</span>
+              <span class="project-preview-tag">Bootstrap 3</span>
+              <span class="project-preview-tag">jQuery</span>
+            </div>
           </div>
         </div>
-        <div class="project-preview-card">
-          <div class="project-preview-head">
-            <h3 class="project-preview-title">Urban Care</h3>
-            <span class="project-type-badge">WordPress</span>
+        <div class="project-preview-card" data-project-id="pechan" tabindex="0" role="button" aria-label="Details zu Pechan Straßenbau öffnen">
+          <div class="project-preview-img-wrap">
+            <img src="assets/imgs/projekte/pechan.png" alt="Projektvorschau Pechan Straßenbau" class="project-preview-img" loading="lazy" />
           </div>
-          <p class="project-preview-desc">Custom-Theme, Formularlogik und angepasste Inhaltsstruktur für ein reales Webprojekt.</p>
-          <div class="project-preview-tags">
-            <span class="project-preview-tag">WordPress</span>
-            <span class="project-preview-tag">PHP</span>
-            <span class="project-preview-tag">Custom Theme</span>
-            <span class="project-preview-tag">Formulare</span>
-          </div>
-        </div>
-        <div class="project-preview-card">
-          <div class="project-preview-head">
-            <h3 class="project-preview-title">Razer Battery Status</h3>
-            <span class="project-type-badge">Tool</span>
-          </div>
-          <p class="project-preview-desc">Kleines Desktop-Tool, entstanden aus einem nervigen Alltagsproblem.</p>
-          <div class="project-preview-tags">
-            <span class="project-preview-tag">AutoHotkey v2</span>
-            <span class="project-preview-tag">Windows</span>
-            <span class="project-preview-tag">Logs</span>
-            <span class="project-preview-tag">Overlay</span>
+          <div class="project-preview-body">
+            <div class="project-preview-head">
+              <h3 class="project-preview-title">Pechan Straßenbau</h3>
+              <span class="project-type-badge">Kundenprojekt</span>
+            </div>
+            <p class="project-preview-desc">Individuelles Webprojekt mit eigener Umsetzung von Layout, Struktur und Funktionen.</p>
+            <div class="project-preview-tags">
+              <span class="project-preview-tag">PHP</span>
+              <span class="project-preview-tag">JavaScript</span>
+              <span class="project-preview-tag">Bootstrap</span>
+              <span class="project-preview-tag">SASS</span>
+            </div>
           </div>
         </div>
-        <div class="project-preview-card">
-          <div class="project-preview-head">
-            <h3 class="project-preview-title">Jungelmusik</h3>
-            <span class="project-type-badge">Webapp</span>
+        <div class="project-preview-card" data-project-id="urbancare" tabindex="0" role="button" aria-label="Details zu Urban Care öffnen">
+          <div class="project-preview-img-wrap">
+            <img src="assets/imgs/projekte/urbancare.png" alt="Projektvorschau Urban Care" class="project-preview-img" loading="lazy" />
           </div>
-          <p class="project-preview-desc">Aktuelles Flask-Projekt mit externen Integrationen und eigener Oberfläche.</p>
-          <div class="project-preview-tags">
-            <span class="project-preview-tag">Python</span>
-            <span class="project-preview-tag">Flask</span>
-            <span class="project-preview-tag">Bootstrap</span>
-            <span class="project-preview-tag">SASS</span>
-          </div>
-        </div>
-        <div class="project-preview-card">
-          <div class="project-preview-head">
-            <h3 class="project-preview-title">2AMBS Sass Generator</h3>
-            <span class="project-type-badge">Developer Tool</span>
-          </div>
-          <p class="project-preview-desc">Tool zur Erstellung und Anpassung von Bootstrap-5-Themes über eine Oberfläche.</p>
-          <div class="project-preview-tags">
-            <span class="project-preview-tag">Python</span>
-            <span class="project-preview-tag">Flask</span>
-            <span class="project-preview-tag">SASS</span>
-            <span class="project-preview-tag">Bootstrap 5</span>
+          <div class="project-preview-body">
+            <div class="project-preview-head">
+              <h3 class="project-preview-title">Urban Care</h3>
+              <span class="project-type-badge">WordPress</span>
+            </div>
+            <p class="project-preview-desc">Custom-Theme, Formularlogik und angepasste Inhaltsstruktur für ein reales Webprojekt.</p>
+            <div class="project-preview-tags">
+              <span class="project-preview-tag">WordPress</span>
+              <span class="project-preview-tag">PHP</span>
+              <span class="project-preview-tag">Custom Theme</span>
+              <span class="project-preview-tag">Formulare</span>
+            </div>
           </div>
         </div>
-        <div class="project-preview-card">
-          <div class="project-preview-head">
-            <h3 class="project-preview-title">Portfolio</h3>
-            <span class="project-type-badge">Dokumentation</span>
+        <div class="project-preview-card" data-project-id="razer" tabindex="0" role="button" aria-label="Details zu Razer Battery Status öffnen">
+          <div class="project-preview-img-wrap">
+            <img src="assets/imgs/projekte/razer_battery_status.png" alt="Projektvorschau Razer Battery Status" class="project-preview-img" loading="lazy" />
           </div>
-          <p class="project-preview-desc">Diese Seite verbindet Projekte, Lernweg und persönliche Entwicklung.</p>
-          <div class="project-preview-tags">
-            <span class="project-preview-tag">HTML</span>
-            <span class="project-preview-tag">CSS</span>
-            <span class="project-preview-tag">JavaScript</span>
-            <span class="project-preview-tag">GitHub Pages</span>
-          </div>
-        </div>
-        <div class="project-preview-card">
-          <div class="project-preview-head">
-            <h3 class="project-preview-title">Linux & Systemtooling</h3>
-            <span class="project-type-badge">Selbststudium</span>
-          </div>
-          <p class="project-preview-desc">Experimente mit Distributionen, VMs, Systemaufbau und Automatisierung.</p>
-          <div class="project-preview-tags">
-            <span class="project-preview-tag">Linux</span>
-            <span class="project-preview-tag">VMs</span>
-            <span class="project-preview-tag">Shell</span>
-            <span class="project-preview-tag">Python</span>
+          <div class="project-preview-body">
+            <div class="project-preview-head">
+              <h3 class="project-preview-title">Razer Battery Status</h3>
+              <span class="project-type-badge">Tool</span>
+            </div>
+            <p class="project-preview-desc">Kleines Desktop-Tool, entstanden aus einem nervigen Alltagsproblem.</p>
+            <div class="project-preview-tags">
+              <span class="project-preview-tag">AutoHotkey v2</span>
+              <span class="project-preview-tag">Windows</span>
+              <span class="project-preview-tag">Logs</span>
+              <span class="project-preview-tag">Overlay</span>
+            </div>
           </div>
         </div>
-        <div class="project-preview-card">
-          <div class="project-preview-head">
-            <h3 class="project-preview-title">Windows Automatisierung</h3>
-            <span class="project-type-badge">Skripting</span>
+        <div class="project-preview-card" data-project-id="jungelmusik" tabindex="0" role="button" aria-label="Details zu Jungelmusik öffnen">
+          <div class="project-preview-img-wrap">
+            <img src="assets/imgs/projekte/jungelmusik.png" alt="Projektvorschau Jungelmusik" class="project-preview-img" loading="lazy" />
           </div>
-          <p class="project-preview-desc">Kleine Automatisierungen für wiederkehrende Aufgaben unter Windows.</p>
-          <div class="project-preview-tags">
-            <span class="project-preview-tag">AutoHotkey</span>
-            <span class="project-preview-tag">PowerShell</span>
-            <span class="project-preview-tag">Batch</span>
-            <span class="project-preview-tag">Windows</span>
+          <div class="project-preview-body">
+            <div class="project-preview-head">
+              <h3 class="project-preview-title">Jungelmusik</h3>
+              <span class="project-type-badge">Webapp</span>
+            </div>
+            <p class="project-preview-desc">Aktuelles Flask-Projekt mit externen Integrationen und eigener Oberfläche.</p>
+            <div class="project-preview-tags">
+              <span class="project-preview-tag">Python</span>
+              <span class="project-preview-tag">Flask</span>
+              <span class="project-preview-tag">Bootstrap</span>
+              <span class="project-preview-tag">SASS</span>
+            </div>
           </div>
         </div>
-        <div class="project-preview-card">
-          <div class="project-preview-head">
-            <h3 class="project-preview-title">MIDI Skripte</h3>
-            <span class="project-type-badge">Kreativtechnik</span>
+        <div class="project-preview-card" data-project-id="2ambs" tabindex="0" role="button" aria-label="Details zu 2AMBS Sass Generator öffnen">
+          <div class="project-preview-img-wrap">
+            <img src="assets/imgs/projekte/2ambs_sass_generator.png" alt="Projektvorschau 2AMBS Sass Generator" class="project-preview-img" loading="lazy" />
           </div>
-          <p class="project-preview-desc">Skripte und Anpassungen rund um MIDI, DAWs und kreative Workflows.</p>
-          <div class="project-preview-tags">
-            <span class="project-preview-tag">Python</span>
-            <span class="project-preview-tag">MIDI</span>
-            <span class="project-preview-tag">FL Studio</span>
-            <span class="project-preview-tag">Automation</span>
+          <div class="project-preview-body">
+            <div class="project-preview-head">
+              <h3 class="project-preview-title">2AMBS Sass Generator</h3>
+              <span class="project-type-badge">Developer Tool</span>
+            </div>
+            <p class="project-preview-desc">Tool zur Erstellung und Anpassung von Bootstrap-5-Themes über eine Oberfläche.</p>
+            <div class="project-preview-tags">
+              <span class="project-preview-tag">Python</span>
+              <span class="project-preview-tag">Flask</span>
+              <span class="project-preview-tag">SASS</span>
+              <span class="project-preview-tag">Bootstrap 5</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-preview-card" data-project-id="portfolio" tabindex="0" role="button" aria-label="Details zum Portfolio öffnen">
+          <div class="project-preview-img-wrap">
+            <img src="assets/imgs/projekte/solevital.png" alt="Projektvorschau Portfolio" class="project-preview-img" loading="lazy" onerror="this.parentElement.classList.add('project-preview-img-placeholder'); this.style.display='none';" />
+          </div>
+          <div class="project-preview-body">
+            <div class="project-preview-head">
+              <h3 class="project-preview-title">Portfolio</h3>
+              <span class="project-type-badge">Dokumentation</span>
+            </div>
+            <p class="project-preview-desc">Diese Seite verbindet Projekte, Lernweg und persönliche Entwicklung.</p>
+            <div class="project-preview-tags">
+              <span class="project-preview-tag">HTML</span>
+              <span class="project-preview-tag">CSS</span>
+              <span class="project-preview-tag">JavaScript</span>
+              <span class="project-preview-tag">GitHub Pages</span>
+            </div>
           </div>
         </div>
       </div>
