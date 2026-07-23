@@ -12291,6 +12291,8 @@ textarea.form-control-lg {
   text-align: center;
   clear: both;
   z-index: 3;
+  opacity: 1;
+  transform: none;
 }
 
 .tl-phase-title {
