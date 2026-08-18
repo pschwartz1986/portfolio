@@ -15,6 +15,7 @@
   background: linear-gradient(to bottom, transparent 0%, var(--border) 10%, var(--accent-secondary) 50%, var(--border) 90%, transparent 100%);
   transform: translateX(-50%);
   box-shadow: 0 0 20px var(--accent-secondary-glow);
+  opacity: 0.65;
 }
 
 @media (min-width: 769px) {

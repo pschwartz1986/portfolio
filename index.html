@@ -1,120 +1,255 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
+
 <html lang="de" data-bs-theme="dark">
+
 <head>
+
   <meta charset="UTF-8" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Portfolio</title>
+
   <link rel="stylesheet" href="assets/icons/bootstrap-icons.min.css" />
+
   <link rel="stylesheet" href="assets/css/custom.css" />
+
 </head>
+
 <body class="bg-deep">
+
   <div id="page-loader" class="page-loader">
+
     <div class="loader-spinner">
+
       <div class="spinner-ring"></div>
+
       <div class="spinner-ring"></div>
+
       <div class="spinner-ring"></div>
+
     </div>
+
   </div>
 
+
+
   <button id="theme-toggle-bottom" class="theme-toggle-bottom" title="Farbschema wechseln">
+
     <i class="bi bi-moon-stars"></i>
+
   </button>
 
+
+
   <!-- Cover -->
+
   <section id="hero" class="hero-section reveal-section">
+
     <div class="retro-grid"></div>
+
     <div class="container-fluid">
+
       <div class="row justify-content-center">
+
         <div class="col-12 col-md-10 col-lg-9 col-xl-8">
+
           <a href="https://github.com/pschwartz1986" target="_blank" rel="noopener" class="hero-github-icon">
+
             <i class="bi bi-github"></i>
+
           </a>
+
           <nav class="hero-side-nav">
-            <button class="hero-side-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasAbout" aria-label="Ãœber mich">
+
+            <button class="hero-side-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasAbout" aria-label="Über mich">
+
               <i class="bi bi-person"></i>
-              <span>Ãœber mich</span>
+
+              <span>Über mich</span>
+
             </button>
+
             <button class="hero-side-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTech" aria-label="Tech Stack">
+
               <i class="bi bi-code-slash"></i>
+
               <span>Tech Stack</span>
+
             </button>
+
             <button class="hero-side-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasProjects" aria-label="Projekte">
+
               <i class="bi bi-grid-3x3-gap"></i>
+
               <span>Projekte</span>
+
             </button>
+
           </nav>
+
           <div class="text-center position-relative">
+
             <div class="mb-4 position-relative d-inline-block">
+
               <img src="https://avatars.githubusercontent.com/u/297923195?v=4" class="hero-avatar" alt="Portfolio" />
+
               <div id="speak-bubble" class="speak-bubble w-25" role="status" aria-live="polite" aria-atomic="true">
+
                 <div class="speak-bubble-header">
-                  <strong class="me-auto fw-bold">Bereit fÃ¼r echte Projektpraxis</strong>
+
+                  <strong class="me-auto fw-bold">Bereit für echte Projektpraxis</strong>
+
                   <button type="button" class="btn-close speak-bubble-close" aria-label="Close"></button>
+
                 </div>
+
                 <div class="speak-bubble-body fw-medium text-start">
-                  Ab Oktober 2027 suche ich einen Praktikumsplatz in der Anwendungsentwicklung, um an echten Aufgaben zu wachsen und praktische Erfahrung fÃ¼r mein IHK-Abschlussprojekt zu sammeln.
+
+                  Ab Oktober 2027 suche ich einen Praktikumsplatz in der Anwendungsentwicklung, um an echten Aufgaben zu wachsen und praktische Erfahrung für mein IHK-Abschlussprojekt zu sammeln.
+
                 </div>
+
               </div>
+
             </div>
+
             <p class="hero-pre text-accent mb-3 fw-bold">SPUREN DER ENTWICKLUNG</p>
+
             <h1 class="display-1 hero-name glitch reveal-zoom" data-text="Patrick Schwartz">Patrick Schwartz</h1>
-            <p class="hero-role mb-4">Nicht jeder Schritt war richtig. Aber jeder fÃ¼hrte weiter.</p>
+
+            <p class="hero-role mb-4">Nicht jeder Schritt war richtig. Aber jeder führte weiter.</p>
+
             <a href="#warum" class="btn btn-glow btn-lg my-5">
+
               <i class="bi bi-arrow-down me-3"></i>Warum Anwendungsentwicklung?
+
             </a>
+
           </div>
+
         </div>
+
       </div>
+
     </div>
+
   </section>
+
+
 
   <section id="warum" class="section bg-deep reveal-section">
+
     <div class="container">
+
       <div class="row justify-content-center">
+
         <div class="col-12 col-lg-10 col-xl-9">
+
           <div class="text-center mb-5">
+
             <p class="hero-pre text-accent mb-3 fw-bold"></p>
+
             <h2 class="hero-pre text-accent fw-bold mb-4">Warum Anwendungsentwicklung?</h2>
+
           </div>
+
           <div class="row g-4">
+
             <div class="col-md-4">
+
               <div class="why-card p-4 h-100">
+
                 <div class="why-icon mb-3"><i class="bi bi-lightbulb"></i></div>
+
                 <div class="why-title text-accent mb-3">Ich will verstehen</div>
+
                 <p class="mb-0 text-muted">Vom ersten Rechner bis heute begleitet mich die Frage, wie Technik funktioniert und wie einzelne Systeme zusammenarbeiten.</p>
+
               </div>
+
             </div>
+
             <div class="col-md-4">
+
               <div class="why-card p-4 h-100">
+
                 <div class="why-icon mb-3"><i class="bi bi-wrench"></i></div>
+
                 <div class="why-title text-accent mb-3">Ich will gestalten</div>
-                <p class="mb-0 text-muted">Webseiten, Musik, Designs oder Software: Mich fasziniert die MÃ¶glichkeit, aus einer Idee etwas Eigenes zu erschaffen.</p>
+
+                <p class="mb-0 text-muted">Webseiten, Musik, Designs oder Software: Mich fasziniert die Möglichkeit, aus einer Idee etwas Eigenes zu erschaffen.</p>
+
               </div>
+
             </div>
+
             <div class="col-md-4">
+
               <div class="why-card p-4 h-100">
+
                 <div class="why-icon mb-3"><i class="bi bi-bug"></i></div>
-                <div class="why-title text-accent mb-3">Ich will Probleme lÃ¶sen</div>
-                <p class="mb-0 text-muted">Viele meiner Projekte entstanden nicht, weil sie geplant waren. Sie entstanden, weil mich etwas gestÃ¶rt hat und ich eine LÃ¶sung finden wollte.</p>
+
+                <div class="why-title text-accent mb-3">Ich will Probleme lösen</div>
+
+                <p class="mb-0 text-muted">Viele meiner Projekte entstanden nicht, weil sie geplant waren. Sie entstanden, weil mich etwas gestört hat und ich eine Lösung finden wollte.</p>
+
               </div>
+
             </div>
+
           </div>
+
           <div class="text-center mt-4">
+
             <a href="#projekte" class="btn btn-glow btn-lg my-5">
+
               <i class="bi bi-arrow-down me-3"></i>Zur Entwicklung
+
             </a>
+
           </div>
+
         </div>
+
       </div>
+
     </div>
+
   </section>
 
+
+
   <!-- Timeline / Projekte -->
+
   <section id="projekte" class="section bg-deep reveal-section">
+
     <div class="container">
+
       <div class="row justify-content-center">
+
         <div class="col-12 col-lg-10 col-xl-9">
-           <div class="timeline">
+
+            <div class="timeline">
+
+             <div class="tl-year-block">
+               <div class="tl-year-header">2027</div>
+
+               <span class="tl-section-title">Projekte</span>
+               <div class="tl-projects">
+                 <span class="tl-project"><i class="bi bi-briefcase"></i>Praktikum gesucht</span>
+               </div>
+
+               <span class="tl-section-title">Lernschwerpunkte</span>
+               <div class="tl-learning">
+                 <span class="tl-badge">Praxis</span>
+                 <span class="tl-badge">Softwareentwicklung</span>
+               </div>
+
+               <div class="tl-note">
+                 2027 geht es in die Praxis. Praktikum, betriebliches Abschlussprojekt und weitere Projekte.
+               </div>
+             </div>
 
              <div class="tl-year-block">
                <div class="tl-year-header">2026</div>
@@ -152,7 +287,7 @@
                </div>
 
                <div class="tl-note">
-                 2026 steht aktuell stark im Zeichen von <strong>KI, Automatisierung und eigenen Systemen</strong>. Der Fokus verschiebt sich von einzelnen Anwendungen zunehmend auf die Frage, wie verschiedene Komponenten zu einem funktionierenden Gesamtsystem verbunden werden kÃ¶nnen.
+                 2026 steht aktuell stark im Zeichen von <strong>KI, Automatisierung und eigenen Systemen</strong>. Der Fokus verschiebt sich von einzelnen Anwendungen zunehmend auf die Frage, wie verschiedene Komponenten zu einem funktionierenden Gesamtsystem verbunden werden können.
                </div>
              </div>
 
@@ -183,7 +318,7 @@
                </div>
 
                <div class="tl-note">
-                 2025 lag der Schwerpunkt stÃ¤rker auf <strong>Systemen, Automatisierung und dem VerstÃ¤ndnis bestehender Software</strong>. Neben eigenen Anwendungen wurden Systeme analysiert, angepasst und mit Skripten erweitert.
+                 2025 lag der Schwerpunkt stärker auf <strong>Systemen, Automatisierung und dem Verständnis bestehender Software</strong>. Neben eigenen Anwendungen wurden Systeme analysiert, angepasst und mit Skripten erweitert.
                </div>
              </div>
 
@@ -193,7 +328,7 @@
                <span class="tl-section-title">Projekte</span>
                <div class="tl-projects">
                  <span class="tl-project"><i class="bi bi-wordpress"></i>UrbanCare</span>
-                 <span class="tl-project"><i class="bi bi-file-earmark-code"></i>Pechan StraÃŸenbau</span>
+                 <span class="tl-project"><i class="bi bi-file-earmark-code"></i>Pechan Straßenbau</span>
                  <span class="tl-project"><i class="bi bi-braces"></i>Python-Grundlagen</span>
                  <span class="tl-project"><i class="bi bi-thermometer-half"></i>Rainmeter-Plugins</span>
                  <span class="tl-project"><i class="bi bi-music-note-list"></i>MIDI-Skripte</span>
@@ -212,7 +347,7 @@
                  <span class="tl-badge">Bootstrap 5</span>
                  <span class="tl-badge">jQuery</span>
                  <span class="tl-badge">CMS-Entwicklung</span>
-                 <span class="tl-badge">individuelle WeblÃ¶sungen</span>
+                 <span class="tl-badge">individuelle Weblösungen</span>
                </div>
 
                <div class="tl-note">
@@ -250,7 +385,7 @@
                </div>
 
                <div class="tl-note">
-                 2023 stand vor allem im Zeichen von <strong>Webentwicklung, CMS-Systemen und Frontend-Konzepten</strong>. Parallel entstand ein stÃ¤rkeres Interesse daran, unterschiedliche Frameworks, CMS und technische Konzepte miteinander zu vergleichen und deren Aufbau zu verstehen.
+                 2023 stand vor allem im Zeichen von <strong>Webentwicklung, CMS-Systemen und Frontend-Konzepten</strong>. Parallel entstand ein stärkeres Interesse daran, unterschiedliche Frameworks, CMS und technische Konzepte miteinander zu vergleichen und deren Aufbau zu verstehen.
                </div>
              </div>
 
@@ -286,7 +421,7 @@
                </div>
 
                <div class="tl-note">
-                 2022 entstand ein stÃ¤rkeres Interesse an <strong>Systemen und ihrer praktischen Konfiguration</strong>. Neben der Webentwicklung kamen Linux, Virtualisierung, Backups, lokale Netzwerke und Automatisierung hinzu.
+                 2022 entstand ein stärkeres Interesse an <strong>Systemen und ihrer praktischen Konfiguration</strong>. Neben der Webentwicklung kamen Linux, Virtualisierung, Backups, lokale Netzwerke und Automatisierung hinzu.
                </div>
              </div>
 
@@ -309,654 +444,1457 @@
                </div>
 
                <div class="tl-note">
-                 2021 bildete einen frÃ¼hen Ausgangspunkt der aktuellen Entwicklung mit einem Schwerpunkt auf <strong>Webdesign, digitalen Projekten und visueller Gestaltung</strong>.
+                 2021 bildete einen frühen Ausgangspunkt der aktuellen Entwicklung mit einem Schwerpunkt auf <strong>Webdesign, digitalen Projekten und visueller Gestaltung</strong>.
+               </div>
+             </div>
+
+             <div class="tl-year-block">
+               <div class="tl-year-header">2019</div>
+
+               <span class="tl-section-title">Projekte</span>
+               <div class="tl-projects">
+                 <span class="tl-project"><i class="bi bi-lightbulb"></i>Der Gedanke an einen Neuanfang</span>
+               </div>
+
+               <span class="tl-section-title">Lernschwerpunkte</span>
+               <div class="tl-learning">
+                 <span class="tl-badge">Linux</span>
+                 <span class="tl-badge">Virtualisierung</span>
+                 <span class="tl-badge">WordPress</span>
+                 <span class="tl-badge">Selbststudium</span>
+               </div>
+
+               <div class="tl-note">
+                 2019 entstand der Gedanke an einen Neuanfang. IT wurde vom Hobby zur beruflichen Perspektive.
+               </div>
+             </div>
+
+             <div class="tl-year-block">
+               <div class="tl-year-header">2016</div>
+
+               <span class="tl-section-title">Projekte</span>
+               <div class="tl-projects">
+                 <span class="tl-project"><i class="bi bi-shop"></i>Solevital</span>
+               </div>
+
+               <span class="tl-section-title">Lernschwerpunkte</span>
+               <div class="tl-learning">
+                 <span class="tl-badge">Monstra CMS</span>
+                 <span class="tl-badge">Bootstrap 3</span>
+                 <span class="tl-badge">PHP</span>
+                 <span class="tl-badge">jQuery</span>
+               </div>
+
+               <div class="tl-note">
+                 2016 entstand Solevital. Aus HTML/CSS-Bastelei wurde ein echtes Webprojekt mit CMS.
+               </div>
+             </div>
+
+             <div class="tl-year-block">
+               <div class="tl-year-header">2016</div>
+
+               <span class="tl-section-title">Projekte</span>
+               <div class="tl-projects">
+                 <span class="tl-project"><i class="bi bi-box"></i>Linux, Virtualisierung</span>
+               </div>
+
+               <span class="tl-section-title">Lernschwerpunkte</span>
+               <div class="tl-learning">
+                 <span class="tl-badge">Linux</span>
+                 <span class="tl-badge">Virtual Machines</span>
+                 <span class="tl-badge">Hardware</span>
+                 <span class="tl-badge">UEFI</span>
+               </div>
+
+               <div class="tl-note">
+                  2016 begann die Auseinandersetzung mit Linux und Systemen. VMs, Hardware und die Suche nach dem "Warum".
+               </div>
+             </div>
+
+             <div class="tl-year-block">
+               <div class="tl-year-header">2014</div>
+
+               <span class="tl-section-title">Projekte</span>
+               <div class="tl-projects">
+                 <span class="tl-project"><i class="bi bi-code-slash"></i>Programmierung wird greifbar</span>
+               </div>
+
+               <span class="tl-section-title">Lernschwerpunkte</span>
+               <div class="tl-learning">
+                 <span class="tl-badge">PHP</span>
+                 <span class="tl-badge">XAMPP</span>
+                 <span class="tl-badge">Bootstrap</span>
+                 <span class="tl-badge">jQuery</span>
+                 <span class="tl-badge">Datenbanken</span>
+               </div>
+
+               <div class="tl-note">
+                 2014 wurde Programmierung greifbar. Erste dynamische Webprojekte mit PHP und Datenbanken.
+               </div>
+             </div>
+
+             <div class="tl-year-block">
+               <div class="tl-year-header">2008</div>
+
+               <span class="tl-section-title">Projekte</span>
+               <div class="tl-projects">
+                 <span class="tl-project"><i class="bi bi-globe"></i>Erste Webseiten</span>
+               </div>
+
+               <span class="tl-section-title">Lernschwerpunkte</span>
+               <div class="tl-learning">
+                 <span class="tl-badge">HTML</span>
+                 <span class="tl-badge">CSS</span>
+                 <span class="tl-badge">Webdesign</span>
+                 <span class="tl-badge">Gestaltung</span>
+               </div>
+
+               <div class="tl-note">
+                 2008 begann die Faszination für Webentwicklung. Erste Websites und das Verständnis für Gestaltung.
+               </div>
+             </div>
+
+             <div class="tl-year-block">
+               <div class="tl-year-header">2006</div>
+
+               <span class="tl-section-title">Projekte</span>
+               <div class="tl-projects">
+                 <span class="tl-project"><i class="bi bi-hdd-network"></i>LAN-Partys, Netzwerke</span>
+               </div>
+
+               <span class="tl-section-title">Lernschwerpunkte</span>
+               <div class="tl-learning">
+                 <span class="tl-badge">Netzwerke</span>
+                 <span class="tl-badge">Hardware</span>
+                 <span class="tl-badge">Gaming</span>
+                 <span class="tl-badge">Troubleshooting</span>
+               </div>
+
+               <div class="tl-note">
+                 2006 entstand ein erstes praktisches Verständnis für Netzwerke und Hardware durch LAN-Partys.
+               </div>
+             </div>
+
+             <div class="tl-year-block">
+               <div class="tl-year-header">2004</div>
+
+               <span class="tl-section-title">Projekte</span>
+               <div class="tl-projects">
+                 <span class="tl-project"><i class="bi bi-music-note"></i>Ausbildung, Audio/Video, DAWs</span>
+               </div>
+
+               <span class="tl-section-title">Lernschwerpunkte</span>
+               <div class="tl-learning">
+                 <span class="tl-badge">Audio</span>
+                 <span class="tl-badge">Video</span>
+                 <span class="tl-badge">DAWs</span>
+                 <span class="tl-badge">VSTs</span>
+                 <span class="tl-badge">Multimedia</span>
+               </div>
+
+               <div class="tl-note">
+                 2004 stand im Zeichen von Multimedia. Erste Berührung mit digitalen Werkzeugen jenseits von Spielen.
+               </div>
+             </div>
+
+             <div class="tl-year-block">
+               <div class="tl-year-header">2002</div>
+
+               <span class="tl-section-title">Projekte</span>
+               <div class="tl-projects">
+                 <span class="tl-project"><i class="bi bi-pc"></i>Der Anfang der Neugier</span>
+               </div>
+
+               <span class="tl-section-title">Lernschwerpunkte</span>
+               <div class="tl-learning">
+                 <span class="tl-badge">Amiga</span>
+                 <span class="tl-badge">DOS</span>
+                 <span class="tl-badge">Windows</span>
+                 <span class="tl-badge">Gaming</span>
+                 <span class="tl-badge">Multimedia</span>
+               </div>
+
+               <div class="tl-note">
+                 2002 war der Beginn der Neugier. Erster eigener Rechner, Exploration von Windows, DOS und Multimedia.
                </div>
              </div>
 
              <div class="tl-thread">
                <div class="tl-thread-title">Roter Faden</div>
                <div class="tl-thread-text">
-                 <strong>Web â†’ CMS â†’ Backend â†’ Automatisierung â†’ Linux &amp; Systeme â†’ Reverse Engineering â†’ KI &amp; Agenten â†’ Systemarchitektur</strong><br><br>
-                 Was mit Webentwicklung und eigenen Websites begann, hat sich Schritt fÃ¼r Schritt in Richtung Backend, Automatisierung, Systemintegration und lokale KI entwickelt. Heute interessiert mich zunehmend nicht mehr nur die einzelne Anwendung, sondern das Zusammenspiel der Komponenten dahinter: Eingabe, Verarbeitung, Daten, APIs, Betriebssystem, Hardware und KI.
+                 <strong>Web → CMS → Backend → Automatisierung → Linux &amp; Systeme → Reverse Engineering → KI &amp; Agenten → Systemarchitektur</strong><br><br>
+                 Was mit Webentwicklung und eigenen Websites begann, hat sich Schritt für Schritt in Richtung Backend, Automatisierung, Systemintegration und lokale KI entwickelt. Heute interessiert mich zunehmend nicht mehr nur die einzelne Anwendung, sondern das Zusammenspiel der Komponenten dahinter: Eingabe, Verarbeitung, Daten, APIs, Betriebssystem, Hardware und KI.
                </div>
              </div>
 
            </div>
-        </div>
-      </div>
-    </div>
-  </section>
+
+
+
 
   <div id="portfolio-modal" class="portfolio-modal" aria-hidden="true">
+
     <div class="portfolio-modal__panel" role="dialog" aria-modal="true">
+
       <div class="portfolio-modal__header">
+
         <h2 class="portfolio-modal__title" id="modal-title"></h2>
-        <button id="modal-close" class="portfolio-modal__close" aria-label="SchlieÃŸen">
+
+        <button id="modal-close" class="portfolio-modal__close" aria-label="Schließen">
+
           <i class="bi bi-x-lg"></i>
+
         </button>
+
       </div>
+
       <div class="portfolio-modal__body">
+
         <div class="portfolio-modal__grid">
+
           <div class="portfolio-modal__media">
+
             <img id="modal-img" src="" alt="Projektvorschau" />
+
           </div>
+
           <div class="portfolio-modal__content">
+
             <p class="portfolio-modal__desc" id="modal-desc"></p>
+
             <div class="portfolio-modal__tags" id="modal-tags"></div>
+
             <div class="portfolio-modal__actions" id="modal-actions"></div>
+
           </div>
+
         </div>
+
       </div>
+
     </div>
+
   </div>
 
+
+
   <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+
   <script>
+
     (function () {
+
       var themeToggle = document.getElementById('theme-toggle-bottom');
+
       var themeKey = 'portfolio-theme';
 
+
+
       function applyTheme(theme) {
+
         document.documentElement.setAttribute('data-bs-theme', theme);
+
       }
+
+
 
       function initTheme() {
+
         var saved = localStorage.getItem(themeKey) || 'dark';
+
         applyTheme(saved);
+
         var icon = themeToggle && themeToggle.querySelector('i');
+
         if (icon) {
+
           icon.className = saved === 'dark' ? 'bi bi-moon-stars' : 'bi bi-sun';
+
         }
+
       }
 
+
+
       if (themeToggle) {
+
         themeToggle.addEventListener('click', function () {
+
           var current = document.documentElement.getAttribute('data-bs-theme');
+
           var next = current === 'dark' ? 'light' : 'dark';
+
           applyTheme(next);
+
           localStorage.setItem(themeKey, next);
+
           var icon = themeToggle.querySelector('i');
+
           if (icon) {
+
             icon.className = next === 'dark' ? 'bi bi-moon-stars' : 'bi bi-sun';
+
           }
+
         });
+
       }
+
+
 
       initTheme();
 
+
+
       document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+
         anchor.addEventListener('click', function (e) {
+
           var targetId = this.getAttribute('href');
+
           if (targetId === '#') return;
+
           var target = document.querySelector(targetId);
+
           if (target) {
+
             e.preventDefault();
+
             target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
           }
+
         });
+
       });
+
+
 
       function revealVisible() {
+
         document.querySelectorAll('.reveal-section, .tl-item').forEach(function (el) {
+
           if (!el.classList.contains('visible')) {
+
             var rect = el.getBoundingClientRect();
+
             if (rect.top < window.innerHeight && rect.bottom > 0) {
+
               el.classList.add('visible');
+
             }
+
           }
+
         });
+
       }
+
+
 
       if ('IntersectionObserver' in window) {
+
         var observer = new IntersectionObserver(function (entries) {
+
           entries.forEach(function (entry) {
+
             if (entry.isIntersecting) {
+
               entry.target.classList.add('visible');
+
               observer.unobserve(entry.target);
+
             }
+
           });
+
         }, { threshold: 0.01 });
 
+
+
         document.querySelectorAll('.reveal-section, .reveal-zoom, .reveal-fade, .tl-item, .tl-card').forEach(function (el) {
+
           observer.observe(el);
+
         });
+
       } else {
+
         document.querySelectorAll('.reveal-section, .reveal-zoom, .reveal-fade, .tl-item, .tl-card').forEach(function (el) {
+
           el.classList.add('visible');
+
         });
+
       }
+
+
 
       window.addEventListener('load', function () {
+
         window.scrollTo(0, 0);
+
         var loader = document.getElementById('page-loader');
+
         if (loader) {
+
           loader.classList.add('is-hidden');
+
         }
+
         setTimeout(revealVisible, 100);
+
       });
+
+
 
       function createMockThumbnail(title) {
+
         var canvas = document.createElement('canvas');
+
         canvas.width = 280;
+
         canvas.height = 158;
+
         var ctx = canvas.getContext('2d');
+
         var bg = ctx.createLinearGradient(0, 0, 280, 158);
+
         bg.addColorStop(0, '#6b21a8');
+
         bg.addColorStop(0.5, '#7c3aed');
+
         bg.addColorStop(1, '#4c1d95');
+
         ctx.fillStyle = bg;
+
         ctx.fillRect(0, 0, 280, 158);
+
         ctx.fillStyle = 'rgba(255,255,255,0.35)';
+
         ctx.beginPath();
+
         ctx.arc(26, 26, 9, 0, Math.PI * 2);
+
         ctx.fill();
+
         ctx.beginPath();
+
         ctx.arc(52, 26, 9, 0, Math.PI * 2);
+
         ctx.fill();
+
         ctx.beginPath();
+
         ctx.arc(78, 26, 9, 0, Math.PI * 2);
+
         ctx.fill();
+
         ctx.fillStyle = 'rgba(255,255,255,0.95)';
+
         ctx.font = '600 13px Orbitron, Arial, sans-serif';
+
         ctx.textAlign = 'center';
+
         ctx.fillText(title, 140, 88);
+
         return canvas.toDataURL('image/png');
+
       }
+
+
 
       function getThumbnailSrc(title) {
+
         var normalized = title.toLowerCase();
+
         if (normalized.indexOf('2ambs') !== -1 || normalized.indexOf('sass generator') !== -1) {
+
           return 'assets/imgs/projekte/2ambs_sass_generator.png';
+
         }
+
         if (normalized.indexOf('razer') !== -1 || normalized.indexOf('battery') !== -1) {
+
           return 'assets/imgs/projekte/razer_battery_status.png';
+
         }
+
         if (normalized.indexOf('jungelmusik') !== -1) {
+
           return 'assets/imgs/projekte/jungelmusik.png';
+
         }
+
         if (normalized.indexOf('urban-care') !== -1 || normalized.indexOf('urban care') !== -1) {
+
           return 'assets/imgs/projekte/urbancare.png';
+
         }
+
         if (normalized.indexOf('pechan') !== -1 || normalized.indexOf('strassenbau') !== -1) {
+
           return 'assets/imgs/projekte/pechan.png';
+
         }
+
         if (normalized.indexOf('solevital') !== -1 || normalized.indexOf('salzgrotte') !== -1) {
+
           return 'assets/imgs/projekte/solevital.png';
+
         }
+
         return null;
+
       }
+
+
 
       var modal = document.getElementById('portfolio-modal');
+
       var modalImg = document.getElementById('modal-img');
+
       var modalTitle = document.getElementById('modal-title');
+
       var modalDesc = document.getElementById('modal-desc');
+
       var modalTags = document.getElementById('modal-tags');
+
       var modalActions = document.getElementById('modal-actions');
+
       var modalClose = document.getElementById('modal-close');
 
+
+
       function openModal(card) {
+
         var titleEl = card.querySelector('.tl-title');
+
         var tagEls = card.querySelectorAll('.tl-tag');
+
         var title = titleEl ? titleEl.textContent.trim() : '';
+
         var fullDesc = card.getAttribute('data-desc') || '';
+
         var tags = Array.from(tagEls).map(function (t) { return t.textContent.trim(); });
+
         var href = card.getAttribute('data-href');
 
+
+
         modalTitle.textContent = title;
+
         modalDesc.textContent = fullDesc;
+
         modalTags.innerHTML = '';
+
         tags.forEach(function (tag) {
+
           var span = document.createElement('span');
+
           span.className = 'portfolio-modal__tag';
+
           span.textContent = tag;
+
           modalTags.appendChild(span);
+
         });
 
+
+
         modalActions.innerHTML = '';
+
         if (href) {
+
           var a = document.createElement('a');
+
           a.href = href;
+
           a.target = '_blank';
+
           a.rel = 'noopener';
-          a.innerHTML = '<i class="bi bi-box-arrow-up-right me-2"></i>Projekt Ã¶ffnen';
+
+          a.innerHTML = '<i class="bi bi-box-arrow-up-right me-2"></i>Projekt öffnen';
+
           modalActions.appendChild(a);
+
         }
+
+
 
         var thumbSrc = getThumbnailSrc(title);
+
         modalImg.src = thumbSrc || '';
+
         modalImg.style.display = thumbSrc ? 'block' : 'none';
 
+
+
         modal.classList.add('is-open');
+
         modal.setAttribute('aria-hidden', 'false');
+
         document.body.style.overflow = 'hidden';
+
         modalClose.focus();
+
       }
+
+
 
       function closeModal() {
+
         modal.classList.remove('is-open');
+
         modal.setAttribute('aria-hidden', 'true');
+
         document.body.style.overflow = '';
+
       }
+
+
 
       var projects = {
+
         solevital: {
+
           title: 'Solevital',
-          type: 'FrÃ¼hes Webprojekt',
+
+          type: 'Frühes Webprojekt',
+
           image: 'assets/imgs/projekte/solevital.png',
+
           short: 'Der Punkt, an dem aus HTML/CSS-Bastelei ein echtes Webprojekt wurde.',
-          description: 'Solevital war eines der ersten echten Webprojekte. Es entstand aus der Wende, einfache HTML/CSS-Bastelarbeiten in ein nutzbares Webprojekt zu Ã¼berfÃ¼hren. Mit Monstra CMS, PHP, Bootstrap 3 und jQuery wurde hier erstmals zusammenspielt, was spÃ¤ter zur Arbeitsweise wurde: Technik verstehen und dann anwenden.',
+
+          description: 'Solevital war eines der ersten echten Webprojekte. Es entstand aus der Wende, einfache HTML/CSS-Bastelarbeiten in ein nutzbares Webprojekt zu überführen. Mit Monstra CMS, PHP, Bootstrap 3 und jQuery wurde hier erstmals zusammenspielt, was später zur Arbeitsweise wurde: Technik verstehen und dann anwenden.',
+
           tags: ['Monstra CMS', 'PHP', 'Bootstrap 3', 'jQuery'],
+
           links: []
+
         },
+
         pechan: {
-          title: 'Pechan StraÃŸenbau',
+
+          title: 'Pechan Straßenbau',
+
           type: 'Kundenprojekt',
+
           image: 'assets/imgs/projekte/pechan.png',
+
           short: 'Individuelles Webprojekt mit eigener Umsetzung von Layout, Struktur und Funktionen.',
-          description: 'Ein echtes Kundenprojekt, bei dem Layout, Struktur und Funktionen individuell umgesetzt wurden. PHP, JavaScript, Bootstrap und SASS kamen zusammen, um eine praktische LÃ¶sung zu bauen, die auch in der Praxis funktioniert.',
+
+          description: 'Ein echtes Kundenprojekt, bei dem Layout, Struktur und Funktionen individuell umgesetzt wurden. PHP, JavaScript, Bootstrap und SASS kamen zusammen, um eine praktische Lösung zu bauen, die auch in der Praxis funktioniert.',
+
           tags: ['PHP', 'JavaScript', 'Bootstrap', 'SASS'],
+
           links: []
+
         },
+
         urbancare: {
+
           title: 'Urban Care',
+
           type: 'WordPress',
+
           image: 'assets/imgs/projekte/urbancare.png',
-          short: 'Custom-Theme, Formularlogik und angepasste Inhaltsstruktur fÃ¼r ein reales Webprojekt.',
-          description: 'Urban Care zeigt, was mit WordPress mÃ¶glich ist, wenn man tiefer einsteigt: ein eigenes Custom-Theme, angepasste Formularlogik und eine auf den Kunden abgestimmte Inhaltsstruktur.',
+
+          short: 'Custom-Theme, Formularlogik und angepasste Inhaltsstruktur für ein reales Webprojekt.',
+
+          description: 'Urban Care zeigt, was mit WordPress möglich ist, wenn man tiefer einsteigt: ein eigenes Custom-Theme, angepasste Formularlogik und eine auf den Kunden abgestimmte Inhaltsstruktur.',
+
           tags: ['WordPress', 'PHP', 'Custom Theme', 'Formulare'],
+
           links: []
+
         },
+
         razer: {
+
           title: 'Razer Battery Status',
+
           type: 'Tool',
+
           image: 'assets/imgs/projekte/razer_battery_status.png',
+
           short: 'Kleines Desktop-Tool, entstanden aus einem nervigen Alltagsproblem.',
-          description: 'Razer Battery Status entstand aus einem konkreten Alltagsproblem: Wie lÃ¤sst sich der Akkustatus von Razer-GerÃ¤ten ohne Umwege beobachten? Ein kleines Desktop-Tool mit AutoHotkey v2 zeigt, dass nÃ¼tzliche Helfer nicht groÃŸ sein mÃ¼ssen.',
+
+          description: 'Razer Battery Status entstand aus einem konkreten Alltagsproblem: Wie lässt sich der Akkustatus von Razer-Geräten ohne Umwege beobachten? Ein kleines Desktop-Tool mit AutoHotkey v2 zeigt, dass nützliche Helfer nicht groß sein müssen.',
+
           tags: ['AutoHotkey v2', 'Windows', 'Logs', 'Overlay'],
+
           links: []
+
         },
+
         jungelmusik: {
+
           title: 'Jungelmusik',
+
           type: 'Webapp',
+
           image: 'assets/imgs/projekte/jungelmusik.png',
-          short: 'Aktuelles Flask-Projekt mit externen Integrationen und eigener OberflÃ¤che.',
-          description: 'Jungelmusik ist eine Flask-Webapp mit externen Integrationen und einer eigenen OberflÃ¤che. Sie zeigt, wie sich Python als Backend mit modernen Frontend-Technologien verbinden lÃ¤sst.',
+
+          short: 'Aktuelles Flask-Projekt mit externen Integrationen und eigener Oberfläche.',
+
+          description: 'Jungelmusik ist eine Flask-Webapp mit externen Integrationen und einer eigenen Oberfläche. Sie zeigt, wie sich Python als Backend mit modernen Frontend-Technologien verbinden lässt.',
+
           tags: ['Python', 'Flask', 'Bootstrap', 'SASS'],
+
           links: []
+
         },
+
         '2ambs': {
+
           title: '2AMBS Sass Generator',
+
           type: 'Developer Tool',
+
           image: 'assets/imgs/projekte/2ambs_sass_generator.png',
-          short: 'Tool zur Erstellung und Anpassung von Bootstrap-5-Themes Ã¼ber eine OberflÃ¤che.',
-          description: 'Der 2AMBS Sass Generator ist ein Developer Tool, das die Arbeit mit Bootstrap 5-Themes Ã¼ber eine einfache OberflÃ¤che zugÃ¤nglich macht. SASS wird interaktiver und nachvollziehbarer.',
+
+          short: 'Tool zur Erstellung und Anpassung von Bootstrap-5-Themes über eine Oberfläche.',
+
+          description: 'Der 2AMBS Sass Generator ist ein Developer Tool, das die Arbeit mit Bootstrap 5-Themes über eine einfache Oberfläche zugänglich macht. SASS wird interaktiver und nachvollziehbarer.',
+
           tags: ['Python', 'Flask', 'SASS', 'Bootstrap 5'],
+
           links: []
+
         },
+
         portfolio: {
+
           title: 'Portfolio',
+
           type: 'Dokumentation',
+
           image: 'assets/imgs/projekte/github_portfolio.png',
-          short: 'Diese Seite verbindet Projekte, Lernweg und persÃ¶nliche Entwicklung.',
-          description: 'Dieses Portfolio selbst ist ein eigenes Projekt: Es dokumentiert nicht nur fertige Arbeiten, sondern verbindet Lernweg, Technikinteresse und persÃ¶nliche Entwicklung zu einer nachvollziehbaren Geschichte.',
+
+          short: 'Diese Seite verbindet Projekte, Lernweg und persönliche Entwicklung.',
+
+          description: 'Dieses Portfolio selbst ist ein eigenes Projekt: Es dokumentiert nicht nur fertige Arbeiten, sondern verbindet Lernweg, Technikinteresse und persönliche Entwicklung zu einer nachvollziehbaren Geschichte.',
+
           tags: ['HTML', 'CSS', 'JavaScript', 'GitHub Pages'],
+
           links: []
+
         }
+
       };
 
+
+
       function openProjectModal(projectId) {
+
         var project = projects[projectId];
+
         if (!project) return;
 
+
+
         modalTitle.textContent = project.title;
+
         modalDesc.textContent = project.description || project.short;
+
         modalTags.innerHTML = '';
+
         project.tags.forEach(function (tag) {
+
           var span = document.createElement('span');
+
           span.className = 'portfolio-modal__tag';
+
           span.textContent = tag;
+
           modalTags.appendChild(span);
+
         });
+
+
 
         if (project.image) {
+
           modalImg.src = project.image;
+
           modalImg.style.display = 'block';
+
         } else {
+
           modalImg.removeAttribute('src');
+
           modalImg.style.display = 'none';
+
         }
+
+
 
         modalActions.innerHTML = '';
+
         if (project.links && project.links.length) {
+
           project.links.forEach(function (link) {
+
             var a = document.createElement('a');
+
             a.href = link.href;
+
             a.target = '_blank';
+
             a.rel = 'noopener';
+
             a.textContent = link.label;
+
             modalActions.appendChild(a);
+
           });
+
         }
+
+
 
         modal.classList.add('is-open');
+
         modal.setAttribute('aria-hidden', 'false');
+
         document.body.style.overflow = 'hidden';
+
         modalClose.focus();
+
       }
+
+
 
       document.querySelectorAll('.project-preview-card').forEach(function (card) {
+
         card.style.cursor = 'pointer';
+
         card.addEventListener('click', function () {
+
           var projectId = card.getAttribute('data-project-id');
+
           if (projectId) openProjectModal(projectId);
+
         });
+
         card.addEventListener('keydown', function (e) {
+
           if (e.key === 'Enter' || e.key === ' ') {
+
             e.preventDefault();
+
             var projectId = card.getAttribute('data-project-id');
+
             if (projectId) openProjectModal(projectId);
+
           }
+
         });
+
       });
+
+
 
       document.querySelectorAll('.tl-card').forEach(function (card) {
+
         card.style.cursor = 'pointer';
+
         card.addEventListener('click', function () {
+
           openModal(card);
+
         });
+
       });
+
+
 
       if (modalClose) {
+
         modalClose.addEventListener('click', closeModal);
+
       }
+
+
 
       if (modal) {
+
         modal.addEventListener('click', function (e) {
+
           if (e.target === modal) {
+
             closeModal();
+
           }
+
         });
+
       }
+
+
 
       document.addEventListener('keydown', function (e) {
+
         if (e.key === 'Escape' && modal.classList.contains('is-open')) {
+
           closeModal();
+
         }
+
       });
+
+
 
       if (document.readyState === 'complete') {
+
         onPageReady();
+
       } else {
+
         window.addEventListener('load', onPageReady);
+
       }
+
+
 
       function onPageReady() {
+
         window.scrollTo(0, 0);
+
         var loader = document.getElementById('page-loader');
+
         if (loader) {
+
           loader.classList.add('is-hidden');
+
         }
+
         setTimeout(revealVisible, 100);
+
         setTimeout(function () {
+
           var toastEl = document.getElementById('speak-bubble');
+
           if (toastEl) {
+
             toastEl.classList.add('is-visible');
+
           }
+
         }, 1200);
+
       }
 
+
+
       document.querySelector('.speak-bubble-close') && document.querySelector('.speak-bubble-close').addEventListener('click', function () {
+
         var toastEl = document.querySelector('.speak-bubble');
+
         if (toastEl) {
+
           toastEl.classList.remove('is-visible');
+
         }
+
       });
+
+
 
       var offcanvases = document.querySelectorAll('.hero-offcanvas');
+
       offcanvases.forEach(function (panel) {
+
         panel.addEventListener('show.bs.offcanvas', function () {
+
           var toastEl = document.querySelector('.speak-bubble');
+
           if (toastEl) {
+
             toastEl.classList.remove('is-visible');
+
           }
+
         });
+
       });
+
     })();
+
   </script>
 
+
+
   <div class="offcanvas offcanvas-end hero-offcanvas" tabindex="-1" id="offcanvasAbout" aria-labelledby="offcanvasAboutLabel">
+
     <div class="offcanvas-header">
-      <h5 class="offcanvas-title hero-pre text-accent mb-3 fw-bold" id="offcanvasAboutLabel">Ãœber mich</h5>
+
+      <h5 class="offcanvas-title hero-pre text-accent mb-3 fw-bold" id="offcanvasAboutLabel">Über mich</h5>
+
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
     </div>
+
     <div class="offcanvas-body">
+
       <div class="d-flex align-items-center gap-3 mb-4">
+
         <div>
+
           <div class="fw-bold fs-5">Patrick Schwartz</div>
-          <div class="text-muted small">UmschÃ¼ler Fachinformatiker Anwendungsentwicklung</div>
+
+          <div class="text-muted small">Umschüler Fachinformatiker Anwendungsentwicklung</div>
+
         </div>
+
       </div>
+
       <div class="d-grid gap-3 small">
+
         <div class="cv-profile p-3">
+
           <div class="text-accent mb-2"><i class="bi bi-lightning me-2"></i>Kurzvorstellung</div>
-          <p class="mb-0 text-muted">Ich beschÃ¤ftige mich aktuell intensiv mit Softwareentwicklung, Systemintegration und lokalen KI-Systemen. Dabei interessiert mich vor allem nicht nur, wie man einzelne Anwendungen programmiert, sondern wie verschiedene Technologien sinnvoll zusammenspielen.</p>
-          <p class="mb-0 text-muted mt-2">Ich arbeite viel mit Python, C#/.NET, Flask, FastAPI, SQL, Webtechnologien und Windows/Linux und probiere dabei unterschiedliche AnsÃ¤tze praktisch aus. Mein Schwerpunkt liegt auf eigenen Projekten, bei denen ich Technologien nicht nur theoretisch lerne, sondern direkt einsetze, teste und weiterentwickle.</p>
+
+          <p class="mb-0 text-muted">Ich beschäftige mich aktuell intensiv mit Softwareentwicklung, Systemintegration und lokalen KI-Systemen. Dabei interessiert mich vor allem nicht nur, wie man einzelne Anwendungen programmiert, sondern wie verschiedene Technologien sinnvoll zusammenspielen.</p>
+
+          <p class="mb-0 text-muted mt-2">Ich arbeite viel mit Python, C#/.NET, Flask, FastAPI, SQL, Webtechnologien und Windows/Linux und probiere dabei unterschiedliche Ansätze praktisch aus. Mein Schwerpunkt liegt auf eigenen Projekten, bei denen ich Technologien nicht nur theoretisch lerne, sondern direkt einsetze, teste und weiterentwickle.</p>
+
         </div>
+
         <div class="cv-profile p-3">
+
           <div class="text-accent mb-2"><i class="bi bi-diagram-3 me-2"></i>Projektweg &amp; Interessen</div>
-          <p class="mb-0 text-muted">Mein Weg ist ziemlich breit aufgestellt: Von Webentwicklung, WordPress und PHP Ã¼ber Datenbanken und Python bis hin zu KI, Automatisierung, Sprachsteuerung und Systemarchitektur.</p>
-          <p class="mb-0 text-muted mt-2">Dabei entstehen immer wieder eigene Projekte â€“ unter anderem Websites, kleine Tools, Automatisierungen, Sprachsysteme und KI-Anwendungen. Ein wichtiger Teil davon ist SwagBot 3000, an dem ich mich mit Sprachsteuerung, ZustÃ¤nden, Befehlslogik und lokaler KI beschÃ¤ftige.</p>
+
+          <p class="mb-0 text-muted">Mein Weg ist ziemlich breit aufgestellt: Von Webentwicklung, WordPress und PHP über Datenbanken und Python bis hin zu KI, Automatisierung, Sprachsteuerung und Systemarchitektur.</p>
+
+          <p class="mb-0 text-muted mt-2">Dabei entstehen immer wieder eigene Projekte – unter anderem Websites, kleine Tools, Automatisierungen, Sprachsysteme und KI-Anwendungen. Ein wichtiger Teil davon ist SwagBot 3000, an dem ich mich mit Sprachsteuerung, Zuständen, Befehlslogik und lokaler KI beschäftige.</p>
+
           <p class="mb-0 text-muted mt-2">Was mich dabei besonders interessiert: Was passiert eigentlich zwischen Eingabe und Ergebnis? Wie zerlegt ein System Sprache? Wie erkennt es Kontext? Wie werden Befehle verarbeitet? Wie kommunizieren einzelne Komponenten miteinander? Und wie baut man daraus ein System, das nicht nur funktioniert, sondern auch sinnvoll erweiterbar ist?</p>
+
         </div>
+
         <div class="cv-profile p-3">
+
           <div class="text-accent mb-2"><i class="bi bi-crosshair me-2"></i>Aktueller Fokus</div>
-          <p class="mb-0 text-muted">Momentan verschiebt sich mein Schwerpunkt immer stÃ¤rker in Richtung KI- und Systemarchitektur.</p>
+
+          <p class="mb-0 text-muted">Momentan verschiebt sich mein Schwerpunkt immer stärker in Richtung KI- und Systemarchitektur.</p>
+
           <p class="mb-0 text-muted mt-2">Ich experimentiere mit lokalen LLMs, Speech-to-Text, Text-to-Speech, Computer Vision, Sprachsteuerung und eigenen Agenten-Systemen. Dabei geht es mir weniger darum, einfach irgendeine KI einzubauen, sondern darum, die einzelnen Bausteine zu verstehen und selbst zu einer funktionierenden Architektur zusammenzusetzen.</p>
-          <p class="mb-0 text-muted mt-2">Mein Ziel ist deshalb nicht, mich auf eine einzelne Technologie festzulegen. Ich mÃ¶chte verstehen, wie aus verschiedenen Technologien ein komplettes System entsteht â€“ von der Hardware Ã¼ber Betriebssystem und Backend bis zur BenutzeroberflÃ¤che und KI.</p>
-          <p class="mb-0 text-muted mt-2">Kurz gesagt: Ich lerne am liebsten, indem ich Dinge baue, kaputt mache, herausfinde warum sie kaputt sind und sie anschlieÃŸend besser wieder zusammenbaue.</p>
+
+          <p class="mb-0 text-muted mt-2">Mein Ziel ist deshalb nicht, mich auf eine einzelne Technologie festzulegen. Ich möchte verstehen, wie aus verschiedenen Technologien ein komplettes System entsteht – von der Hardware über Betriebssystem und Backend bis zur Benutzeroberfläche und KI.</p>
+
+          <p class="mb-0 text-muted mt-2">Kurz gesagt: Ich lerne am liebsten, indem ich Dinge baue, kaputt mache, herausfinde warum sie kaputt sind und sie anschließend besser wieder zusammenbaue.</p>
+
         </div>
+
       </div>
+
     </div>
+
   </div>
+
+
 
   <div class="offcanvas offcanvas-end hero-offcanvas" tabindex="-1" id="offcanvasTech" aria-labelledby="offcanvasTechLabel">
+
     <div class="offcanvas-header">
+
       <h5 class="offcanvas-title hero-pre text-accent mb-3 fw-bold" id="offcanvasTechLabel">Tech Stack</h5>
+
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
     </div>
+
     <div class="offcanvas-body">
-      <p class="offcanvas-intro text-muted small mb-4">Keine vollstÃ¤ndige Skill-Liste, sondern ein kompakter Ãœberblick Ã¼ber Technologien und Werkzeuge, mit denen ich praktisch gearbeitet oder eigene Projekte umgesetzt habe.</p>
+
+      <p class="offcanvas-intro text-muted small mb-4">Keine vollständige Skill-Liste, sondern ein kompakter Überblick über Technologien und Werkzeuge, mit denen ich praktisch gearbeitet oder eigene Projekte umgesetzt habe.</p>
+
       <div class="d-flex flex-column gap-3">
+
         <div class="cv-profile p-3">
+
           <div class="text-accent mb-2 fw-bold"><i class="bi bi-code-slash me-2"></i>Web & Frontend</div>
+
           <div class="d-flex flex-wrap gap-1">
+
             <span class="badge-tech">HTML</span>
+
             <span class="badge-tech">CSS</span>
+
             <span class="badge-tech">JavaScript</span>
+
             <span class="badge-tech">Bootstrap</span>
+
             <span class="badge-tech">SASS</span>
+
           </div>
+
         </div>
+
         <div class="cv-profile p-3">
+
           <div class="text-accent mb-2 fw-bold"><i class="bi bi-server me-2"></i>Backend & Anwendungen</div>
+
           <div class="d-flex flex-wrap gap-1">
+
             <span class="badge-tech">Python</span>
+
             <span class="badge-tech">PHP</span>
+
             <span class="badge-tech">Flask</span>
+
             <span class="badge-tech">FastAPI</span>
+
             <span class="badge-tech">SQL</span>
+
           </div>
+
         </div>
+
         <div class="cv-profile p-3">
+
           <div class="text-accent mb-2 fw-bold"><i class="bi bi-tools me-2"></i>Tools & Workflow</div>
+
           <div class="d-flex flex-wrap gap-1">
+
             <span class="badge-tech">Git</span>
+
             <span class="badge-tech">GitHub</span>
+
             <span class="badge-tech">Docker</span>
+
             <span class="badge-tech">npm</span>
+
             <span class="badge-tech">Composer</span>
+
           </div>
+
         </div>
+
         <div class="cv-profile p-3">
+
           <div class="text-accent mb-2 fw-bold"><i class="bi bi-gear me-2"></i>Systeme & Automatisierung</div>
+
           <div class="d-flex flex-wrap gap-1">
+
             <span class="badge-tech">Windows</span>
+
             <span class="badge-tech">Linux</span>
+
             <span class="badge-tech">AutoHotkey</span>
+
             <span class="badge-tech">PowerShell</span>
+
             <span class="badge-tech">Shell</span>
+
           </div>
+
         </div>
+
         <div class="cv-profile p-3">
+
           <div class="text-accent mb-2 fw-bold"><i class="bi bi-bullseye me-2"></i>Schwerpunkte</div>
+
           <div class="d-flex flex-wrap gap-1">
+
             <span class="badge-tech">Webentwicklung</span>
+
             <span class="badge-tech">Automatisierung</span>
+
             <span class="badge-tech">Desktop-Tools</span>
-            <span class="badge-tech">ProjektverstÃ¤ndnis</span>
+
+            <span class="badge-tech">Projektverständnis</span>
+
             <span class="badge-tech">Debugging</span>
+
           </div>
+
         </div>
+
       </div>
+
     </div>
+
   </div>
 
+
+
   <div class="offcanvas offcanvas-end hero-offcanvas" tabindex="-1" id="offcanvasProjects" aria-labelledby="offcanvasProjectsLabel">
+
     <div class="offcanvas-header">
+
       <h5 class="offcanvas-title hero-pre text-accent mb-3 fw-bold" id="offcanvasProjectsLabel">Projekt-Schnellblick</h5>
+
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
     </div>
+
     <div class="offcanvas-body">
+
       <p class="offcanvas-intro text-muted small mb-4">Eine kompakte Auswahl echter Projekte und Tools.</p>
+
       <div class="project-preview-grid" id="project-preview-grid">
-        <div class="project-preview-card" data-project-id="solevital" tabindex="0" role="button" aria-label="Details zu Solevital Ã¶ffnen">
+
+        <div class="project-preview-card" data-project-id="solevital" tabindex="0" role="button" aria-label="Details zu Solevital öffnen">
+
           <div class="project-preview-img-wrap">
+
             <img src="assets/imgs/projekte/solevital.png" alt="Projektvorschau Solevital" class="project-preview-img" loading="lazy" />
+
           </div>
+
           <div class="project-preview-body">
+
             <div class="project-preview-head">
+
               <h3 class="project-preview-title">Solevital</h3>
-              <span class="project-type-badge">FrÃ¼hes Webprojekt</span>
+
+              <span class="project-type-badge">Frühes Webprojekt</span>
+
             </div>
+
             <p class="project-preview-desc">Der Punkt, an dem aus HTML/CSS-Bastelei ein echtes Webprojekt wurde.</p>
+
             <div class="project-preview-tags">
+
               <span class="project-preview-tag">Monstra CMS</span>
+
               <span class="project-preview-tag">PHP</span>
+
               <span class="project-preview-tag">Bootstrap 3</span>
+
               <span class="project-preview-tag">jQuery</span>
+
             </div>
+
           </div>
+
         </div>
-        <div class="project-preview-card" data-project-id="pechan" tabindex="0" role="button" aria-label="Details zu Pechan StraÃŸenbau Ã¶ffnen">
+
+        <div class="project-preview-card" data-project-id="pechan" tabindex="0" role="button" aria-label="Details zu Pechan Straßenbau öffnen">
+
           <div class="project-preview-img-wrap">
-            <img src="assets/imgs/projekte/pechan.png" alt="Projektvorschau Pechan StraÃŸenbau" class="project-preview-img" loading="lazy" />
+
+            <img src="assets/imgs/projekte/pechan.png" alt="Projektvorschau Pechan Straßenbau" class="project-preview-img" loading="lazy" />
+
           </div>
+
           <div class="project-preview-body">
+
             <div class="project-preview-head">
-              <h3 class="project-preview-title">Pechan StraÃŸenbau</h3>
+
+              <h3 class="project-preview-title">Pechan Straßenbau</h3>
+
               <span class="project-type-badge">Kundenprojekt</span>
+
             </div>
+
             <p class="project-preview-desc">Individuelles Webprojekt mit eigener Umsetzung von Layout, Struktur und Funktionen.</p>
+
             <div class="project-preview-tags">
+
               <span class="project-preview-tag">PHP</span>
+
               <span class="project-preview-tag">JavaScript</span>
+
               <span class="project-preview-tag">Bootstrap</span>
+
               <span class="project-preview-tag">SASS</span>
+
             </div>
+
           </div>
+
         </div>
-        <div class="project-preview-card" data-project-id="urbancare" tabindex="0" role="button" aria-label="Details zu Urban Care Ã¶ffnen">
+
+        <div class="project-preview-card" data-project-id="urbancare" tabindex="0" role="button" aria-label="Details zu Urban Care öffnen">
+
           <div class="project-preview-img-wrap">
+
             <img src="assets/imgs/projekte/urbancare.png" alt="Projektvorschau Urban Care" class="project-preview-img" loading="lazy" />
+
           </div>
+
           <div class="project-preview-body">
+
             <div class="project-preview-head">
+
               <h3 class="project-preview-title">Urban Care</h3>
+
               <span class="project-type-badge">WordPress</span>
+
             </div>
-            <p class="project-preview-desc">Custom-Theme, Formularlogik und angepasste Inhaltsstruktur fÃ¼r ein reales Webprojekt.</p>
+
+            <p class="project-preview-desc">Custom-Theme, Formularlogik und angepasste Inhaltsstruktur für ein reales Webprojekt.</p>
+
             <div class="project-preview-tags">
+
               <span class="project-preview-tag">WordPress</span>
+
               <span class="project-preview-tag">PHP</span>
+
               <span class="project-preview-tag">Custom Theme</span>
+
               <span class="project-preview-tag">Formulare</span>
+
             </div>
+
           </div>
+
         </div>
-        <div class="project-preview-card" data-project-id="razer" tabindex="0" role="button" aria-label="Details zu Razer Battery Status Ã¶ffnen">
+
+        <div class="project-preview-card" data-project-id="razer" tabindex="0" role="button" aria-label="Details zu Razer Battery Status öffnen">
+
           <div class="project-preview-img-wrap">
+
             <img src="assets/imgs/projekte/razer_battery_status.png" alt="Projektvorschau Razer Battery Status" class="project-preview-img" loading="lazy" />
+
           </div>
+
           <div class="project-preview-body">
+
             <div class="project-preview-head">
+
               <h3 class="project-preview-title">Razer Battery Status</h3>
+
               <span class="project-type-badge">Tool</span>
+
             </div>
+
             <p class="project-preview-desc">Kleines Desktop-Tool, entstanden aus einem nervigen Alltagsproblem.</p>
+
             <div class="project-preview-tags">
+
               <span class="project-preview-tag">AutoHotkey v2</span>
+
               <span class="project-preview-tag">Windows</span>
+
               <span class="project-preview-tag">Logs</span>
+
               <span class="project-preview-tag">Overlay</span>
+
             </div>
+
           </div>
+
         </div>
-        <div class="project-preview-card" data-project-id="jungelmusik" tabindex="0" role="button" aria-label="Details zu Jungelmusik Ã¶ffnen">
+
+        <div class="project-preview-card" data-project-id="jungelmusik" tabindex="0" role="button" aria-label="Details zu Jungelmusik öffnen">
+
           <div class="project-preview-img-wrap">
+
             <img src="assets/imgs/projekte/jungelmusik.png" alt="Projektvorschau Jungelmusik" class="project-preview-img" loading="lazy" />
+
           </div>
+
           <div class="project-preview-body">
+
             <div class="project-preview-head">
+
               <h3 class="project-preview-title">Jungelmusik</h3>
+
               <span class="project-type-badge">Webapp</span>
+
             </div>
-            <p class="project-preview-desc">Aktuelles Flask-Projekt mit externen Integrationen und eigener OberflÃ¤che.</p>
+
+            <p class="project-preview-desc">Aktuelles Flask-Projekt mit externen Integrationen und eigener Oberfläche.</p>
+
             <div class="project-preview-tags">
+
               <span class="project-preview-tag">Python</span>
+
               <span class="project-preview-tag">Flask</span>
+
               <span class="project-preview-tag">Bootstrap</span>
+
               <span class="project-preview-tag">SASS</span>
+
             </div>
+
           </div>
+
         </div>
-        <div class="project-preview-card" data-project-id="2ambs" tabindex="0" role="button" aria-label="Details zu 2AMBS Sass Generator Ã¶ffnen">
+
+        <div class="project-preview-card" data-project-id="2ambs" tabindex="0" role="button" aria-label="Details zu 2AMBS Sass Generator öffnen">
+
           <div class="project-preview-img-wrap">
+
             <img src="assets/imgs/projekte/2ambs_sass_generator.png" alt="Projektvorschau 2AMBS Sass Generator" class="project-preview-img" loading="lazy" />
+
           </div>
+
           <div class="project-preview-body">
+
             <div class="project-preview-head">
+
               <h3 class="project-preview-title">2AMBS Sass Generator</h3>
+
               <span class="project-type-badge">Developer Tool</span>
+
             </div>
-            <p class="project-preview-desc">Tool zur Erstellung und Anpassung von Bootstrap-5-Themes Ã¼ber eine OberflÃ¤che.</p>
+
+            <p class="project-preview-desc">Tool zur Erstellung und Anpassung von Bootstrap-5-Themes über eine Oberfläche.</p>
+
             <div class="project-preview-tags">
+
               <span class="project-preview-tag">Python</span>
+
               <span class="project-preview-tag">Flask</span>
+
               <span class="project-preview-tag">SASS</span>
+
               <span class="project-preview-tag">Bootstrap 5</span>
+
             </div>
+
           </div>
+
         </div>
-        <div class="project-preview-card" data-project-id="portfolio" tabindex="0" role="button" aria-label="Details zum Portfolio Ã¶ffnen">
+
+        <div class="project-preview-card" data-project-id="portfolio" tabindex="0" role="button" aria-label="Details zum Portfolio öffnen">
+
           <div class="project-preview-img-wrap">
+
             <img src="assets/imgs/projekte/github_portfolio.png" alt="Projektvorschau Portfolio" class="project-preview-img" loading="lazy" onerror="this.parentElement.classList.add('project-preview-img-placeholder'); this.style.display='none';" />
+
           </div>
+
           <div class="project-preview-body">
+
             <div class="project-preview-head">
+
               <h3 class="project-preview-title">Portfolio</h3>
+
               <span class="project-type-badge">Dokumentation</span>
+
             </div>
-            <p class="project-preview-desc">Diese Seite verbindet Projekte, Lernweg und persÃ¶nliche Entwicklung.</p>
+
+            <p class="project-preview-desc">Diese Seite verbindet Projekte, Lernweg und persönliche Entwicklung.</p>
+
             <div class="project-preview-tags">
+
               <span class="project-preview-tag">HTML</span>
+
               <span class="project-preview-tag">CSS</span>
+
               <span class="project-preview-tag">JavaScript</span>
+
               <span class="project-preview-tag">GitHub Pages</span>
+
             </div>
+
           </div>
+
         </div>
+
       </div>
+
     </div>
+
   </div>
+
 </body>
+
 </html>
+
