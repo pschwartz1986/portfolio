@@ -62,7 +62,7 @@
 
           <nav class="hero-side-nav">
 
-            <button type="button" class="hero-side-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasAbout" aria-label="Über mich">
+            <button type="button" class="hero-side-btn" data-offcanvas-target="#offcanvasAbout" aria-label="Über mich">
 
               <i class="bi bi-person"></i>
 
@@ -70,7 +70,7 @@
 
             </button>
 
-            <button type="button" class="hero-side-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTech" aria-label="Tech Stack">
+            <button type="button" class="hero-side-btn" data-offcanvas-target="#offcanvasTech" aria-label="Tech Stack">
 
               <i class="bi bi-code-slash"></i>
 
@@ -78,7 +78,7 @@
 
             </button>
 
-            <button type="button" class="hero-side-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasProjects" aria-label="Projekte">
+            <button type="button" class="hero-side-btn" data-offcanvas-target="#offcanvasProjects" aria-label="Projekte">
 
               <i class="bi bi-grid-3x3-gap"></i>
 
@@ -1414,6 +1414,30 @@
         btn.addEventListener('click', function (e) {
 
           e.preventDefault();
+
+          e.stopPropagation();
+
+          var targetSelector = btn.getAttribute('data-offcanvas-target');
+
+          if (!targetSelector) return;
+
+          var panel = document.querySelector(targetSelector);
+
+          if (!panel) return;
+
+          var scrollY = window.scrollY;
+
+          var offcanvas = bootstrap.Offcanvas.getOrCreateInstance(panel);
+
+          offcanvas.show();
+
+          panel.addEventListener('shown.bs.offcanvas', function restoreScroll() {
+
+            window.scrollTo(0, scrollY);
+
+            panel.removeEventListener('shown.bs.offcanvas', restoreScroll);
+
+          });
 
         });
 
