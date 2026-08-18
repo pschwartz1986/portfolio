@@ -62,7 +62,7 @@
 
           <nav class="hero-side-nav">
 
-            <button class="hero-side-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasAbout" aria-label="Über mich">
+            <button type="button" class="hero-side-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasAbout" aria-label="Über mich">
 
               <i class="bi bi-person"></i>
 
@@ -70,7 +70,7 @@
 
             </button>
 
-            <button class="hero-side-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTech" aria-label="Tech Stack">
+            <button type="button" class="hero-side-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTech" aria-label="Tech Stack">
 
               <i class="bi bi-code-slash"></i>
 
@@ -78,7 +78,7 @@
 
             </button>
 
-            <button class="hero-side-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasProjects" aria-label="Projekte">
+            <button type="button" class="hero-side-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasProjects" aria-label="Projekte">
 
               <i class="bi bi-grid-3x3-gap"></i>
 
@@ -1404,6 +1404,16 @@
             toastEl.classList.remove('is-visible');
 
           }
+
+        });
+
+      });
+
+      document.querySelectorAll('.hero-side-btn').forEach(function (btn) {
+
+        btn.addEventListener('click', function (e) {
+
+          e.preventDefault();
 
         });
 
