@@ -1,1933 +1,944 @@
 <!DOCTYPE html>
-
 <html lang="de" data-bs-theme="dark">
-
 <head>
-
   <meta charset="UTF-8" />
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Portfolio</title>
-
   <link rel="stylesheet" href="assets/icons/bootstrap-icons.min.css" />
-
   <link rel="stylesheet" href="assets/css/custom.css" />
-
 </head>
-
 <body class="bg-deep">
-
   <div id="page-loader" class="page-loader">
-
     <div class="loader-spinner">
-
       <div class="spinner-ring"></div>
-
       <div class="spinner-ring"></div>
-
       <div class="spinner-ring"></div>
-
     </div>
-
   </div>
-
-
 
   <button id="theme-toggle-bottom" class="theme-toggle-bottom" title="Farbschema wechseln">
-
     <i class="bi bi-moon-stars"></i>
-
   </button>
 
-
-
   <!-- Cover -->
-
   <section id="hero" class="hero-section reveal-section">
-
     <div class="retro-grid"></div>
-
     <div class="container-fluid">
-
       <div class="row justify-content-center">
-
         <div class="col-12 col-md-10 col-lg-9 col-xl-8">
-
           <a href="https://github.com/pschwartz1986" target="_blank" rel="noopener" class="hero-github-icon">
-
             <i class="bi bi-github"></i>
-
           </a>
-
           <nav class="hero-side-nav">
-
-            <button type="button" class="hero-side-btn" data-offcanvas-target="#offcanvasAbout" aria-label="Über mich">
-
+            <button class="hero-side-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasAbout" aria-label="Über mich">
               <i class="bi bi-person"></i>
-
               <span>Über mich</span>
-
             </button>
-
-            <button type="button" class="hero-side-btn" data-offcanvas-target="#offcanvasTech" aria-label="Tech Stack">
-
+            <button class="hero-side-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTech" aria-label="Tech Stack">
               <i class="bi bi-code-slash"></i>
-
               <span>Tech Stack</span>
-
             </button>
-
-            <button type="button" class="hero-side-btn" data-offcanvas-target="#offcanvasProjects" aria-label="Projekte">
-
+            <button class="hero-side-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasProjects" aria-label="Projekte">
               <i class="bi bi-grid-3x3-gap"></i>
-
               <span>Projekte</span>
-
             </button>
-
           </nav>
-
           <div class="text-center position-relative">
-
             <div class="mb-4 position-relative d-inline-block">
-
               <img src="https://avatars.githubusercontent.com/u/297923195?v=4" class="hero-avatar" alt="Portfolio" />
-
               <div id="speak-bubble" class="speak-bubble w-25" role="status" aria-live="polite" aria-atomic="true">
-
                 <div class="speak-bubble-header">
-
                   <strong class="me-auto fw-bold">Bereit für echte Projektpraxis</strong>
-
                   <button type="button" class="btn-close speak-bubble-close" aria-label="Close"></button>
-
                 </div>
-
                 <div class="speak-bubble-body fw-medium text-start">
-
                   Ab Oktober 2027 suche ich einen Praktikumsplatz in der Anwendungsentwicklung, um an echten Aufgaben zu wachsen und praktische Erfahrung für mein IHK-Abschlussprojekt zu sammeln.
-
                 </div>
-
               </div>
-
             </div>
-
             <p class="hero-pre text-accent mb-3 fw-bold">SPUREN DER ENTWICKLUNG</p>
-
             <h1 class="display-1 hero-name glitch reveal-zoom" data-text="Patrick Schwartz">Patrick Schwartz</h1>
-
             <p class="hero-role mb-4">Nicht jeder Schritt war richtig. Aber jeder führte weiter.</p>
-
             <a href="#warum" class="btn btn-glow btn-lg my-5">
-
               <i class="bi bi-arrow-down me-3"></i>Warum Anwendungsentwicklung?
-
             </a>
-
           </div>
-
         </div>
-
       </div>
-
     </div>
-
   </section>
-
-
 
   <section id="warum" class="section bg-deep reveal-section">
-
     <div class="container">
-
       <div class="row justify-content-center">
-
         <div class="col-12 col-lg-10 col-xl-9">
-
           <div class="text-center mb-5">
-
             <p class="hero-pre text-accent mb-3 fw-bold"></p>
-
             <h2 class="hero-pre text-accent fw-bold mb-4">Warum Anwendungsentwicklung?</h2>
-
           </div>
-
           <div class="row g-4">
-
             <div class="col-md-4">
-
               <div class="why-card p-4 h-100">
-
                 <div class="why-icon mb-3"><i class="bi bi-lightbulb"></i></div>
-
                 <div class="why-title text-accent mb-3">Ich will verstehen</div>
-
                 <p class="mb-0 text-muted">Vom ersten Rechner bis heute begleitet mich die Frage, wie Technik funktioniert und wie einzelne Systeme zusammenarbeiten.</p>
-
               </div>
-
             </div>
-
             <div class="col-md-4">
-
               <div class="why-card p-4 h-100">
-
                 <div class="why-icon mb-3"><i class="bi bi-wrench"></i></div>
-
                 <div class="why-title text-accent mb-3">Ich will gestalten</div>
-
                 <p class="mb-0 text-muted">Webseiten, Musik, Designs oder Software: Mich fasziniert die Möglichkeit, aus einer Idee etwas Eigenes zu erschaffen.</p>
-
               </div>
-
             </div>
-
             <div class="col-md-4">
-
               <div class="why-card p-4 h-100">
-
                 <div class="why-icon mb-3"><i class="bi bi-bug"></i></div>
-
                 <div class="why-title text-accent mb-3">Ich will Probleme lösen</div>
-
                 <p class="mb-0 text-muted">Viele meiner Projekte entstanden nicht, weil sie geplant waren. Sie entstanden, weil mich etwas gestört hat und ich eine Lösung finden wollte.</p>
-
               </div>
-
             </div>
-
           </div>
-
           <div class="text-center mt-4">
-
             <a href="#projekte" class="btn btn-glow btn-lg my-5">
-
               <i class="bi bi-arrow-down me-3"></i>Zur Entwicklung
-
             </a>
-
           </div>
-
         </div>
-
       </div>
-
     </div>
-
   </section>
 
-
-
   <!-- Timeline / Projekte -->
-
   <section id="projekte" class="section bg-deep reveal-section">
-
     <div class="container">
-
       <div class="row justify-content-center">
-
         <div class="col-12 col-lg-10 col-xl-9">
-
-            <div class="timeline">
-
-             <div class="tl-year-block">
-               <div class="tl-year-header">2027</div>
-
-               <span class="tl-section-title">Projekte</span>
-               <div class="tl-projects">
-                 <span class="tl-project"><i class="bi bi-briefcase"></i>Praktikum gesucht</span>
-               </div>
-
-               <span class="tl-section-title">Lernschwerpunkte</span>
-               <div class="tl-learning">
-                 <span class="tl-badge">Praxis</span>
-                 <span class="tl-badge">Softwareentwicklung</span>
-               </div>
-
-               <div class="tl-note">
-                 2027 geht es in die Praxis. Praktikum, betriebliches Abschlussprojekt und weitere Projekte.
-                </div>
-             </div>
-
-             <div class="tl-year-block">
-               <div class="tl-year-header">2026</div>
-
-               <span class="tl-section-title">Projekte</span>
-               <div class="tl-projects">
-                 <span class="tl-project"><i class="bi bi-hdd-stack"></i>2AMBS</span>
-                 <span class="tl-project"><i class="bi bi-music-note"></i>JungelMusik</span>
-                 <span class="tl-project"><i class="bi bi-cpu"></i>SwagCP</span>
-                 <span class="tl-project"><i class="bi bi-robot"></i>SwagBot 3000</span>
-                 <span class="tl-project"><i class="bi bi-sun"></i>GoodMorningGFN</span>
-               </div>
-
-               <span class="tl-section-title">Lernschwerpunkte</span>
-               <div class="tl-learning">
-                 <span class="tl-badge">Python</span>
-                 <span class="tl-badge">Flask</span>
-                 <span class="tl-badge">FastAPI</span>
-                 <span class="tl-badge">Lokale KI</span>
-                 <span class="tl-badge">LLM-Konzepte</span>
-                 <span class="tl-badge">AI-Agenten</span>
-                 <span class="tl-badge">Speech-to-Text</span>
-                 <span class="tl-badge">Text-to-Speech</span>
-                 <span class="tl-badge">SAPI</span>
-                 <span class="tl-badge">Sprachsteuerung</span>
-                 <span class="tl-badge">Computer Vision</span>
-                 <span class="tl-badge">Eye Tracking</span>
-                 <span class="tl-badge">MediaPipe</span>
-                 <span class="tl-badge">FaceMesh</span>
-                 <span class="tl-badge">C#</span>
-                 <span class="tl-badge">.NET</span>
-                 <span class="tl-badge">WinUI</span>
-                 <span class="tl-badge">Systemarchitektur</span>
-                 <span class="tl-badge">Automatisierung</span>
-               </div>
-
-               <div class="tl-note">
-                 2026 steht im Zeichen von <strong>KI, Automatisierung und eigenen Systemen</strong>. Projekte wie SwagBot 3000, GoodMorningGFN oder SwagCP zeigen den Wandel: weg von einzelnen Apps, hin zu vernetzten Systemen mit Speech-to-Text, lokalen LLMs, Computer Vision und Desktop-Automation.
-                </div>
-             </div>
-
-             <div class="tl-year-block">
-               <div class="tl-year-header">2025</div>
-
-               <span class="tl-section-title">Projekte</span>
-               <div class="tl-projects">
-                 <span class="tl-project"><i class="bi bi-collection"></i>FLAXIOM</span>
-                 <span class="tl-project"><i class="bi bi-play-btn"></i>Shitify</span>
-                 <span class="tl-project"><i class="bi bi-battery-charging"></i>RazerBatteryStatus</span>
-                 <span class="tl-project"><i class="bi bi-hdd"></i>HomeServer / Linux Ubuntu</span>
-                 <span class="tl-project"><i class="bi bi-terminal"></i>Automatisierungs- &amp; Systemskripte</span>
-                 <span class="tl-project"><i class="bi bi-window"></i>AutoHotkey-Projekte</span>
-                 <span class="tl-project"><i class="bi bi-music-note-beamed"></i>InstrumentalSquad</span>
-               </div>
-
-               <span class="tl-section-title">Lernschwerpunkte</span>
-               <div class="tl-learning">
-                 <span class="tl-badge">Python</span>
-                 <span class="tl-badge">AutoHotkey</span>
-                 <span class="tl-badge">Linux / Ubuntu / Fedora</span>
-                 <span class="tl-badge">Reverse Engineering</span>
-                 <span class="tl-badge">Debugging</span>
-                 <span class="tl-badge">Systemanalyse</span>
-                 <span class="tl-badge">Automatisierung</span>
-                 <span class="tl-badge">Customizing</span>
-               </div>
-
-               <div class="tl-note">
-                 2025 lag der Schwerpunkt auf <strong>Systemen, Automatisierung und Reverse Engineering</strong>. FLAXIOM, Shitify, InstrumentalSquad und diverse AutoHotkey-Tools zeigen, wie ich bestehende Software analysiere, anpasse und in eigene Workflows einbinde. RazerBatteryStatus wurde hier zum Musterprojekt: Aus einem Alltagsproblem entstand ein funktionierendes Desktop-Tool.
-                </div>
-             </div>
-
-             <div class="tl-year-block">
-               <div class="tl-year-header">2024</div>
-
-               <span class="tl-section-title">Projekte</span>
-               <div class="tl-projects">
-                 <span class="tl-project"><i class="bi bi-wordpress"></i>UrbanCare</span>
-                 <span class="tl-project"><i class="bi bi-file-earmark-code"></i>Pechan Straßenbau</span>
-                 <span class="tl-project"><i class="bi bi-braces"></i>Python-Grundlagen</span>
-                 <span class="tl-project"><i class="bi bi-thermometer-half"></i>Rainmeter-Plugins</span>
-                 <span class="tl-project"><i class="bi bi-music-note-list"></i>MIDI-Skripte</span>
-                 <span class="tl-project"><i class="bi bi-palette"></i>WordPress Themes &amp; Plugins</span>
-                 <span class="tl-project"><i class="bi bi-ui-checks"></i>Schadensmeldungssystem</span>
-               </div>
-
-               <span class="tl-section-title">Lernschwerpunkte</span>
-               <div class="tl-learning">
-                 <span class="tl-badge">Python</span>
-                 <span class="tl-badge">PHP</span>
-                 <span class="tl-badge">WordPress</span>
-                 <span class="tl-badge">Lua</span>
-                 <span class="tl-badge">AutoHotkey</span>
-                 <span class="tl-badge">SASS</span>
-                 <span class="tl-badge">Bootstrap 5</span>
-                 <span class="tl-badge">jQuery</span>
-                 <span class="tl-badge">CMS-Entwicklung</span>
-                 <span class="tl-badge">individuelle Weblösungen</span>
-               </div>
-
-               <div class="tl-note">
-                 2024 wurde Webentwicklung praktisch: <strong>Kundenprojekte, individuelle CMS-Lösungen und kleine Tools</strong>. UrbanCare, Pechan Straßenbau und das Schadensmeldungssystem zeigen, wie PHP, WordPress und Bootstrap in echten Aufträgen eingesetzt wurden. Parallel entstanden erste Python-Grundlagen und MIDI-Skripte.
-                </div>
-
-             <div class="tl-year-block">
-               <div class="tl-year-header">2023</div>
-
-               <span class="tl-section-title">Projekte &amp; Experimente</span>
-               <div class="tl-projects">
-                 <span class="tl-project"><i class="bi bi-wordpress"></i>WordPress &amp; Flat-File-CMS</span>
-                 <span class="tl-project"><i class="bi bi-puzzle"></i>Plugins &amp; Themes</span>
-                 <span class="tl-project"><i class="bi bi-layout-three-columns"></i>Bulma / Bootstrap / Foundation</span>
-                 <span class="tl-project"><i class="bi bi-brush"></i>Bootstrap-5-/SASS-Theming</span>
-                 <span class="tl-project"><i class="bi bi-journal-text"></i>InstrumentalSquad Blog</span>
-                 <span class="tl-project"><i class="bi bi-flask"></i>Web- &amp; Designexperimente</span>
-                 <span class="tl-project"><i class="bi bi-search"></i>Analyse &amp; Recherche</span>
-               </div>
-
-               <span class="tl-section-title">Lernschwerpunkte</span>
-               <div class="tl-learning">
-                 <span class="tl-badge">HTML</span>
-                 <span class="tl-badge">CSS</span>
-                 <span class="tl-badge">PHP</span>
-                 <span class="tl-badge">Composer</span>
-                 <span class="tl-badge">WordPress</span>
-                 <span class="tl-badge">Lua</span>
-                 <span class="tl-badge">AutoHotkey</span>
-                 <span class="tl-badge">SASS</span>
-                 <span class="tl-badge">Bootstrap 5</span>
-                 <span class="tl-badge">jQuery</span>
-                 <span class="tl-badge">Git</span>
-               </div>
-
-               <div class="tl-note">
-                 2023 stand im Zeichen von <strong>WordPress, Flat-File-CMS und Frontend-Theming</strong>. Plugins, Themes, Bootstrap-5-/SASS-Theming und Experimente mit Bulma/Foundation zeigten, wie sich Systeme vergleichen und individuell anpassen lassen. Der InstrumentalSquad Blog wurde zum Live-Projekt.
-                </div>
-
-             <div class="tl-year-block">
-               <div class="tl-year-header">2022</div>
-
-               <span class="tl-section-title">Projekte &amp; Experimente</span>
-               <div class="tl-projects">
-                 <span class="tl-project"><i class="bi bi-git"></i>Git &amp; GitHub</span>
-                 <span class="tl-project"><i class="bi bi-hdd-network"></i>NAS-Aufbau FritzBox</span>
-                 <span class="tl-project"><i class="bi bi-shield-check"></i>Clonezilla Backups</span>
-                 <span class="tl-project"><i class="bi bi-windows"></i>Windows-10-Installationsmedien</span>
-                 <span class="tl-project"><i class="bi bi-box"></i>Virtuelle Maschinen &amp; Linux</span>
-                 <span class="tl-project"><i class="bi bi-wordpress"></i>WordPress Themes &amp; Plugins</span>
-                 <span class="tl-project"><i class="bi bi-palette2"></i>Logos, Icons &amp; Konzepte</span>
-                 <span class="tl-project"><i class="bi bi-terminal"></i>AutoHotkey-Skripte</span>
-                 <span class="tl-project"><i class="bi bi-laptop"></i>PHP &amp; WordPress Udemy-Kurse</span>
-               </div>
-
-               <span class="tl-section-title">Lernschwerpunkte</span>
-               <div class="tl-learning">
-                 <span class="tl-badge">Git</span>
-                 <span class="tl-badge">GitHub</span>
-                 <span class="tl-badge">PHP</span>
-                 <span class="tl-badge">WordPress</span>
-                 <span class="tl-badge">Linux</span>
-                 <span class="tl-badge">Virtualisierung</span>
-                 <span class="tl-badge">Windows</span>
-                 <span class="tl-badge">Backup-Konzepte</span>
-                 <span class="tl-badge">AutoHotkey</span>
-                 <span class="tl-badge">Systemkonfiguration</span>
-                 <span class="tl-badge">Webentwicklung</span>
-               </div>
-
-               <div class="tl-note">
-                 2022 wurde das Interesse an <strong>Systemen und deren praktischer Konfiguration</strong> stärker: Git/GitHub, NAS-Aufbau, Clonezilla-Backups, Windows-10-Installationsmedien und virtuelle Maschinen. AutoHotkey-Skripte und erste WordPress-Versuche ergänzten die Webentwicklung.
-                </div>
-
-             <div class="tl-year-block">
-               <div class="tl-year-header">2021</div>
-
-               <span class="tl-section-title">Projekte</span>
-               <div class="tl-projects">
-                 <span class="tl-project"><i class="bi bi-brush"></i>DiDiArt Finelines</span>
-                 <span class="tl-project"><i class="bi bi-journal-text"></i>2AMBS UNDRGRND</span>
-                 <span class="tl-project"><i class="bi bi-palette"></i>Photoshop &amp; Illustrator</span>
-               </div>
-
-               <span class="tl-section-title">Lernschwerpunkte</span>
-               <div class="tl-learning">
-                 <span class="tl-badge">Webdesign</span>
-                 <span class="tl-badge">WordPress</span>
-                 <span class="tl-badge">HTML / CSS</span>
-                 <span class="tl-badge">Grafik- &amp; Designgrundlagen</span>
-               </div>
-
-               <div class="tl-note">
-                 2021 war der Startpunkt: <strong>Webdesign, visuelle Gestaltung und erste WordPress-Projekte</strong>. DiDiArt Finelines und 2AMBS UNDRGRND entstanden, während Photoshop und Illustrator das Verständnis für visuelle Konzepte schärften.
-                </div>
-
-             <div class="tl-year-block">
-               <div class="tl-year-header">2019</div>
-
-               <span class="tl-section-title">Projekte</span>
-               <div class="tl-projects">
-                 <span class="tl-project"><i class="bi bi-lightbulb"></i>Der Gedanke an einen Neuanfang</span>
-               </div>
-
-               <span class="tl-section-title">Lernschwerpunkte</span>
-               <div class="tl-learning">
-                 <span class="tl-badge">Linux</span>
-                 <span class="tl-badge">Virtualisierung</span>
-                 <span class="tl-badge">WordPress</span>
-                 <span class="tl-badge">Selbststudium</span>
-               </div>
-
-               <div class="tl-note">
-                 2019 entstand der Gedanke an einen <strong>Neuanfang</strong>. IT war nicht mehr nur Hobby, sondern wurde zur denkbaren beruflichen Perspektive. Erste Bewerbungen, intensivere Selbststudien und die Frage: „Warum nicht IT?“
-                </div>
-
-             <div class="tl-year-block">
-               <div class="tl-year-header">2017</div>
-
-               <span class="tl-section-title">Projekte</span>
-               <div class="tl-projects">
-                 <span class="tl-project"><i class="bi bi-shop"></i>Solevital</span>
-               </div>
-
-               <span class="tl-section-title">Lernschwerpunkte</span>
-               <div class="tl-learning">
-                 <span class="tl-badge">Monstra CMS</span>
-                 <span class="tl-badge">Bootstrap 3</span>
-                 <span class="tl-badge">PHP</span>
-                 <span class="tl-badge">jQuery</span>
-               </div>
-
-               <div class="tl-note">
-                 Solevital wurde zum <strong>ersten großen Projekt</strong>: erstes Framework (Bootstrap 3), erster OnlineShop, PHP-Grundwissen gefestigt, jQuery, SQL-Datenbank. PHP war seitdem klar: Anwendungsentwicklung wäre genau das Richtige.
-                </div>
-             </div>
-
-             <div class="tl-year-block">
-               <div class="tl-year-header">2016</div>
-
-               <span class="tl-section-title">Projekte</span>
-               <div class="tl-projects">
-                 <span class="tl-project"><i class="bi bi-box"></i>Linux, Virtualisierung</span>
-               </div>
-
-               <span class="tl-section-title">Lernschwerpunkte</span>
-               <div class="tl-learning">
-                 <span class="tl-badge">Linux</span>
-                 <span class="tl-badge">Virtual Machines</span>
-                 <span class="tl-badge">Hardware</span>
-                 <span class="tl-badge">UEFI</span>
-               </div>
-
-               <div class="tl-note">
-                 2016 begann die Auseinandersetzung mit <strong>Linux und Systemen</strong>: virtuelle Maschinen, Hardware, UEFI und die Frage nach dem „Warum“. Windows 10, neue Mainboards und Boot-Prozesse weckten das Interesse an Betriebssystemen.
-                </div>
-
-             <div class="tl-year-block">
-               <div class="tl-year-header">2014</div>
-
-               <span class="tl-section-title">Projekte</span>
-               <div class="tl-projects">
-                 <span class="tl-project"><i class="bi bi-code-slash"></i>Programmierung wird greifbar</span>
-               </div>
-
-               <span class="tl-section-title">Lernschwerpunkte</span>
-               <div class="tl-learning">
-                 <span class="tl-badge">PHP</span>
-                 <span class="tl-badge">XAMPP</span>
-                 <span class="tl-badge">Bootstrap</span>
-                 <span class="tl-badge">jQuery</span>
-                 <span class="tl-badge">Datenbanken</span>
-               </div>
-
-               <div class="tl-note">
-                 2014 wurde Programmierung greifbar: <strong>PHP, XAMPP, Bootstrap, jQuery und erste Datenbanken</strong>. Aus statischem HTML wurden dynamische Anwendungen. Aus Layouts wurden Systeme.
-                </div>
-
-             <div class="tl-year-block">
-               <div class="tl-year-header">2008</div>
-
-               <span class="tl-section-title">Projekte</span>
-               <div class="tl-projects">
-                 <span class="tl-project"><i class="bi bi-globe"></i>Erste Webseiten</span>
-               </div>
-
-               <span class="tl-section-title">Lernschwerpunkte</span>
-               <div class="tl-learning">
-                 <span class="tl-badge">HTML</span>
-                 <span class="tl-badge">CSS</span>
-                 <span class="tl-badge">Webdesign</span>
-                 <span class="tl-badge">Gestaltung</span>
-               </div>
-
-               <div class="tl-note">
-                 2008 begann die Faszination für <strong>Webentwicklung und Gestaltung</strong>: HTML, CSS, Templates auseinandernehmen, Farbtheorie, Lesbarkeit, Benutzerführung. Erste Websites für Freunde und die Gaming-Community entstanden.
-                </div>
-
-             <div class="tl-year-block">
-               <div class="tl-year-header">2006</div>
-
-               <span class="tl-section-title">Projekte</span>
-               <div class="tl-projects">
-                 <span class="tl-project"><i class="bi bi-hdd-network"></i>LAN-Partys, Netzwerke</span>
-               </div>
-
-               <span class="tl-section-title">Lernschwerpunkte</span>
-               <div class="tl-learning">
-                 <span class="tl-badge">Netzwerke</span>
-                 <span class="tl-badge">Hardware</span>
-                 <span class="tl-badge">Gaming</span>
-                 <span class="tl-badge">Troubleshooting</span>
-               </div>
-
-               <div class="tl-note">
-                 2006 entstand ein erstes praktisches Verständnis für <strong>Netzwerke und Hardware</strong>: LAN-Partys, Kabel verlegen, Switches anschließen, Fehlersuche. Nicht nur Gaming, sondern Improvisation und Systemverständnis.
-                </div>
-
-             <div class="tl-year-block">
-               <div class="tl-year-header">2004</div>
-
-               <span class="tl-section-title">Projekte</span>
-               <div class="tl-projects">
-                 <span class="tl-project"><i class="bi bi-music-note"></i>Ausbildung, Audio/Video, DAWs</span>
-               </div>
-
-               <span class="tl-section-title">Lernschwerpunkte</span>
-               <div class="tl-learning">
-                 <span class="tl-badge">Audio</span>
-                 <span class="tl-badge">Video</span>
-                 <span class="tl-badge">DAWs</span>
-                 <span class="tl-badge">VSTs</span>
-                 <span class="tl-badge">Multimedia</span>
-               </div>
-
-               <div class="tl-note">
-                 2004 stand im Zeichen von <strong>Multimedia und digitalen Werkzeugen</strong>: Audio-/Videobearbeitung, DAWs, VSTs, erste Recording-Projekte. Nicht nur spielen, sondern verstehen, wie digitale Werkzeuge funktionieren.
-                </div>
-
-             <div class="tl-year-block">
-               <div class="tl-year-header">2002</div>
-
-               <span class="tl-section-title">Projekte</span>
-               <div class="tl-projects">
-                 <span class="tl-project"><i class="bi bi-pc"></i>Der Anfang der Neugier</span>
-               </div>
-
-               <span class="tl-section-title">Lernschwerpunkte</span>
-               <div class="tl-learning">
-                 <span class="tl-badge">Amiga</span>
-                 <span class="tl-badge">DOS</span>
-                 <span class="tl-badge">Windows</span>
-                 <span class="tl-badge">Gaming</span>
-                 <span class="tl-badge">Multimedia</span>
-               </div>
-
-               <div class="tl-note">
-                 2002 wurde die Neugier konkret: <strong>erster eigener Rechner, Exploration von Windows, DOS und kreativen Multimedia-Werkzeugen</strong>. Der alte Athlon-PC wurde zum Rückzugsort für Experimente.
-                </div>
-
-             <div class="tl-thread">
-               <div class="tl-thread-title">Roter Faden</div>
-               <div class="tl-thread-text">
-                 <strong>Web → CMS → Backend → Automatisierung → Linux &amp; Systeme → Reverse Engineering → KI &amp; Agenten → Systemarchitektur</strong><br><br>
-                 Was mit Webentwicklung und eigenen Websites begann, hat sich Schritt für Schritt in Richtung Backend, Automatisierung, Systemintegration und lokale KI entwickelt. Heute interessiert mich zunehmend nicht mehr nur die einzelne Anwendung, sondern das Zusammenspiel der Komponenten dahinter: Eingabe, Verarbeitung, Daten, APIs, Betriebssystem, Hardware und KI.
-               </div>
-             </div>
-
-           </div>
-
-
-
+          <div class="timeline">
+
+            <div class="tl-phase">
+              <span class="tl-phase-title">PHASE 1</span>
+              <span class="tl-phase-subtitle">DIE NEUGIER · 2002–2007</span>
+            </div>
+
+            <div class="tl-item tl-left">
+              <div class="tl-card" data-desc="Eigentlich begann alles schon deutlich früher. Ich bin ein Kind der 80er-Jahre und Computer waren schon früh Teil meines Umfelds. Mein Vater besaß einen Amiga, später folgten die ersten PCs. Disketten, Joystick, DOS-Eingabeaufforderungen und die ersten Windows-Versionen gehörten für mich ganz selbstverständlich dazu. Im Gegensatz zu vielen anderen interessierten mich Computer jedoch nicht nur wegen der Spiele. Mich faszinierte vor allem die Frage, wie das alles funktioniert. Warum startet ein Programm? Wie ist Windows aufgebaut? Wofür sind die vielen Ordner und Dateien zuständig? Was passiert im Hintergrund, wenn man etwas anklickt? Um das Jahr 2000 bekam ich den ersten eigenen Rechner geschenkt. Es war der alte AMD-Athlon-PC meines Vaters, der auf damals beeindruckende 768 MHz aufgerüstet worden war. Für viele war es einfach ein alter Computer. Für mich war es etwas völlig anderes. Dieser Rechner wurde zu meinem Rückzugsort. Ich verbrachte unzählige Stunden damit, Windows zu erkunden, Programme zu installieren, Systeme anzupassen und herauszufinden, wie die einzelnen Komponenten zusammenhängen. Dabei ging es selten um konkrete Ziele. Es war reine Neugier. Schon damals faszinierte mich die Verbindung aus Technik und Kreativität. Die Vorstellung, mit einem Computer eigene Dinge erschaffen zu können, wirkte beinahe grenzenlos. Webseiten, Grafiken, Musik, Anwendungen oder digitale Welten. Alles schien möglich. Rückblickend war das die eigentliche Geburtsstunde meiner Leidenschaft für Computer und digitale Technologien. Nicht, weil ich bereits programmieren konnte, sondern weil dort der Wunsch entstand, verstehen zu wollen, wie diese Welt funktioniert.">
+                <div class="tl-year">2002</div>
+                <div class="tl-title">Der Anfang der Neugier</div>
+                <div class="tl-tag">Amiga · DOS · Windows · Gaming · Multimedia</div>
+              </div>
+            </div>
+
+            <div class="tl-item tl-right">
+              <div class="tl-card" data-desc="Die Schulzeit näherte sich ihrem Ende und wie bei vielen Jugendlichen stand plötzlich die Frage im Raum: Was will ich eigentlich werden? Eine klare Antwort hatte ich damals nicht. Irgendetwas mit Computern war zwar ein Gedanke, der immer wieder auftauchte, aber er war zu unkonkret. Mir fehlte die Vorstellung, welche Berufe es überhaupt gab und wie man dort hinkommt. Rückblickend sah ich den Wald vor lauter Bäumen nicht. 2005 begann ich schließlich eine Ausbildung bei der Deutschen Post AG. Zu diesem Zeitpunkt war das vor allem eine vernünftige Entscheidung für einen sicheren Einstieg ins Berufsleben. Die berufliche Richtung war damit zwar zunächst festgelegt, meine technischen Interessen verschwanden allerdings nie. Parallel dazu entdeckte ich immer neue digitale Themen für mich. Einen besonderen Reiz übten Audio- und Videobearbeitung auf mich aus. Ich experimentierte mit unterschiedlichen Dateiformaten, befasste mich mit Konvertierung, Aufnahme- und Bearbeitungstechniken und verbrachte viele Stunden mit Software, von der ich vorher nicht einmal wusste, dass sie existiert. Mit der Zeit kamen Digital Audio Workstations, virtuelle Instrumente und erste Recording-Projekte hinzu. Zwischendurch entstanden eigene Beats, kleine Musikprojekte und unzählige Experimente mit neuen Werkzeugen. Oft ging es dabei weniger um das fertige Ergebnis als um die Freude am Ausprobieren und Entdecken. Gemeinsam mit Freunden wurden neue Programme getestet, Erfahrungen ausgetauscht und ständig neue Möglichkeiten gefunden, vorhandene Werkzeuge kreativ einzusetzen. Rückblickend war diese Zeit wichtig, obwohl sie auf den ersten Blick wenig mit Softwareentwicklung zu tun hatte. Zum ersten Mal wurde mir bewusst, wie leistungsfähig digitale Werkzeuge sein können, wenn Kreativität und Technik zusammenkommen. Viele der Fähigkeiten, die ich heute beim Lernen neuer Technologien nutze, entstanden bereits damals: eigenständiges Einarbeiten in neue Software, Experimentieren ohne feste Anleitung, Problemlösung durch Ausprobieren, Begeisterung für digitale Werkzeuge und die Freude daran, neue Möglichkeiten zu entdecken. Was damals mit Musik, Audio und Multimedia begann, entwickelte sich später Schritt für Schritt weiter und führte schließlich zur Webentwicklung, Programmierung und vielen Jahren des Selbststudiums.">
+                <div class="tl-year">2004</div>
+                <div class="tl-title">Zwischen Alltag, Ausbildung und neuen Welten</div>
+                <div class="tl-tag">Audio · Video · DAWs · VSTs · Recording · Multimedia</div>
+              </div>
+            </div>
+
+            <div class="tl-item tl-left">
+              <div class="tl-card" data-desc="Computer waren in dieser Zeit längst mehr als nur ein Hobby. Sie wurden zum Mittelpunkt vieler gemeinsamer Projekte mit Freunden. Regelmäßig wurden LAN-Partys organisiert. Rechner wurden in Reisekoffer gepackt, Monitore durch die Gegend geschleppt und bei Freunden oder zuhause komplette Netzwerke aufgebaut. Drei Kilometer Fußweg mit Rechner und Bildschirm waren damals kein Grund, zuhause zu bleiben. Wenn fünf oder sechs Freunde mit ihren Rechnern zusammenkamen, war der Spaß allerdings nur die halbe Geschichte. Bevor überhaupt gespielt werden konnte, musste zunächst alles funktionieren. Netzwerkkabel wurden verlegt, Hubs und Switches angeschlossen, Freigaben eingerichtet und Probleme gelöst. Warum sieht Rechner A den Rechner B nicht? Warum funktioniert die Verbindung nicht? Warum kann ein Spiel nur auf einigen Systemen gestartet werden? Solche Fragen gehörten fast selbstverständlich dazu. Genau dadurch entstand ein erstes praktisches Verständnis für Netzwerke und die Grundlagen der Kommunikation zwischen Computern. Viele Dinge wurden nicht aus Büchern gelernt, sondern durch Ausprobieren, Fehlersuche und Zusammenarbeit. Natürlich wurde auch gespielt. Age of Empires, Half-Life, Counter-Strike und viele andere Titel gehörten zu den Spielen, die an langen Wochenenden für unzählige Stunden auf den Bildschirmen liefen. Gleichzeitig wurden Daten ausgetauscht, neue Software entdeckt und Erfahrungen weitergegeben. Rückblickend waren diese Treffen mehr als reine Gaming-Abende. Sie vermittelten Wissen über Hardware, Netzwerke und Systemkonfiguration oft ganz nebenbei. Viele technische Grundlagen, die heute selbstverständlich erscheinen, entstanden damals aus Neugier, Improvisation und dem Wunsch, die Technik zum Laufen zu bringen. Vor allem aber zeigte sich erneut etwas, das sich durch die gesamte weitere Entwicklung ziehen sollte: Mich interessierte selten nur die Nutzung eines Systems. Mich interessierte, wie es funktioniert und warum es funktioniert.">
+                <div class="tl-year">2006</div>
+                <div class="tl-title">LAN-Partys, Netzwerke und Hardware</div>
+                <div class="tl-tag">Netzwerke · Hardware · Gaming · Troubleshooting</div>
+              </div>
+            </div>
+
+            <div class="tl-phase">
+              <span class="tl-phase-title">PHASE 2</span>
+              <span class="tl-phase-subtitle">VERSTEHEN STATT NUR NUTZEN · 2008–2018</span>
+            </div>
+
+            <div class="tl-item tl-right">
+              <div class="tl-card" data-desc="Lange bevor ich mich mit Programmiersprachen beschäftigte, faszinierte mich die Verbindung aus Technik und Gestaltung. Ich war schon immer ein kreativer Mensch und verbrachte viel Zeit damit, Webseiten zu analysieren, Layouts zu verstehen und herauszufinden, warum bestimmte Designs funktionieren und andere nicht. Themen wie Farbtheorie, Lesbarkeit, Benutzerführung und die Wirkung von Gestaltung interessierten mich oft genauso sehr wie die technische Umsetzung selbst. HTML und CSS waren dabei der Einstieg in eine neue Welt. Die Grundlagen waren schnell gelernt, aber gerade dadurch entstand der Wunsch, immer tiefer einzusteigen. Viele Stunden verbrachte ich damit, Templates auseinanderzunehmen, Code zu verändern und zu beobachten, welche Auswirkungen selbst kleine Änderungen auf das Gesamtbild hatten. In dieser Zeit entstanden die ersten eigenen Webseiten für Freunde und Bekannte, darunter auch die Webseite unserer Gaming-Community. Rückblickend waren das einfache Projekte, aber für die damalige Zeit konnten sie sich durchaus sehen lassen und lagen über dem, was viele Hobbyprojekte im Umfeld boten. Noch wichtiger war jedoch etwas anderes: Zum ersten Mal hatte ich das Gefühl, nicht nur Software zu benutzen, sondern selbst etwas erschaffen zu können. Je mehr ich lernte, desto deutlicher wurde mir allerdings, dass HTML und CSS nur die Oberfläche waren. Ich begann zu verstehen, dass hinter Webseiten deutlich mehr steckt als Farben, Layouts und Grafiken. Genau diese Erkenntnis machte Webentwicklung für mich so spannend. Aus gelegentlichem Herumbasteln wurde ein dauerhaftes Interesse, das mich über viele Jahre begleiten sollte.">
+                <div class="tl-year">2008</div>
+                <div class="tl-title">Erste Webseiten und die Faszination für Gestaltung</div>
+                <div class="tl-tag">HTML · CSS · Webdesign · Gestaltung</div>
+              </div>
+            </div>
+
+            <div class="tl-item tl-left">
+              <div class="tl-card" data-desc="Zwischen den ersten Webseiten und den Projekten der folgenden Jahre lag eine Zeit, in der vieles passierte. Nicht alles davon gehört in ein Portfolio. Entscheidend ist jedoch, dass das Interesse an Technik und Webentwicklung nie vollständig verschwand. Ab 2013 beziehungsweise 2014 begann ich wieder intensiver, mich mit dem Thema zu beschäftigen. Neben Vollzeitjob, Familie und Alltag versuchte ich, möglichst viel freie Zeit in das Selbststudium zu investieren. Dabei verfolgte ich keinen festen Plan und hatte auch nicht das Ziel, irgendwann Softwareentwickler zu werden. Stattdessen entstand der Antrieb aus einem privaten Projekt und der ständigen Frage, wie moderne Webseiten eigentlich funktionieren. In dieser Zeit lernte ich zahlreiche Werkzeuge und Technologien kennen, die später zu wichtigen Bestandteilen meiner Projekte werden sollten. Dazu gehörten unter anderem PHP, XAMPP, erste Datenbanken, Content-Management-Systeme sowie verschiedene Frameworks und Bibliotheken. Besonders spannend war für mich die Erkenntnis, dass Webseiten nicht nur aus statischem HTML und CSS bestehen. Zum ersten Mal beschäftigte ich mich mit dynamischen Inhalten, Formularen, Datenbanken und der serverseitigen Verarbeitung von Daten. Aus einzelnen Dateien wurden Anwendungen. Aus Layouts wurden Systeme. Auch Bootstrap und jQuery begegneten mir zum ersten Mal in dieser Phase. Viele Konzepte verstand ich anfangs nur oberflächlich. Dennoch entstand genau dadurch die Gewohnheit, Dinge auszuprobieren, Fehler zu machen, Dokumentationen zu lesen und Schritt für Schritt zu verstehen, warum etwas funktioniert. Rückblickend war diese Zeit weniger durch einzelne Projekte geprägt als durch die Bereitschaft, immer tiefer einzusteigen. Viele Konzepte, die damals neu waren, bilden heute noch die Grundlage meines Verständnisses von Webentwicklung.">
+                <div class="tl-year">2014</div>
+                <div class="tl-title">Programmierung wird greifbar</div>
+                <div class="tl-tag">PHP · XAMPP · Bootstrap · jQuery · Datenbanken</div>
+              </div>
+            </div>
+
+            <div class="tl-item tl-right">
+              <div class="tl-card" data-desc="Solevital war das erste Projekt, bei dem ich das Gefühl hatte, nicht mehr nur mit Webseiten zu experimentieren, sondern etwas Eigenes aufzubauen.
+
+Die ersten Schritte hatten bereits Jahre zuvor mit HTML-Templates, CSS-Anpassungen und kleinen Experimenten begonnen. Vieles davon entstand lokal auf meinem Rechner und wurde nie veröffentlicht. Es ging nicht darum, fertige Produkte zu präsentieren, sondern darum zu verstehen, wie Webseiten aufgebaut sind und wie sich eigene Ideen umsetzen lassen.
+
+Mit Solevital änderte sich das.
+
+Zunächst entstand sogar ein eigener Onlineshop, komplett selbst entwickelt. Rückblickend erscheint das fast verrückt, denn vieles davon entstand aus Neugier, Ausprobieren und dem Wunsch, jede Funktion selbst zu verstehen und umzusetzen.
+
+Irgendwann wurde jedoch klar, dass die Anforderungen größer wurden als meine damaligen Kenntnisse. Statt stur weiterzumachen, entschied ich mich für einen pragmatischeren Weg und setzte auf eine bestehende Open-Source-Shoplösung. Dabei lernte ich etwas, das bis heute wichtig geblieben ist:
+
+Nicht jede Lösung muss selbst entwickelt werden.
+Manchmal besteht die bessere Entscheidung darin, vorhandene Systeme sinnvoll einzusetzen.
+
+Für die eigentliche Website kam Monstra CMS zum Einsatz, ein leichtgewichtiges Flatfile-CMS, das sich ohne Datenbank betreiben ließ. Zusammen mit Bootstrap 3, PHP und jQuery entstand daraus das umfangreichste Webprojekt, an dem ich bis dahin gearbeitet hatte.
+
+Rückblickend war Solevital weniger wegen der fertigen Website bedeutsam, sondern weil dort die Begeisterung für Webentwicklung, Problemlösung und eigenständiges Lernen endgültig entstanden ist.">
+                <div class="tl-year">2016</div>
+                <div class="tl-title">Solevital</div>
+                <div class="tl-tag">Monstra CMS · Bootstrap 3 · PHP · jQuery</div>
+              </div>
+            </div>
+
+            <div class="tl-item tl-left">
+              <div class="tl-card" data-desc="Während ich mich intensiver mit Webentwicklung beschäftigte, tauchte gleichzeitig ein weiteres Thema immer häufiger auf: Linux. Zuvor war Linux für mich etwas, von dem man in Foren, Blogs und technischen Diskussionen immer wieder hörte. Viele Entwickler, Administratoren und technisch interessierte Nutzer schwärmten davon. Je häufiger mir das Thema begegnete, desto größer wurde die Neugier. Anstatt mein bestehendes Windows-System direkt zu ersetzen, begann ich zunächst mit virtuellen Maschinen zu experimentieren. Verschiedene Distributionen wurden installiert, getestet und wieder verworfen. Dabei ging es weniger darum, Linux produktiv einzusetzen, sondern vielmehr darum zu verstehen, wie Betriebssysteme funktionieren und worin sich die unterschiedlichen Konzepte unterscheiden. Parallel dazu entwickelte sich auch das Interesse an Hardware stärker. Die Einführung von Windows 10, neue Mainboards und Themen wie UEFI, Boot-Prozesse, Partitionierung und Systemarchitekturen führten dazu, dass ich mich zunehmend mit den Zusammenhängen zwischen Hard- und Software beschäftigte. Was zunächst als reine Neugier begann, entwickelte sich mit der Zeit zu einem tieferen technischen Verständnis. Es ging nicht mehr nur darum, Programme zu benutzen, sondern zu verstehen, wie Betriebssysteme, Hardware und Software miteinander arbeiten. Rückblickend war diese Phase wichtig, weil sie meinen Blick auf Computer grundlegend verändert hat. Viele Dinge, die zuvor wie eine Blackbox wirkten, wurden langsam nachvollziehbar.">
+                <div class="tl-year">2016</div>
+                <div class="tl-title">Linux, Virtualisierung und die Suche nach dem „Warum“</div>
+                <div class="tl-tag">Linux · Virtual Machines · Hardware · UEFI</div>
+              </div>
+            </div>
+
+            <div class="tl-item tl-right">
+              <div class="tl-card" data-desc="In den Jahren zuvor hatte ich mich immer wieder mit unterschiedlichsten technischen Themen beschäftigt. Mal intensiver, mal nebenbei. Vieles entstand aus Neugier, vieles aus dem Wunsch, neue Werkzeuge kennenzulernen und zu verstehen, wie Dinge funktionieren. Gleichzeitig wurde mir immer deutlicher, dass mein beruflicher Weg mich nicht dauerhaft erfüllen würde. Der Arbeitsalltag fühlte sich zunehmend wie eine Wiederholung an. Neue Firmen, andere Namen, ähnliche Aufgaben. Irgendwann stellte sich immer häufiger die Frage, ob das wirklich alles gewesen sein sollte. Zum ersten Mal entstand der ernsthafte Gedanke, beruflich in die IT zu wechseln. Aus Eigeninitiative verschickte ich Bewerbungen für Ausbildungsplätze und begann mich intensiver mit den Möglichkeiten eines beruflichen Neustarts zu beschäftigen. Die Bewerbungen blieben zwar erfolglos, trotzdem war dieser Schritt wichtig. Zum ersten Mal war die IT nicht nur ein Hobby oder privates Interesse, sondern eine denkbare berufliche Perspektive. Parallel dazu investierte ich weiterhin Zeit in mein Selbststudium. Dabei ging es weniger darum, möglichst viele Technologien zu lernen. Vielmehr wollte ich verstehen, wie moderne Anwendungen aufgebaut sind und warum bestimmte Lösungen funktionieren. In dieser Phase beschäftigte ich mich intensiver mit Linux und Virtualisierung. Linux war mir bereits seit Jahren immer wieder begegnet, doch nun begann ich, verschiedene Distributionen in virtuellen Maschinen auszuprobieren und die Unterschiede zu Windows besser zu verstehen. Themen wie Partitionierung, Bootprozesse, UEFI und Systemarchitekturen wurden zunehmend interessant, weil sie dabei halfen, die Zusammenhänge zwischen Hard- und Software besser einzuordnen. Gleichzeitig entstanden verschiedene lokale Projekte auf Basis von WordPress. Dabei stand weniger die Nutzung des Systems im Vordergrund, sondern das Verständnis dafür, wie Themes, Templates und Plugins aufgebaut sind. Durch das Anpassen vorhandener Komponenten, das Durcharbeiten fremden Codes und viele Experimente entwickelte sich nach und nach ein besseres Verständnis für Webanwendungen und deren Struktur. Rückblickend war diese Zeit vor allem von einer Erkenntnis geprägt: Das Interesse an Technik verschwand nie. Die Frage war nicht mehr, ob ich mich weiter damit beschäftigen würde. Die Frage war nur noch, wann daraus mehr werden sollte.">
+                <div class="tl-year">2019</div>
+                <div class="tl-title">Der Gedanke an einen Neuanfang</div>
+                <div class="tl-tag">Linux · Virtualisierung · WordPress · Selbststudium</div>
+              </div>
+            </div>
+
+            <div class="tl-phase">
+              <span class="tl-phase-title">PHASE 3</span>
+              <span class="tl-phase-subtitle">AUTOMATISIEREN UND OPTIMIEREN · 2021–2024</span>
+            </div>
+
+            <div class="tl-item tl-right">
+              <div class="tl-card" data-desc="Eigene Werkzeuge zur Automatisierung, Wartung und Anpassung von Systemen.">
+                <div class="tl-year">2022</div>
+                <div class="tl-title">Linux & Systemtooling</div>
+                <div class="tl-tag">Linux · Python · Shell</div>
+              </div>
+            </div>
+
+            <div class="tl-item tl-right">
+              <div class="tl-card" data-desc="Automatisierung wiederkehrender Aufgaben und Optimierung täglicher Arbeitsabläufe.">
+                <div class="tl-year">2022</div>
+                <div class="tl-title">Windows Automatisierung</div>
+                <div class="tl-tag">AutoHotkey · PowerShell · Batch</div>
+              </div>
+            </div>
+
+            <div class="tl-item tl-left">
+              <div class="tl-card" data-desc="Python-Skripte zur Anpassung von Hardware und kreativen Workflows.">
+                <div class="tl-year">2023</div>
+                <div class="tl-title">MIDI Skripte</div>
+                <div class="tl-tag">Python · MIDI · FL Studio</div>
+              </div>
+            </div>
+
+            <div class="tl-item tl-right">
+              <div class="tl-card" data-desc="Umsetzung individueller Webseiten für reale Kundenprojekte. Darunter Pechan Straßenbau und Urban Care." data-href="https://pechan-strassenbau.de">
+                <div class="tl-year">2024</div>
+                <div class="tl-title">Kundenprojekte</div>
+                <div class="tl-tag">PHP · WordPress · JavaScript</div>
+              </div>
+            </div>
+
+            <div class="tl-item tl-left">
+              <div class="tl-card" data-desc="Manchmal entstehen Projekte nicht aus großen Ideen, sondern aus kleinen Problemen, die im Alltag einfach nerven. In meinem Fall war es die Akkustandsanzeige meiner Razer Basilisk Ultimate. Der Batteriestand war zwar über die offizielle Software abrufbar, dafür musste jedoch jedes Mal die Taskleiste geöffnet, das Razer-Symbol angeklickt und die entsprechende Anzeige geöffnet werden. Für viele Menschen vermutlich kein Problem. Mich hat es irgendwann trotzdem gestört. Da ich bereits Rainmeter für eigene Desktop-Overlays und Anpassungen nutzte, lag die Idee nahe, eine eigene Lösung zu entwickeln. Die Theorie klang einfach: Der Batteriestand existiert irgendwo. Also muss man ihn auch auslesen können. Die Praxis war deutlich komplizierter. Zunächst führte die Recherche zu verschiedenen Entwicklerprojekten und Bibliotheken rund um Razer-Hardware. Viele davon waren allerdings primär für Linux gedacht und halfen unter Windows nur bedingt weiter. Also begann die eigentliche Suche. Es folgten zahlreiche Versuche, Analysen und Experimente. Unterschiedliche Tools wurden getestet, Datenströme untersucht und Prozesse analysiert. Zwischenzeitlich beschäftigte ich mich sogar mit Reverse Engineering und Debugging, um herauszufinden, woher die offizielle Software ihre Informationen bezieht. Lange Zeit war ich überzeugt, kurz vor der Lösung zu stehen. Trotzdem führte jede Spur früher oder später in eine Sackgasse. Irgendwann entstand dann eine deutlich einfachere Frage: Wenn die Software den Batteriestand kennt, woher bekommt sie diese Information eigentlich? Statt weiter nach versteckten Schnittstellen zu suchen, konzentrierte ich mich auf die vorhandene Windows-Software. Die entscheidende Idee war schließlich, die Logdateien des Treibers näher zu betrachten. Und tatsächlich: Dort befanden sich genau die Informationen, nach denen ich gesucht hatte. Die Lösung lag nicht in einer komplizierten API oder einer aufwändigen Hardwarekommunikation, sondern in einer simplen Logdatei, die vom Treiber bereits geschrieben wurde. Auf Basis dieser Erkenntnis entstand ein eigenes Desktop-Overlay, das den aktuellen Akkustand dauerhaft sichtbar machte, ohne dass die Originalsoftware geöffnet werden musste. Die finale Umsetzung erfolgte mit AutoHotkey v2 und wurde anschließend als eigenständige ausführbare Anwendung bereitgestellt. Rückblickend war an diesem Projekt nicht die technische Komplexität entscheidend, sondern die Erkenntnis, die ich daraus mitgenommen habe: Nicht jedes Problem wird durch kompliziertere Lösungen gelöst. Manchmal besteht der wichtigste Schritt darin, die richtige Frage zu stellen.">
+                <div class="tl-year">2024</div>
+                <div class="tl-title">Razer Battery Status</div>
+                <div class="tl-tag">AutoHotkey v2 · Reverse Engineering · Windows · Rainmeter</div>
+              </div>
+            </div>
+
+            <div class="tl-phase">
+              <span class="tl-phase-title">PHASE 4</span>
+              <span class="tl-phase-subtitle">BERUFLICHE NEUORIENTIERUNG · 2025</span>
+            </div>
+
+            <div class="tl-item tl-right">
+              <div class="tl-card" data-desc="Nach vielen Jahren Berufserfahrung entstand die Entscheidung, den langjährigen technischen Interessen auch beruflich zu folgen.">
+                <div class="tl-year">2025</div>
+                <div class="tl-title">Die Entscheidung</div>
+                <div class="tl-tag">Weiterbildung · Neuorientierung</div>
+              </div>
+            </div>
+
+            <div class="tl-phase">
+              <span class="tl-phase-title">PHASE 5</span>
+              <span class="tl-phase-subtitle">FACHINFORMATIKER ANWENDUNGSENTWICKLUNG · ab 2026</span>
+            </div>
+
+            <div class="tl-item tl-left">
+              <div class="tl-card" data-desc="Beginn der Umschulung zum Fachinformatiker für Anwendungsentwicklung.">
+                <div class="tl-year">2026</div>
+                <div class="tl-title">Umschulung FIAE</div>
+                <div class="tl-tag">GFN · IHK</div>
+              </div>
+            </div>
+
+            <div class="tl-item tl-right">
+              <div class="tl-card" data-desc="Fullstack-Webapp auf Basis von Python/Flask mit Bootstrap 5 und eigenem SASS-Theme. Features umfassen Spotify-/YouTube-/Google Calendar Sync, Terminbuchungen, Kontaktformular und weitere Funktionen." data-href="https://jungelmusik.de">
+                <div class="tl-year">2026</div>
+                <div class="tl-title">Jungelmusik</div>
+                <div class="tl-tag">Python · Flask · Bootstrap</div>
+              </div>
+            </div>
+
+            <div class="tl-item tl-left">
+              <div class="tl-card" data-desc="Python-Flask-App zur Generierung von Custom Themes per GUI. Übersetzt Bootstrap 5 SASS zu CSS und bietet weitere Features wie Live-Preview, BS5-Beispiele, Cheatsheets und Code-Snippets." data-href="https://github.com/pschwartz1986">
+                <div class="tl-year">2026</div>
+                <div class="tl-title">2AMBS Sass Generator</div>
+                <div class="tl-tag">Python · Flask · Bootstrap</div>
+              </div>
+            </div>
+
+            <div class="tl-item tl-right">
+              <div class="tl-card" data-desc="Dokumentation der eigenen Entwicklung, Projekte und technischen Interessen.">
+                <div class="tl-year">2026</div>
+                <div class="tl-title">Portfolio</div>
+                <div class="tl-tag">GitHub · Web</div>
+              </div>
+            </div>
+
+            <div class="tl-item tl-left">
+              <div class="tl-card" data-desc="Der nächste Schritt: Praktische Erfahrung sammeln, an realen Projekten mitarbeiten und ein betriebliches Abschlussprojekt umsetzen.">
+                <div class="tl-year">2027</div>
+                <div class="tl-title">Praktikum gesucht</div>
+                <div class="tl-tag">Praxis · Softwareentwicklung</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <div id="portfolio-modal" class="portfolio-modal" aria-hidden="true">
-
     <div class="portfolio-modal__panel" role="dialog" aria-modal="true">
-
       <div class="portfolio-modal__header">
-
         <h2 class="portfolio-modal__title" id="modal-title"></h2>
-
         <button id="modal-close" class="portfolio-modal__close" aria-label="Schließen">
-
           <i class="bi bi-x-lg"></i>
-
         </button>
-
       </div>
-
       <div class="portfolio-modal__body">
-
         <div class="portfolio-modal__grid">
-
           <div class="portfolio-modal__media">
-
             <img id="modal-img" src="" alt="Projektvorschau" />
-
           </div>
-
           <div class="portfolio-modal__content">
-
             <p class="portfolio-modal__desc" id="modal-desc"></p>
-
             <div class="portfolio-modal__tags" id="modal-tags"></div>
-
             <div class="portfolio-modal__actions" id="modal-actions"></div>
-
           </div>
-
         </div>
-
       </div>
-
     </div>
-
   </div>
 
-
-
   <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-
   <script>
-
     (function () {
-
       var themeToggle = document.getElementById('theme-toggle-bottom');
-
       var themeKey = 'portfolio-theme';
 
-
-
       function applyTheme(theme) {
-
         document.documentElement.setAttribute('data-bs-theme', theme);
-
       }
-
-
 
       function initTheme() {
-
         var saved = localStorage.getItem(themeKey) || 'dark';
-
         applyTheme(saved);
-
         var icon = themeToggle && themeToggle.querySelector('i');
-
         if (icon) {
-
           icon.className = saved === 'dark' ? 'bi bi-moon-stars' : 'bi bi-sun';
-
         }
-
       }
-
-
 
       if (themeToggle) {
-
         themeToggle.addEventListener('click', function () {
-
           var current = document.documentElement.getAttribute('data-bs-theme');
-
           var next = current === 'dark' ? 'light' : 'dark';
-
           applyTheme(next);
-
           localStorage.setItem(themeKey, next);
-
           var icon = themeToggle.querySelector('i');
-
           if (icon) {
-
             icon.className = next === 'dark' ? 'bi bi-moon-stars' : 'bi bi-sun';
-
           }
-
         });
-
       }
-
-
 
       initTheme();
 
-
-
       document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
-
         anchor.addEventListener('click', function (e) {
-
           var targetId = this.getAttribute('href');
-
           if (targetId === '#') return;
-
           var target = document.querySelector(targetId);
-
           if (target) {
-
             e.preventDefault();
-
             target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-
           }
-
         });
-
       });
-
-
 
       function revealVisible() {
-
         document.querySelectorAll('.reveal-section, .tl-item').forEach(function (el) {
-
           if (!el.classList.contains('visible')) {
-
             var rect = el.getBoundingClientRect();
-
             if (rect.top < window.innerHeight && rect.bottom > 0) {
-
               el.classList.add('visible');
-
             }
-
           }
-
         });
-
       }
-
-
 
       if ('IntersectionObserver' in window) {
-
         var observer = new IntersectionObserver(function (entries) {
-
           entries.forEach(function (entry) {
-
             if (entry.isIntersecting) {
-
               entry.target.classList.add('visible');
-
               observer.unobserve(entry.target);
-
             }
-
           });
-
         }, { threshold: 0.01 });
 
-
-
         document.querySelectorAll('.reveal-section, .reveal-zoom, .reveal-fade, .tl-item, .tl-card').forEach(function (el) {
-
           observer.observe(el);
-
         });
-
       } else {
-
         document.querySelectorAll('.reveal-section, .reveal-zoom, .reveal-fade, .tl-item, .tl-card').forEach(function (el) {
-
           el.classList.add('visible');
-
         });
-
       }
-
-
 
       window.addEventListener('load', function () {
-
         window.scrollTo(0, 0);
-
         var loader = document.getElementById('page-loader');
-
         if (loader) {
-
           loader.classList.add('is-hidden');
-
         }
-
         setTimeout(revealVisible, 100);
-
       });
-
-
 
       function createMockThumbnail(title) {
-
         var canvas = document.createElement('canvas');
-
         canvas.width = 280;
-
         canvas.height = 158;
-
         var ctx = canvas.getContext('2d');
-
         var bg = ctx.createLinearGradient(0, 0, 280, 158);
-
         bg.addColorStop(0, '#6b21a8');
-
         bg.addColorStop(0.5, '#7c3aed');
-
         bg.addColorStop(1, '#4c1d95');
-
         ctx.fillStyle = bg;
-
         ctx.fillRect(0, 0, 280, 158);
-
         ctx.fillStyle = 'rgba(255,255,255,0.35)';
-
         ctx.beginPath();
-
         ctx.arc(26, 26, 9, 0, Math.PI * 2);
-
         ctx.fill();
-
         ctx.beginPath();
-
         ctx.arc(52, 26, 9, 0, Math.PI * 2);
-
         ctx.fill();
-
         ctx.beginPath();
-
         ctx.arc(78, 26, 9, 0, Math.PI * 2);
-
         ctx.fill();
-
         ctx.fillStyle = 'rgba(255,255,255,0.95)';
-
         ctx.font = '600 13px Orbitron, Arial, sans-serif';
-
         ctx.textAlign = 'center';
-
         ctx.fillText(title, 140, 88);
-
         return canvas.toDataURL('image/png');
-
       }
-
-
 
       function getThumbnailSrc(title) {
-
         var normalized = title.toLowerCase();
-
         if (normalized.indexOf('2ambs') !== -1 || normalized.indexOf('sass generator') !== -1) {
-
           return 'assets/imgs/projekte/2ambs_sass_generator.png';
-
         }
-
         if (normalized.indexOf('razer') !== -1 || normalized.indexOf('battery') !== -1) {
-
           return 'assets/imgs/projekte/razer_battery_status.png';
-
         }
-
         if (normalized.indexOf('jungelmusik') !== -1) {
-
           return 'assets/imgs/projekte/jungelmusik.png';
-
         }
-
         if (normalized.indexOf('urban-care') !== -1 || normalized.indexOf('urban care') !== -1) {
-
           return 'assets/imgs/projekte/urbancare.png';
-
         }
-
         if (normalized.indexOf('pechan') !== -1 || normalized.indexOf('strassenbau') !== -1) {
-
           return 'assets/imgs/projekte/pechan.png';
-
         }
-
         if (normalized.indexOf('solevital') !== -1 || normalized.indexOf('salzgrotte') !== -1) {
-
           return 'assets/imgs/projekte/solevital.png';
-
         }
-
         return null;
-
       }
-
-
 
       var modal = document.getElementById('portfolio-modal');
-
       var modalImg = document.getElementById('modal-img');
-
       var modalTitle = document.getElementById('modal-title');
-
       var modalDesc = document.getElementById('modal-desc');
-
       var modalTags = document.getElementById('modal-tags');
-
       var modalActions = document.getElementById('modal-actions');
-
       var modalClose = document.getElementById('modal-close');
 
-
-
       function openModal(card) {
-
         var titleEl = card.querySelector('.tl-title');
-
         var tagEls = card.querySelectorAll('.tl-tag');
-
         var title = titleEl ? titleEl.textContent.trim() : '';
-
         var fullDesc = card.getAttribute('data-desc') || '';
-
         var tags = Array.from(tagEls).map(function (t) { return t.textContent.trim(); });
-
         var href = card.getAttribute('data-href');
 
-
-
         modalTitle.textContent = title;
-
         modalDesc.textContent = fullDesc;
-
         modalTags.innerHTML = '';
-
         tags.forEach(function (tag) {
-
           var span = document.createElement('span');
-
           span.className = 'portfolio-modal__tag';
-
           span.textContent = tag;
-
           modalTags.appendChild(span);
-
         });
 
-
-
         modalActions.innerHTML = '';
-
         if (href) {
-
           var a = document.createElement('a');
-
           a.href = href;
-
           a.target = '_blank';
-
           a.rel = 'noopener';
-
           a.innerHTML = '<i class="bi bi-box-arrow-up-right me-2"></i>Projekt öffnen';
-
           modalActions.appendChild(a);
-
         }
-
-
 
         var thumbSrc = getThumbnailSrc(title);
-
         modalImg.src = thumbSrc || '';
-
         modalImg.style.display = thumbSrc ? 'block' : 'none';
 
-
-
         modal.classList.add('is-open');
-
         modal.setAttribute('aria-hidden', 'false');
-
         document.body.style.overflow = 'hidden';
-
         modalClose.focus();
-
       }
-
-
 
       function closeModal() {
-
         modal.classList.remove('is-open');
-
         modal.setAttribute('aria-hidden', 'true');
-
         document.body.style.overflow = '';
-
       }
-
-
 
       var projects = {
-
         solevital: {
-
           title: 'Solevital',
-
           type: 'Frühes Webprojekt',
-
           image: 'assets/imgs/projekte/solevital.png',
-
           short: 'Der Punkt, an dem aus HTML/CSS-Bastelei ein echtes Webprojekt wurde.',
-
-          description: 'Solevital war das erste große Projekt und ein Wendepunkt: erstes Framework (Bootstrap 3), erster OnlineShop, PHP-Grundwissen gefestigt, jQuery, SQL-Datenbank. Aus HTML/CSS-Bastelei wurde ein echtes Webprojekt mit CMS. Hier wurde klar: Anwendungsentwicklung ist genau das Richtige.',
-
+          description: 'Solevital war eines der ersten echten Webprojekte. Es entstand aus der Wende, einfache HTML/CSS-Bastelarbeiten in ein nutzbares Webprojekt zu überführen. Mit Monstra CMS, PHP, Bootstrap 3 und jQuery wurde hier erstmals zusammenspielt, was später zur Arbeitsweise wurde: Technik verstehen und dann anwenden.',
           tags: ['Monstra CMS', 'PHP', 'Bootstrap 3', 'jQuery'],
-
           links: []
-
         },
-
         pechan: {
-
           title: 'Pechan Straßenbau',
-
           type: 'Kundenprojekt',
-
           image: 'assets/imgs/projekte/pechan.png',
-
           short: 'Individuelles Webprojekt mit eigener Umsetzung von Layout, Struktur und Funktionen.',
-
           description: 'Ein echtes Kundenprojekt, bei dem Layout, Struktur und Funktionen individuell umgesetzt wurden. PHP, JavaScript, Bootstrap und SASS kamen zusammen, um eine praktische Lösung zu bauen, die auch in der Praxis funktioniert.',
-
           tags: ['PHP', 'JavaScript', 'Bootstrap', 'SASS'],
-
           links: []
-
         },
-
         urbancare: {
-
           title: 'Urban Care',
-
           type: 'WordPress',
-
           image: 'assets/imgs/projekte/urbancare.png',
-
           short: 'Custom-Theme, Formularlogik und angepasste Inhaltsstruktur für ein reales Webprojekt.',
-
           description: 'Urban Care zeigt, was mit WordPress möglich ist, wenn man tiefer einsteigt: ein eigenes Custom-Theme, angepasste Formularlogik und eine auf den Kunden abgestimmte Inhaltsstruktur.',
-
           tags: ['WordPress', 'PHP', 'Custom Theme', 'Formulare'],
-
           links: []
-
         },
-
         razer: {
-
           title: 'Razer Battery Status',
-
           type: 'Tool',
-
           image: 'assets/imgs/projekte/razer_battery_status.png',
-
           short: 'Kleines Desktop-Tool, entstanden aus einem nervigen Alltagsproblem.',
-
-          description: 'Razer Battery Status ist eines der relevantesten Projekte: Es zeigt analytisches Denken, Systemverständnis und die Fähigkeit, aus einem Alltagsproblem eine funktionierende Lösung zu bauen. Ohne API, ohne offizielle Schnittstelle – nur durch Logdateien, Reverse Engineering und AutoHotkey v2 entstand ein Desktop-Tool, das den Akkustand zuverlässig anzeigt. Nicht groß, aber genau die Herangehensweise, die mich prägt.',
-
+          description: 'Razer Battery Status entstand aus einem konkreten Alltagsproblem: Wie lässt sich der Akkustatus von Razer-Geräten ohne Umwege beobachten? Ein kleines Desktop-Tool mit AutoHotkey v2 zeigt, dass nützliche Helfer nicht groß sein müssen.',
           tags: ['AutoHotkey v2', 'Windows', 'Logs', 'Overlay'],
-
           links: []
-
         },
-
         jungelmusik: {
-
           title: 'Jungelmusik',
-
           type: 'Webapp',
-
           image: 'assets/imgs/projekte/jungelmusik.png',
-
           short: 'Aktuelles Flask-Projekt mit externen Integrationen und eigener Oberfläche.',
-
           description: 'Jungelmusik ist eine Flask-Webapp mit externen Integrationen und einer eigenen Oberfläche. Sie zeigt, wie sich Python als Backend mit modernen Frontend-Technologien verbinden lässt.',
-
           tags: ['Python', 'Flask', 'Bootstrap', 'SASS'],
-
           links: []
-
         },
-
         '2ambs': {
-
           title: '2AMBS Sass Generator',
-
           type: 'Developer Tool',
-
           image: 'assets/imgs/projekte/2ambs_sass_generator.png',
-
           short: 'Tool zur Erstellung und Anpassung von Bootstrap-5-Themes über eine Oberfläche.',
-
           description: 'Der 2AMBS Sass Generator ist ein Developer Tool, das die Arbeit mit Bootstrap 5-Themes über eine einfache Oberfläche zugänglich macht. SASS wird interaktiver und nachvollziehbarer.',
-
           tags: ['Python', 'Flask', 'SASS', 'Bootstrap 5'],
-
           links: []
-
         },
-
         portfolio: {
-
           title: 'Portfolio',
-
           type: 'Dokumentation',
-
           image: 'assets/imgs/projekte/github_portfolio.png',
-
           short: 'Diese Seite verbindet Projekte, Lernweg und persönliche Entwicklung.',
-
           description: 'Dieses Portfolio selbst ist ein eigenes Projekt: Es dokumentiert nicht nur fertige Arbeiten, sondern verbindet Lernweg, Technikinteresse und persönliche Entwicklung zu einer nachvollziehbaren Geschichte.',
-
           tags: ['HTML', 'CSS', 'JavaScript', 'GitHub Pages'],
-
           links: []
-
         }
-
       };
 
-
-
       function openProjectModal(projectId) {
-
         var project = projects[projectId];
-
         if (!project) return;
 
-
-
         modalTitle.textContent = project.title;
-
         modalDesc.textContent = project.description || project.short;
-
         modalTags.innerHTML = '';
-
         project.tags.forEach(function (tag) {
-
           var span = document.createElement('span');
-
           span.className = 'portfolio-modal__tag';
-
           span.textContent = tag;
-
           modalTags.appendChild(span);
-
         });
-
-
 
         if (project.image) {
-
           modalImg.src = project.image;
-
           modalImg.style.display = 'block';
-
         } else {
-
           modalImg.removeAttribute('src');
-
           modalImg.style.display = 'none';
-
         }
-
-
 
         modalActions.innerHTML = '';
-
         if (project.links && project.links.length) {
-
           project.links.forEach(function (link) {
-
             var a = document.createElement('a');
-
             a.href = link.href;
-
             a.target = '_blank';
-
             a.rel = 'noopener';
-
             a.textContent = link.label;
-
             modalActions.appendChild(a);
-
           });
-
         }
-
-
 
         modal.classList.add('is-open');
-
         modal.setAttribute('aria-hidden', 'false');
-
         document.body.style.overflow = 'hidden';
-
         modalClose.focus();
-
       }
-
-
 
       document.querySelectorAll('.project-preview-card').forEach(function (card) {
-
         card.style.cursor = 'pointer';
-
         card.addEventListener('click', function () {
-
           var projectId = card.getAttribute('data-project-id');
-
           if (projectId) openProjectModal(projectId);
-
         });
-
         card.addEventListener('keydown', function (e) {
-
           if (e.key === 'Enter' || e.key === ' ') {
-
             e.preventDefault();
-
             var projectId = card.getAttribute('data-project-id');
-
             if (projectId) openProjectModal(projectId);
-
           }
-
         });
-
       });
-
-
 
       document.querySelectorAll('.tl-card').forEach(function (card) {
-
         card.style.cursor = 'pointer';
-
         card.addEventListener('click', function () {
-
           openModal(card);
-
         });
-
       });
-
-
 
       if (modalClose) {
-
         modalClose.addEventListener('click', closeModal);
-
       }
-
-
 
       if (modal) {
-
         modal.addEventListener('click', function (e) {
-
           if (e.target === modal) {
-
             closeModal();
-
           }
-
         });
-
       }
-
-
 
       document.addEventListener('keydown', function (e) {
-
         if (e.key === 'Escape' && modal.classList.contains('is-open')) {
-
           closeModal();
-
         }
-
       });
-
-
 
       if (document.readyState === 'complete') {
-
         onPageReady();
-
       } else {
-
         window.addEventListener('load', onPageReady);
-
       }
-
-
 
       function onPageReady() {
-
         window.scrollTo(0, 0);
-
         var loader = document.getElementById('page-loader');
-
         if (loader) {
-
           loader.classList.add('is-hidden');
-
         }
-
         setTimeout(revealVisible, 100);
-
         setTimeout(function () {
-
           var toastEl = document.getElementById('speak-bubble');
-
           if (toastEl) {
-
             toastEl.classList.add('is-visible');
-
           }
-
         }, 1200);
-
       }
 
-
-
       document.querySelector('.speak-bubble-close') && document.querySelector('.speak-bubble-close').addEventListener('click', function () {
-
         var toastEl = document.querySelector('.speak-bubble');
-
         if (toastEl) {
-
           toastEl.classList.remove('is-visible');
-
         }
-
       });
-
-
 
       var offcanvases = document.querySelectorAll('.hero-offcanvas');
-
       offcanvases.forEach(function (panel) {
-
         panel.addEventListener('show.bs.offcanvas', function () {
-
           var toastEl = document.querySelector('.speak-bubble');
-
           if (toastEl) {
-
             toastEl.classList.remove('is-visible');
-
           }
-
-          var scrollY = window.scrollY;
-
-          panel.addEventListener('shown.bs.offcanvas', function restoreScroll() {
-
-            window.scrollTo(0, scrollY);
-
-            panel.removeEventListener('shown.bs.offcanvas', restoreScroll);
-
-          });
-
         });
-
       });
-
-      document.querySelectorAll('.hero-side-btn').forEach(function (btn) {
-
-        btn.addEventListener('click', function (e) {
-
-          e.preventDefault();
-
-          e.stopPropagation();
-
-          var targetSelector = btn.getAttribute('data-offcanvas-target');
-
-          if (!targetSelector) return;
-
-          var panel = document.querySelector(targetSelector);
-
-          if (!panel) return;
-
-          var scrollY = window.scrollY;
-
-          var offcanvas = bootstrap.Offcanvas.getOrCreateInstance(panel);
-
-          offcanvas.show();
-
-          panel.addEventListener('shown.bs.offcanvas', function restoreScroll() {
-
-            window.scrollTo(0, scrollY);
-
-            panel.removeEventListener('shown.bs.offcanvas', restoreScroll);
-
-          });
-
-        });
-
-      });
-
     })();
-
   </script>
 
-
-
   <div class="offcanvas offcanvas-end hero-offcanvas" tabindex="-1" id="offcanvasAbout" aria-labelledby="offcanvasAboutLabel">
-
     <div class="offcanvas-header">
-
-      <h5 class="offcanvas-title hero-pre text-accent mb-3 fw-bold" id="offcanvasAboutLabel">Über mich</h5>
-
+      <h5 class="offcanvas-title" id="offcanvasAboutLabel">Über mich</h5>
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-
     </div>
-
     <div class="offcanvas-body">
-
       <div class="d-flex align-items-center gap-3 mb-4">
-
+        <img src="https://avatars.githubusercontent.com/u/297923195?v=4" class="hero-avatar" style="width:64px;height:64px;" alt="Patrick Schwartz" />
         <div>
-
           <div class="fw-bold fs-5">Patrick Schwartz</div>
-
           <div class="text-muted small">Umschüler Fachinformatiker Anwendungsentwicklung</div>
-
         </div>
-
       </div>
-
       <div class="d-grid gap-3 small">
-
         <div class="cv-profile p-3">
-
-          <div class="text-accent mb-2"><i class="bi bi-lightning me-2"></i>Kurzvorstellung</div>
-
-          <p class="mb-0 text-muted">Ich beschäftige mich aktuell intensiv mit Softwareentwicklung, Systemintegration und lokalen KI-Systemen. Dabei interessiert mich vor allem nicht nur, wie man einzelne Anwendungen programmiert, sondern wie verschiedene Technologien sinnvoll zusammenspielen.</p>
-
-          <p class="mb-0 text-muted mt-2">Ich arbeite viel mit Python, C#/.NET, Flask, FastAPI, SQL, Webtechnologien und Windows/Linux und probiere dabei unterschiedliche Ansätze praktisch aus. Mein Schwerpunkt liegt auf eigenen Projekten, bei denen ich Technologien nicht nur theoretisch lerne, sondern direkt einsetze, teste und weiterentwickle.</p>
-
+          <div class="text-accent mb-2"><i class="bi bi-person me-2"></i>Steckbrief</div>
+          <p class="mb-0 text-muted">Technikinteressiert seit vielen Jahren. Angefangen hat es mit Neugier, Ausprobieren und dem Wunsch zu verstehen, wie digitale Dinge funktionieren. Heute führt dieser Weg in die Umschulung zum Fachinformatiker für Anwendungsentwicklung.</p>
         </div>
-
         <div class="cv-profile p-3">
-
-          <div class="text-accent mb-2"><i class="bi bi-diagram-3 me-2"></i>Projektweg &amp; Interessen</div>
-
-          <p class="mb-0 text-muted">Mein Weg ist ziemlich breit aufgestellt: Von Webentwicklung, WordPress und PHP über Datenbanken und Python bis hin zu KI, Automatisierung, Sprachsteuerung und Systemarchitektur.</p>
-
-          <p class="mb-0 text-muted mt-2">Dabei entstehen immer wieder eigene Projekte – unter anderem Websites, kleine Tools, Automatisierungen, Sprachsysteme und KI-Anwendungen. Ein wichtiger Teil davon ist SwagBot 3000, an dem ich mich mit Sprachsteuerung, Zuständen, Befehlslogik und lokaler KI beschäftige.</p>
-
-          <p class="mb-0 text-muted mt-2">Was mich dabei besonders interessiert: Was passiert eigentlich zwischen Eingabe und Ergebnis? Wie zerlegt ein System Sprache? Wie erkennt es Kontext? Wie werden Befehle verarbeitet? Wie kommunizieren einzelne Komponenten miteinander? Und wie baut man daraus ein System, das nicht nur funktioniert, sondern auch sinnvoll erweiterbar ist?</p>
-
+          <div class="text-accent mb-2"><i class="bi bi-briefcase me-2"></i>Projektweg</div>
+          <p class="mb-0 text-muted">Webseiten, Automatisierung, Linux, kreative Medien und kleine Tools waren lange private Lernfelder. Dieses Portfolio zeigt nicht nur fertige Projekte, sondern auch den Weg dorthin.</p>
         </div>
-
         <div class="cv-profile p-3">
-
-          <div class="text-accent mb-2"><i class="bi bi-crosshair me-2"></i>Aktueller Fokus</div>
-
-          <p class="mb-0 text-muted">Momentan verschiebt sich mein Schwerpunkt immer stärker in Richtung KI- und Systemarchitektur.</p>
-
-          <p class="mb-0 text-muted mt-2">Ich experimentiere mit lokalen LLMs, Speech-to-Text, Text-to-Speech, Computer Vision, Sprachsteuerung und eigenen Agenten-Systemen. Dabei geht es mir weniger darum, einfach irgendeine KI einzubauen, sondern darum, die einzelnen Bausteine zu verstehen und selbst zu einer funktionierenden Architektur zusammenzusetzen.</p>
-
-          <p class="mb-0 text-muted mt-2">Mein Ziel ist deshalb nicht, mich auf eine einzelne Technologie festzulegen. Ich möchte verstehen, wie aus verschiedenen Technologien ein komplettes System entsteht – von der Hardware über Betriebssystem und Backend bis zur Benutzeroberfläche und KI.</p>
-
-          <p class="mb-0 text-muted mt-2">Kurz gesagt: Ich lerne am liebsten, indem ich Dinge baue, kaputt mache, herausfinde warum sie kaputt sind und sie anschließend besser wieder zusammenbaue.</p>
-
+          <div class="text-accent mb-2"><i class="bi bi-mortarboard me-2"></i>Aktueller Stand</div>
+          <p class="mb-0 text-muted">Aktuell absolviere ich die zweijährige Umschulung zum Fachinformatiker für Anwendungsentwicklung. Ab Oktober 2027 beginnt die betriebliche Praxisphase.</p>
         </div>
-
       </div>
-
     </div>
-
   </div>
-
-
 
   <div class="offcanvas offcanvas-end hero-offcanvas" tabindex="-1" id="offcanvasTech" aria-labelledby="offcanvasTechLabel">
-
     <div class="offcanvas-header">
-
-      <h5 class="offcanvas-title hero-pre text-accent mb-3 fw-bold" id="offcanvasTechLabel">Tech Stack</h5>
-
+      <h5 class="offcanvas-title" id="offcanvasTechLabel">Tech Stack</h5>
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-
     </div>
-
     <div class="offcanvas-body">
-
       <p class="offcanvas-intro text-muted small mb-4">Keine vollständige Skill-Liste, sondern ein kompakter Überblick über Technologien und Werkzeuge, mit denen ich praktisch gearbeitet oder eigene Projekte umgesetzt habe.</p>
-
       <div class="d-flex flex-column gap-3">
-
         <div class="cv-profile p-3">
-
           <div class="text-accent mb-2 fw-bold"><i class="bi bi-code-slash me-2"></i>Web & Frontend</div>
-
           <div class="d-flex flex-wrap gap-1">
-
             <span class="badge-tech">HTML</span>
-
             <span class="badge-tech">CSS</span>
-
             <span class="badge-tech">JavaScript</span>
-
             <span class="badge-tech">Bootstrap</span>
-
             <span class="badge-tech">SASS</span>
-
           </div>
-
         </div>
-
         <div class="cv-profile p-3">
-
           <div class="text-accent mb-2 fw-bold"><i class="bi bi-server me-2"></i>Backend & Anwendungen</div>
-
           <div class="d-flex flex-wrap gap-1">
-
             <span class="badge-tech">Python</span>
-
             <span class="badge-tech">PHP</span>
-
             <span class="badge-tech">Flask</span>
-
             <span class="badge-tech">FastAPI</span>
-
             <span class="badge-tech">SQL</span>
-
           </div>
-
         </div>
-
         <div class="cv-profile p-3">
-
           <div class="text-accent mb-2 fw-bold"><i class="bi bi-tools me-2"></i>Tools & Workflow</div>
-
           <div class="d-flex flex-wrap gap-1">
-
             <span class="badge-tech">Git</span>
-
             <span class="badge-tech">GitHub</span>
-
             <span class="badge-tech">Docker</span>
-
             <span class="badge-tech">npm</span>
-
             <span class="badge-tech">Composer</span>
-
           </div>
-
         </div>
-
         <div class="cv-profile p-3">
-
           <div class="text-accent mb-2 fw-bold"><i class="bi bi-gear me-2"></i>Systeme & Automatisierung</div>
-
           <div class="d-flex flex-wrap gap-1">
-
             <span class="badge-tech">Windows</span>
-
             <span class="badge-tech">Linux</span>
-
             <span class="badge-tech">AutoHotkey</span>
-
             <span class="badge-tech">PowerShell</span>
-
             <span class="badge-tech">Shell</span>
-
           </div>
-
         </div>
-
         <div class="cv-profile p-3">
-
           <div class="text-accent mb-2 fw-bold"><i class="bi bi-bullseye me-2"></i>Schwerpunkte</div>
-
           <div class="d-flex flex-wrap gap-1">
-
             <span class="badge-tech">Webentwicklung</span>
-
             <span class="badge-tech">Automatisierung</span>
-
             <span class="badge-tech">Desktop-Tools</span>
-
             <span class="badge-tech">Projektverständnis</span>
-
             <span class="badge-tech">Debugging</span>
-
           </div>
-
         </div>
-
       </div>
-
     </div>
-
   </div>
-
-
 
   <div class="offcanvas offcanvas-end hero-offcanvas" tabindex="-1" id="offcanvasProjects" aria-labelledby="offcanvasProjectsLabel">
-
     <div class="offcanvas-header">
-
-      <h5 class="offcanvas-title hero-pre text-accent mb-3 fw-bold" id="offcanvasProjectsLabel">Projekt-Schnellblick</h5>
-
+      <h5 class="offcanvas-title" id="offcanvasProjectsLabel">Projekt-Schnellblick</h5>
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-
     </div>
-
     <div class="offcanvas-body">
-
       <p class="offcanvas-intro text-muted small mb-4">Eine kompakte Auswahl echter Projekte und Tools.</p>
-
       <div class="project-preview-grid" id="project-preview-grid">
-
         <div class="project-preview-card" data-project-id="solevital" tabindex="0" role="button" aria-label="Details zu Solevital öffnen">
-
           <div class="project-preview-img-wrap">
-
             <img src="assets/imgs/projekte/solevital.png" alt="Projektvorschau Solevital" class="project-preview-img" loading="lazy" />
-
           </div>
-
           <div class="project-preview-body">
-
             <div class="project-preview-head">
-
               <h3 class="project-preview-title">Solevital</h3>
-
               <span class="project-type-badge">Frühes Webprojekt</span>
-
             </div>
-
             <p class="project-preview-desc">Der Punkt, an dem aus HTML/CSS-Bastelei ein echtes Webprojekt wurde.</p>
-
             <div class="project-preview-tags">
-
               <span class="project-preview-tag">Monstra CMS</span>
-
               <span class="project-preview-tag">PHP</span>
-
               <span class="project-preview-tag">Bootstrap 3</span>
-
               <span class="project-preview-tag">jQuery</span>
-
             </div>
-
           </div>
-
         </div>
-
         <div class="project-preview-card" data-project-id="pechan" tabindex="0" role="button" aria-label="Details zu Pechan Straßenbau öffnen">
-
           <div class="project-preview-img-wrap">
-
             <img src="assets/imgs/projekte/pechan.png" alt="Projektvorschau Pechan Straßenbau" class="project-preview-img" loading="lazy" />
-
           </div>
-
           <div class="project-preview-body">
-
             <div class="project-preview-head">
-
               <h3 class="project-preview-title">Pechan Straßenbau</h3>
-
               <span class="project-type-badge">Kundenprojekt</span>
-
             </div>
-
             <p class="project-preview-desc">Individuelles Webprojekt mit eigener Umsetzung von Layout, Struktur und Funktionen.</p>
-
             <div class="project-preview-tags">
-
               <span class="project-preview-tag">PHP</span>
-
               <span class="project-preview-tag">JavaScript</span>
-
               <span class="project-preview-tag">Bootstrap</span>
-
               <span class="project-preview-tag">SASS</span>
-
             </div>
-
           </div>
-
         </div>
-
         <div class="project-preview-card" data-project-id="urbancare" tabindex="0" role="button" aria-label="Details zu Urban Care öffnen">
-
           <div class="project-preview-img-wrap">
-
             <img src="assets/imgs/projekte/urbancare.png" alt="Projektvorschau Urban Care" class="project-preview-img" loading="lazy" />
-
           </div>
-
           <div class="project-preview-body">
-
             <div class="project-preview-head">
-
               <h3 class="project-preview-title">Urban Care</h3>
-
               <span class="project-type-badge">WordPress</span>
-
             </div>
-
             <p class="project-preview-desc">Custom-Theme, Formularlogik und angepasste Inhaltsstruktur für ein reales Webprojekt.</p>
-
             <div class="project-preview-tags">
-
               <span class="project-preview-tag">WordPress</span>
-
               <span class="project-preview-tag">PHP</span>
-
               <span class="project-preview-tag">Custom Theme</span>
-
               <span class="project-preview-tag">Formulare</span>
-
             </div>
-
           </div>
-
         </div>
-
         <div class="project-preview-card" data-project-id="razer" tabindex="0" role="button" aria-label="Details zu Razer Battery Status öffnen">
-
           <div class="project-preview-img-wrap">
-
             <img src="assets/imgs/projekte/razer_battery_status.png" alt="Projektvorschau Razer Battery Status" class="project-preview-img" loading="lazy" />
-
           </div>
-
           <div class="project-preview-body">
-
             <div class="project-preview-head">
-
               <h3 class="project-preview-title">Razer Battery Status</h3>
-
               <span class="project-type-badge">Tool</span>
-
             </div>
-
             <p class="project-preview-desc">Kleines Desktop-Tool, entstanden aus einem nervigen Alltagsproblem.</p>
-
             <div class="project-preview-tags">
-
               <span class="project-preview-tag">AutoHotkey v2</span>
-
               <span class="project-preview-tag">Windows</span>
-
               <span class="project-preview-tag">Logs</span>
-
               <span class="project-preview-tag">Overlay</span>
-
             </div>
-
           </div>
-
         </div>
-
         <div class="project-preview-card" data-project-id="jungelmusik" tabindex="0" role="button" aria-label="Details zu Jungelmusik öffnen">
-
           <div class="project-preview-img-wrap">
-
             <img src="assets/imgs/projekte/jungelmusik.png" alt="Projektvorschau Jungelmusik" class="project-preview-img" loading="lazy" />
-
           </div>
-
           <div class="project-preview-body">
-
             <div class="project-preview-head">
-
               <h3 class="project-preview-title">Jungelmusik</h3>
-
               <span class="project-type-badge">Webapp</span>
-
             </div>
-
             <p class="project-preview-desc">Aktuelles Flask-Projekt mit externen Integrationen und eigener Oberfläche.</p>
-
             <div class="project-preview-tags">
-
               <span class="project-preview-tag">Python</span>
-
               <span class="project-preview-tag">Flask</span>
-
               <span class="project-preview-tag">Bootstrap</span>
-
               <span class="project-preview-tag">SASS</span>
-
             </div>
-
           </div>
-
         </div>
-
         <div class="project-preview-card" data-project-id="2ambs" tabindex="0" role="button" aria-label="Details zu 2AMBS Sass Generator öffnen">
-
           <div class="project-preview-img-wrap">
-
             <img src="assets/imgs/projekte/2ambs_sass_generator.png" alt="Projektvorschau 2AMBS Sass Generator" class="project-preview-img" loading="lazy" />
-
           </div>
-
           <div class="project-preview-body">
-
             <div class="project-preview-head">
-
               <h3 class="project-preview-title">2AMBS Sass Generator</h3>
-
               <span class="project-type-badge">Developer Tool</span>
-
             </div>
-
             <p class="project-preview-desc">Tool zur Erstellung und Anpassung von Bootstrap-5-Themes über eine Oberfläche.</p>
-
             <div class="project-preview-tags">
-
               <span class="project-preview-tag">Python</span>
-
               <span class="project-preview-tag">Flask</span>
-
               <span class="project-preview-tag">SASS</span>
-
               <span class="project-preview-tag">Bootstrap 5</span>
-
             </div>
-
           </div>
-
         </div>
-
         <div class="project-preview-card" data-project-id="portfolio" tabindex="0" role="button" aria-label="Details zum Portfolio öffnen">
-
           <div class="project-preview-img-wrap">
-
             <img src="assets/imgs/projekte/github_portfolio.png" alt="Projektvorschau Portfolio" class="project-preview-img" loading="lazy" onerror="this.parentElement.classList.add('project-preview-img-placeholder'); this.style.display='none';" />
-
           </div>
-
           <div class="project-preview-body">
-
             <div class="project-preview-head">
-
               <h3 class="project-preview-title">Portfolio</h3>
-
               <span class="project-type-badge">Dokumentation</span>
-
             </div>
-
             <p class="project-preview-desc">Diese Seite verbindet Projekte, Lernweg und persönliche Entwicklung.</p>
-
             <div class="project-preview-tags">
-
               <span class="project-preview-tag">HTML</span>
-
               <span class="project-preview-tag">CSS</span>
-
               <span class="project-preview-tag">JavaScript</span>
-
               <span class="project-preview-tag">GitHub Pages</span>
-
             </div>
-
           </div>
-
         </div>
-
       </div>
-
     </div>
-
   </div>
-
 </body>
-
 </html>
-
