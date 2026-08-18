@@ -1405,6 +1405,16 @@
 
           }
 
+          var scrollY = window.scrollY;
+
+          panel.addEventListener('shown.bs.offcanvas', function restoreScroll() {
+
+            window.scrollTo(0, scrollY);
+
+            panel.removeEventListener('shown.bs.offcanvas', restoreScroll);
+
+          });
+
         });
 
       });

@@ -26,8 +26,8 @@
 
 .tl-year-block {
   position: relative;
-  margin-bottom: 3.5rem;
-  padding-left: 5rem;
+  margin-bottom: 3rem;
+  padding-left: 4rem;
 }
 
 @media (min-width: 769px) {
@@ -43,7 +43,7 @@
   color: var(--accent-secondary);
   letter-spacing: 0.05em;
   text-shadow: 0 0 20px var(--accent-secondary-glow), 0 0 40px var(--accent-secondary-glow);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
   line-height: 1;
 }
 
@@ -54,7 +54,7 @@
   letter-spacing: 0.25em;
   text-transform: uppercase;
   color: var(--text-muted);
-  margin: 1.5rem 0 0.75rem;
+  margin: 1rem 0 0.5rem;
   display: block;
 }
 
@@ -126,16 +126,15 @@
   font-size: 0.85rem;
   line-height: 1.6;
   max-width: 700px;
-  margin-top: 0.75rem;
-  padding-left: 0.25rem;
-  border-left: 2px solid var(--border);
+  margin-top: 0.5rem;
   padding-left: 1rem;
+  border-left: 2px solid var(--border);
 }
 
 .tl-thread {
   position: relative;
-  margin-top: 4rem;
-  padding: 2rem 0 0;
+  margin-top: 3rem;
+  padding: 1.5rem 0 0;
   text-align: center;
 }
 
@@ -177,7 +176,7 @@
   }
 
   .tl-year-block {
-    padding-left: 5rem;
+    padding-left: 4rem;
   }
 
   .timeline::before {

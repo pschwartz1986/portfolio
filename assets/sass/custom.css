@@ -12309,11 +12309,10 @@ textarea.form-control-lg {
     left: 50%;
   }
 }
-
 .tl-year-block {
   position: relative;
-  margin-bottom: 3.5rem;
-  padding-left: 5rem;
+  margin-bottom: 2.5rem;
+  padding-left: 4rem;
 }
 
 @media (min-width: 769px) {
@@ -12321,7 +12320,6 @@ textarea.form-control-lg {
     padding-left: 0;
   }
 }
-
 .tl-year-header {
   font-family: "Orbitron", sans-serif;
   font-size: 2.5rem;
@@ -12329,7 +12327,7 @@ textarea.form-control-lg {
   color: var(--accent-secondary);
   letter-spacing: 0.05em;
   text-shadow: 0 0 20px var(--accent-secondary-glow), 0 0 40px var(--accent-secondary-glow);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
   line-height: 1;
 }
 
@@ -12340,7 +12338,7 @@ textarea.form-control-lg {
   letter-spacing: 0.25em;
   text-transform: uppercase;
   color: var(--text-muted);
-  margin: 1.5rem 0 0.75rem;
+  margin: 1rem 0 0.5rem;
   display: block;
 }
 
@@ -12412,16 +12410,15 @@ textarea.form-control-lg {
   font-size: 0.85rem;
   line-height: 1.6;
   max-width: 700px;
-  margin-top: 0.75rem;
-  padding-left: 0.25rem;
-  border-left: 2px solid var(--border);
+  margin-top: 0.5rem;
   padding-left: 1rem;
+  border-left: 2px solid var(--border);
 }
 
 .tl-thread {
   position: relative;
-  margin-top: 4rem;
-  padding: 2rem 0 0;
+  margin-top: 3rem;
+  padding: 1.5rem 0 0;
   text-align: center;
 }
 
@@ -12461,11 +12458,9 @@ textarea.form-control-lg {
   .tl-year-header {
     font-size: 2rem;
   }
-
   .tl-year-block {
-    padding-left: 5rem;
+    padding-left: 4rem;
   }
-
   .timeline::before {
     left: 22px;
   }
