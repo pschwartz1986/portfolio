@@ -275,6 +275,8 @@
 
 .hero-offcanvas .offcanvas-body {
   padding-bottom: 2rem;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .hero-offcanvas .offcanvas-body::-webkit-scrollbar {

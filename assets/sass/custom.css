@@ -12438,6 +12438,8 @@ textarea.form-control-lg {
 
 .hero-offcanvas .offcanvas-body {
   padding-bottom: 2rem;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .hero-offcanvas .offcanvas-body::-webkit-scrollbar {
@@ -13357,7 +13359,7 @@ textarea.form-control-lg {
 
 .project-preview-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   gap: 1rem;
 }
 
@@ -13366,6 +13368,7 @@ textarea.form-control-lg {
   border: 1px solid rgba(255, 0, 255, 0.35);
   border-radius: 1.25rem;
   min-height: 330px;
+  width: 100%;
   cursor: pointer;
   transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
@@ -13556,6 +13559,7 @@ textarea.form-control-lg {
 }
 
 .portfolio-modal__body {
+  overflow-x: hidden;
   overflow-y: auto;
   flex: 1;
   padding: 1.25rem;
