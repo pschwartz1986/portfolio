@@ -12321,7 +12321,6 @@ textarea.form-control-lg {
     right: 1rem;
   }
 }
-
 .news-ticker-wrap {
   position: fixed;
   top: 0;
@@ -12337,6 +12336,7 @@ textarea.form-control-lg {
 
 .news-ticker-track {
   display: flex;
+  width: -moz-max-content;
   width: max-content;
   animation: tickerScroll 25s linear infinite;
 }
@@ -12377,14 +12377,12 @@ textarea.form-control-lg {
     transform: translateX(-50%);
   }
 }
-
 @media (max-width: 768px) {
   .news-ticker-item {
     font-size: 0.72rem;
     padding: 0.5rem 1rem;
   }
 }
-
 .hero-side-nav {
   position: absolute;
   top: 50%;
