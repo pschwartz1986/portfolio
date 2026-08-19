@@ -12026,7 +12026,7 @@ textarea.form-control-lg {
   position: relative;
   overflow: hidden;
   background: var(--bg-deep);
-  padding-top: calc(var(--nav-height) + 2rem);
+  padding-top: calc(var(--nav-height) + 2.5rem);
   padding-bottom: 3rem;
 }
 
@@ -14058,7 +14058,7 @@ html {
   border: 2px solid var(--accent);
   color: var(--text-main);
   font-size: 1.35rem;
-  z-index: 2;
+  z-index: 1050;
   text-decoration: none;
   opacity: 0.5;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25), 0 0 15px var(--accent-glow);
@@ -14077,6 +14077,69 @@ html {
     font-size: 1.15rem;
     top: 1rem;
     right: 1rem;
+  }
+}
+
+.news-ticker-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  overflow: hidden;
+  background: linear-gradient(90deg, var(--bg-deep), rgba(123, 45, 255, 0.15), var(--bg-deep));
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.news-ticker-track {
+  display: flex;
+  width: max-content;
+  animation: tickerScroll 25s linear infinite;
+}
+
+.news-ticker-wrap:hover .news-ticker-track {
+  animation-play-state: paused;
+}
+
+.news-ticker-content {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.news-ticker-item {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 1.5rem;
+  font-family: "Space Mono", monospace;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--text-main);
+  text-shadow: 0 0 8px var(--accent-glow);
+  white-space: nowrap;
+}
+
+.news-ticker-item::after {
+  content: "•";
+  margin-left: 1.5rem;
+  color: var(--accent);
+  opacity: 0.7;
+}
+
+@keyframes tickerScroll {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .news-ticker-item {
+    font-size: 0.72rem;
+    padding: 0.5rem 1rem;
   }
 }
 
