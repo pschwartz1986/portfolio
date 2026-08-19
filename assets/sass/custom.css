@@ -12286,9 +12286,10 @@ textarea.form-control-lg {
 
 .timeline {
   position: relative;
-  max-width: 900px;
+  width: 100%;
+  max-width: 1100px;
   margin: 5rem auto 0;
-  padding: 0 1rem;
+  padding: 0;
 }
 
 .timeline::before {
@@ -12302,6 +12303,8 @@ textarea.form-control-lg {
   transform: translateX(-50%);
   box-shadow: 0 0 20px var(--accent-secondary-glow);
   opacity: 0.65;
+  z-index: 0;
+  pointer-events: none;
 }
 
 @media (min-width: 769px) {
@@ -12311,8 +12314,11 @@ textarea.form-control-lg {
 }
 .tl-year-block {
   position: relative;
+  width: 100%;
+  box-sizing: border-box;
   margin-bottom: 3rem;
   padding-left: 4rem;
+  z-index: 1 !important;
 }
 
 @media (min-width: 769px) {
