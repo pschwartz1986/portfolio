@@ -86,3 +86,76 @@ html { scroll-behavior: smooth; scroll-padding-top: calc(var(--nav-height) + 2re
 .slide-arrow {
   display: none;
 }
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+
+.page-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: var(--bg-deep);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+.page-loader.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.loader-spinner {
+  position: relative;
+  width: 90px;
+  height: 90px;
+}
+
+.spinner-ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: var(--accent);
+  animation: spin 1.2s linear infinite;
+}
+
+.spinner-ring:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.spinner-ring:nth-child(2) {
+  inset: 10px;
+  border-top-color: var(--accent-secondary);
+  animation-delay: 0.15s;
+  animation-duration: 1s;
+}
+
+.spinner-ring:nth-child(3) {
+  inset: 20px;
+  border-top-color: var(--accent-strong);
+  animation-delay: 0.3s;
+  animation-duration: 0.8s;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
