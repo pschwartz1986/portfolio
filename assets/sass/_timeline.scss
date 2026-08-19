@@ -28,6 +28,7 @@
 }
 
 .tl-year-block {
+  @extend .p-5;
   position: relative;
   width: 100%;
   box-sizing: border-box;
